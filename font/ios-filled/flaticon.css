@@ -1,0 +1,1321 @@
+/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 19/02/2016 14:44
+  	*/
+@font-face {
+    font-family: 'iOSFilled';
+    src        : url('./Flaticon.eot');
+    src        : url('./Flaticon.eot?#iefix') format("embedded-opentype"), url('./Flaticon.woff') format("woff"), url('./Flaticon.ttf') format("truetype"), url('./Flaticon.svg#Flaticon') format("svg");
+    font-weight: normal;
+    font-style : normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+     @font-face{
+        font-family: 'iOSFilled';
+        src        : url('./Flaticon.svg#Flaticon') format("svg");
+    }
+}
+
+[class*=" fi-filled-"]:after,
+[class*=" fi-filled-"]:before,
+[class^="fi-filled-"]:after,
+[class^="fi-filled-"]:before {
+    font-family: 'iOSFilled';
+    font-style : normal;
+}
+
+.fi-filled-24-hours-call-centre:before {
+    content: '\f100';
+}
+
+.fi-filled-4-petal-flower:before {
+    content: '\f101';
+}
+
+.fi-filled-4-square-shapes:before {
+    content: '\f102';
+}
+
+.fi-filled-acoustic-guitar:before {
+    content: '\f103';
+}
+
+.fi-filled-add-frame-option:before {
+    content: '\f104';
+}
+
+.fi-filled-add-layer:before {
+    content: '\f105';
+}
+
+.fi-filled-add-phone-call:before {
+    content: '\f106';
+}
+
+.fi-filled-add-symbol:before {
+    content: '\f107';
+}
+
+.fi-filled-add-to-cart:before {
+    content: '\f108';
+}
+
+.fi-filled-address-book-with-at:before {
+    content: '\f109';
+}
+
+.fi-filled-align-text-right:before {
+    content: '\f10a';
+}
+
+.fi-filled-aligned-to-the-left:before {
+    content: '\f10b';
+}
+
+.fi-filled-all-direction-tool:before {
+    content: '\f10c';
+}
+
+.fi-filled-amex-logo:before {
+    content: '\f10d';
+}
+
+.fi-filled-antique-frequency-radio:before {
+    content: '\f10e';
+}
+
+.fi-filled-arrow-direction-to-the-left-inside-a-circle-outline:before {
+    content: '\f10f';
+}
+
+.fi-filled-arrow-down-inside-a-black-square:before {
+    content: '\f110';
+}
+
+.fi-filled-arrow-pointing-north-west:before {
+    content: '\f111';
+}
+
+.fi-filled-arrow-pointing-right:before {
+    content: '\f112';
+}
+
+.fi-filled-arrow-pointing-south-west:before {
+    content: '\f113';
+}
+
+.fi-filled-arrow-thin-line-to-the-left:before {
+    content: '\f114';
+}
+
+.fi-filled-arrow-to-the-left:before {
+    content: '\f115';
+}
+
+.fi-filled-arrow-up-in-circle:before {
+    content: '\f116';
+}
+
+.fi-filled-arrows-to-the-center:before {
+    content: '\f117';
+}
+
+.fi-filled-ascending-arrow:before {
+    content: '\f118';
+}
+
+.fi-filled-attachment-sign:before {
+    content: '\f119';
+}
+
+.fi-filled-backward-arrows:before {
+    content: '\f11a';
+}
+
+.fi-filled-banking-credit-card:before {
+    content: '\f11b';
+}
+
+.fi-filled-battery-almost-empty:before {
+    content: '\f11c';
+}
+
+.fi-filled-battery-full-thunder:before {
+    content: '\f11d';
+}
+
+.fi-filled-battery-with-two-lines:before {
+    content: '\f11e';
+}
+
+.fi-filled-big-flat-screen:before {
+    content: '\f11f';
+}
+
+.fi-filled-big-umbrella-open:before {
+    content: '\f120';
+}
+
+.fi-filled-birthday-wrapped-present:before {
+    content: '\f121';
+}
+
+.fi-filled-black-play-symbol:before {
+    content: '\f122';
+}
+
+.fi-filled-black-rounded-chat-bubble:before {
+    content: '\f123';
+}
+
+.fi-filled-black-target-pointer:before {
+    content: '\f124';
+}
+
+.fi-filled-blank-page:before {
+    content: '\f125';
+}
+
+.fi-filled-blocked-smartphone:before {
+    content: '\f126';
+}
+
+.fi-filled-blocked-telephone:before {
+    content: '\f127';
+}
+
+.fi-filled-bluetooth-symbol:before {
+    content: '\f128';
+}
+
+.fi-filled-bullet-point-list:before {
+    content: '\f129';
+}
+
+.fi-filled-buoy-float:before {
+    content: '\f12a';
+}
+
+.fi-filled-businessman-briefcase:before {
+    content: '\f12b';
+}
+
+.fi-filled-calendar-with-an-arrow:before {
+    content: '\f12c';
+}
+
+.fi-filled-call-answer:before {
+    content: '\f12d';
+}
+
+.fi-filled-call-volume:before {
+    content: '\f12e';
+}
+
+.fi-filled-camera-lens:before {
+    content: '\f12f';
+}
+
+.fi-filled-camera-lens-1:before {
+    content: '\f130';
+}
+
+.fi-filled-camera-synchronization:before {
+    content: '\f131';
+}
+
+.fi-filled-cancel-button:before {
+    content: '\f132';
+}
+
+.fi-filled-cancel-call:before {
+    content: '\f133';
+}
+
+.fi-filled-cancel-inbox:before {
+    content: '\f134';
+}
+
+.fi-filled-car-battery:before {
+    content: '\f135';
+}
+
+.fi-filled-cash-payment:before {
+    content: '\f136';
+}
+
+.fi-filled-caution-sing:before {
+    content: '\f137';
+}
+
+.fi-filled-centre-alignment:before {
+    content: '\f138';
+}
+
+.fi-filled-cents:before {
+    content: '\f139';
+}
+
+.fi-filled-cents-coins:before {
+    content: '\f13a';
+}
+
+.fi-filled-certificate-with-medal:before {
+    content: '\f13b';
+}
+
+.fi-filled-charging-battery:before {
+    content: '\f13c';
+}
+
+.fi-filled-chat-bubble-with-text:before {
+    content: '\f13d';
+}
+
+.fi-filled-chat-bubbles:before {
+    content: '\f13e';
+}
+
+.fi-filled-check-mark-square-button:before {
+    content: '\f13f';
+}
+
+.fi-filled-checked-calendar:before {
+    content: '\f140';
+}
+
+.fi-filled-church-bell:before {
+    content: '\f141';
+}
+
+.fi-filled-cigarette:before {
+    content: '\f142';
+}
+
+.fi-filled-cinema-clapper:before {
+    content: '\f143';
+}
+
+.fi-filled-circle-grid:before {
+    content: '\f144';
+}
+
+.fi-filled-circle-moon:before {
+    content: '\f145';
+}
+
+.fi-filled-circular-black-speech-bubble:before {
+    content: '\f146';
+}
+
+.fi-filled-circular-circles:before {
+    content: '\f147';
+}
+
+.fi-filled-closed-package:before {
+    content: '\f148';
+}
+
+.fi-filled-cloud-network-upload:before {
+    content: '\f149';
+}
+
+.fi-filled-cloud-uploading-arrow:before {
+    content: '\f14a';
+}
+
+.fi-filled-cloud-with-add-symbol:before {
+    content: '\f14b';
+}
+
+.fi-filled-code-symbol:before {
+    content: '\f14c';
+}
+
+.fi-filled-collumns:before {
+    content: '\f14d';
+}
+
+.fi-filled-computer-screen-with-play-button:before {
+    content: '\f14e';
+}
+
+.fi-filled-computing-code-browser:before {
+    content: '\f14f';
+}
+
+.fi-filled-connecting-points-on-a-presentation-chart:before {
+    content: '\f150';
+}
+
+.fi-filled-converging-arrows:before {
+    content: '\f151';
+}
+
+.fi-filled-conversation-bubble:before {
+    content: '\f152';
+}
+
+.fi-filled-copy-document:before {
+    content: '\f153';
+}
+
+.fi-filled-correct-signal:before {
+    content: '\f154';
+}
+
+.fi-filled-credit-card-and-machine:before {
+    content: '\f155';
+}
+
+.fi-filled-credit-card-pay-mode:before {
+    content: '\f156';
+}
+
+.fi-filled-crop-tool:before {
+    content: '\f157';
+}
+
+.fi-filled-cross-line:before {
+    content: '\f158';
+}
+
+.fi-filled-cross-out-mark:before {
+    content: '\f159';
+}
+
+.fi-filled-curve-modifier:before {
+    content: '\f15a';
+}
+
+.fi-filled-curved-down-arrow:before {
+    content: '\f15b';
+}
+
+.fi-filled-dark-banner:before {
+    content: '\f15c';
+}
+
+.fi-filled-dark-compact-disc-with-shine:before {
+    content: '\f15d';
+}
+
+.fi-filled-dark-dialogue-bubble:before {
+    content: '\f15e';
+}
+
+.fi-filled-deaf-symbol:before {
+    content: '\f15f';
+}
+
+.fi-filled-delivery-time-ios-7-interface-symbol:before {
+    content: '\f160';
+}
+
+.fi-filled-diagonal-arrow-in-square:before {
+    content: '\f161';
+}
+
+.fi-filled-diagonal-down-arrow:before {
+    content: '\f162';
+}
+
+.fi-filled-diagonal-table:before {
+    content: '\f163';
+}
+
+.fi-filled-diagram-structure:before {
+    content: '\f164';
+}
+
+.fi-filled-digital-camera-screen:before {
+    content: '\f165';
+}
+
+.fi-filled-direction-arrow-pointing-right:before {
+    content: '\f166';
+}
+
+.fi-filled-directional-up-arrow:before {
+    content: '\f167';
+}
+
+.fi-filled-do-not-smoke:before {
+    content: '\f168';
+}
+
+.fi-filled-dollar-bag:before {
+    content: '\f169';
+}
+
+.fi-filled-dollar-coin-stacks:before {
+    content: '\f16a';
+}
+
+.fi-filled-dollar-currency-bills:before {
+    content: '\f16b';
+}
+
+.fi-filled-dollar-price-tag:before {
+    content: '\f16c';
+}
+
+.fi-filled-dollar-sign-inside-black-circle:before {
+    content: '\f16d';
+}
+
+.fi-filled-down-arrow-direction:before {
+    content: '\f16e';
+}
+
+.fi-filled-down-button:before {
+    content: '\f16f';
+}
+
+.fi-filled-down-dotted-arrow:before {
+    content: '\f170';
+}
+
+.fi-filled-download-arrow-with-tray:before {
+    content: '\f171';
+}
+
+.fi-filled-download-arrows:before {
+    content: '\f172';
+}
+
+.fi-filled-download-cloud:before {
+    content: '\f173';
+}
+
+.fi-filled-download-from-cloud:before {
+    content: '\f174';
+}
+
+.fi-filled-downwards-curved-arrow:before {
+    content: '\f175';
+}
+
+.fi-filled-empty-battery:before {
+    content: '\f176';
+}
+
+.fi-filled-empty-mailbox:before {
+    content: '\f177';
+}
+
+.fi-filled-end-call:before {
+    content: '\f178';
+}
+
+.fi-filled-excel-document:before {
+    content: '\f179';
+}
+
+.fi-filled-exit-arrow:before {
+    content: '\f17a';
+}
+
+.fi-filled-expand-arrow:before {
+    content: '\f17b';
+}
+
+.fi-filled-expand-arrow-1:before {
+    content: '\f17c';
+}
+
+.fi-filled-expand-tool:before {
+    content: '\f17d';
+}
+
+.fi-filled-eye-open:before {
+    content: '\f17e';
+}
+
+.fi-filled-eye-with-pupil:before {
+    content: '\f17f';
+}
+
+.fi-filled-femenine-symbol:before {
+    content: '\f180';
+}
+
+.fi-filled-film-roll:before {
+    content: '\f181';
+}
+
+.fi-filled-film-roll-1:before {
+    content: '\f182';
+}
+
+.fi-filled-flashlight-torch-turned-off:before {
+    content: '\f183';
+}
+
+.fi-filled-folder-opened:before {
+    content: '\f184';
+}
+
+.fi-filled-folder-refresh:before {
+    content: '\f185';
+}
+
+.fi-filled-forward-arrows:before {
+    content: '\f186';
+}
+
+.fi-filled-frame-edit:before {
+    content: '\f187';
+}
+
+.fi-filled-frame-with-cross:before {
+    content: '\f188';
+}
+
+.fi-filled-frontal-antique-camera:before {
+    content: '\f189';
+}
+
+.fi-filled-frontal-cabinet:before {
+    content: '\f18a';
+}
+
+.fi-filled-frontal-closed-lock:before {
+    content: '\f18b';
+}
+
+.fi-filled-frontal-videocamera:before {
+    content: '\f18c';
+}
+
+.fi-filled-fully-loaded-battery:before {
+    content: '\f18d';
+}
+
+.fi-filled-gamepad-with-joystick:before {
+    content: '\f18e';
+}
+
+.fi-filled-go-back-arrow-button:before {
+    content: '\f18f';
+}
+
+.fi-filled-go-back-curved-arrow:before {
+    content: '\f190';
+}
+
+.fi-filled-graduation-gat:before {
+    content: '\f191';
+}
+
+.fi-filled-grid-table:before {
+    content: '\f192';
+}
+
+.fi-filled-grocery-shop-cart:before {
+    content: '\f193';
+}
+
+.fi-filled-headphones:before {
+    content: '\f194';
+}
+
+.fi-filled-headset:before {
+    content: '\f195';
+}
+
+.fi-filled-help-black-button:before {
+    content: '\f196';
+}
+
+.fi-filled-high-volume-speaker:before {
+    content: '\f197';
+}
+
+.fi-filled-home-with-blank-chimney:before {
+    content: '\f198';
+}
+
+.fi-filled-human-brain:before {
+    content: '\f199';
+}
+
+.fi-filled-id-card:before {
+    content: '\f19a';
+}
+
+.fi-filled-idea-symbol:before {
+    content: '\f19b';
+}
+
+.fi-filled-incoming-call:before {
+    content: '\f19c';
+}
+
+.fi-filled-information-circular-button:before {
+    content: '\f19d';
+}
+
+.fi-filled-jazz-saxophone:before {
+    content: '\f19e';
+}
+
+.fi-filled-jcb-logo:before {
+    content: '\f19f';
+}
+
+.fi-filled-justified-paragraph:before {
+    content: '\f1a0';
+}
+
+.fi-filled-kitchen-funnel:before {
+    content: '\f1a1';
+}
+
+.fi-filled-landscape-picture:before {
+    content: '\f1a2';
+}
+
+.fi-filled-large-shop-bag:before {
+    content: '\f1a3';
+}
+
+.fi-filled-left-arrow-chevron:before {
+    content: '\f1a4';
+}
+
+.fi-filled-left-click-with-a-mouse:before {
+    content: '\f1a5';
+}
+
+.fi-filled-left-curved-arrow:before {
+    content: '\f1a6';
+}
+
+.fi-filled-left-pointing-arrow:before {
+    content: '\f1a7';
+}
+
+.fi-filled-left-turn-arrow:before {
+    content: '\f1a8';
+}
+
+.fi-filled-list-menu:before {
+    content: '\f1a9';
+}
+
+.fi-filled-listen-music:before {
+    content: '\f1aa';
+}
+
+.fi-filled-live-show-microphone:before {
+    content: '\f1ab';
+}
+
+.fi-filled-lock-key-outline:before {
+    content: '\f1ac';
+}
+
+.fi-filled-love-heart:before {
+    content: '\f1ad';
+}
+
+.fi-filled-low-volume:before {
+    content: '\f1ae';
+}
+
+.fi-filled-low-volume-signal:before {
+    content: '\f1af';
+}
+
+.fi-filled-magnifying-glass-zoom-in:before {
+    content: '\f1b0';
+}
+
+.fi-filled-mailbox-with-check-mark:before {
+    content: '\f1b1';
+}
+
+.fi-filled-male-sign:before {
+    content: '\f1b2';
+}
+
+.fi-filled-master-card-logo:before {
+    content: '\f1b3';
+}
+
+.fi-filled-measuring-jar:before {
+    content: '\f1b4';
+}
+
+.fi-filled-menu-box:before {
+    content: '\f1b5';
+}
+
+.fi-filled-message-envelope:before {
+    content: '\f1b6';
+}
+
+.fi-filled-mic-on:before {
+    content: '\f1b7';
+}
+
+.fi-filled-mic-vintage-style:before {
+    content: '\f1b8';
+}
+
+.fi-filled-microhpone-off:before {
+    content: '\f1b9';
+}
+
+.fi-filled-minus-square-button:before {
+    content: '\f1ba';
+}
+
+.fi-filled-mouse:before {
+    content: '\f1bb';
+}
+
+.fi-filled-mouse-with-scroll-wheel:before {
+    content: '\f1bc';
+}
+
+.fi-filled-move-to-the-next-page-symbol:before {
+    content: '\f1bd';
+}
+
+.fi-filled-music-player:before {
+    content: '\f1be';
+}
+
+.fi-filled-music-quaver:before {
+    content: '\f1bf';
+}
+
+.fi-filled-music-screen:before {
+    content: '\f1c0';
+}
+
+.fi-filled-mute-symbol:before {
+    content: '\f1c1';
+}
+
+.fi-filled-newspaper-wit-attach:before {
+    content: '\f1c2';
+}
+
+.fi-filled-newtablet:before {
+    content: '\f1c3';
+}
+
+.fi-filled-next-arrow:before {
+    content: '\f1c4';
+}
+
+.fi-filled-next-arrow-button:before {
+    content: '\f1c5';
+}
+
+.fi-filled-next-calendar-page:before {
+    content: '\f1c6';
+}
+
+.fi-filled-next-curved-arrow:before {
+    content: '\f1c7';
+}
+
+.fi-filled-next-track-buttn:before {
+    content: '\f1c8';
+}
+
+.fi-filled-not-charging:before {
+    content: '\f1c9';
+}
+
+.fi-filled-oboe-instrument:before {
+    content: '\f1ca';
+}
+
+.fi-filled-obscure-glasses:before {
+    content: '\f1cb';
+}
+
+.fi-filled-offer-label:before {
+    content: '\f1cc';
+}
+
+.fi-filled-old-harp:before {
+    content: '\f1cd';
+}
+
+.fi-filled-online-conference-button:before {
+    content: '\f1ce';
+}
+
+.fi-filled-open-box-filled-with-papers:before {
+    content: '\f1cf';
+}
+
+.fi-filled-open-laptop:before {
+    content: '\f1d0';
+}
+
+.fi-filled-open-male-purse:before {
+    content: '\f1d1';
+}
+
+.fi-filled-open-padlock:before {
+    content: '\f1d2';
+}
+
+.fi-filled-open-storage-box:before {
+    content: '\f1d3';
+}
+
+.fi-filled-openned-scissors:before {
+    content: '\f1d4';
+}
+
+.fi-filled-opposite-arrows:before {
+    content: '\f1d5';
+}
+
+.fi-filled-opposite-directions:before {
+    content: '\f1d6';
+}
+
+.fi-filled-option-list:before {
+    content: '\f1d7';
+}
+
+.fi-filled-outcoming-object:before {
+    content: '\f1d8';
+}
+
+.fi-filled-outgoing-call:before {
+    content: '\f1d9';
+}
+
+.fi-filled-overlapsed-frames:before {
+    content: '\f1da';
+}
+
+.fi-filled-paper-plane-perspective:before {
+    content: '\f1db';
+}
+
+.fi-filled-pause-bars:before {
+    content: '\f1dc';
+}
+
+.fi-filled-perspective-stacked-files:before {
+    content: '\f1dd';
+}
+
+.fi-filled-photo-camera:before {
+    content: '\f1de';
+}
+
+.fi-filled-photo-camera-digital:before {
+    content: '\f1df';
+}
+
+.fi-filled-photo-camera-lens:before {
+    content: '\f1e0';
+}
+
+.fi-filled-piggy-bank-with-coin:before {
+    content: '\f1e1';
+}
+
+.fi-filled-play-squared-button:before {
+    content: '\f1e2';
+}
+
+.fi-filled-plus-square-button:before {
+    content: '\f1e3';
+}
+
+.fi-filled-pointing-up-arrow:before {
+    content: '\f1e4';
+}
+
+.fi-filled-portfolio:before {
+    content: '\f1e5';
+}
+
+.fi-filled-power-signal:before {
+    content: '\f1e6';
+}
+
+.fi-filled-previous-arrow:before {
+    content: '\f1e7';
+}
+
+.fi-filled-price-tag-in-euros:before {
+    content: '\f1e8';
+}
+
+.fi-filled-printer-tool:before {
+    content: '\f1e9';
+}
+
+.fi-filled-protest-megaphone:before {
+    content: '\f1ea';
+}
+
+.fi-filled-protractor-ruler:before {
+    content: '\f1eb';
+}
+
+.fi-filled-puzzle-part:before {
+    content: '\f1ec';
+}
+
+.fi-filled-recieved-signal:before {
+    content: '\f1ed';
+}
+
+.fi-filled-rectangle-speech-bubble-with-dots:before {
+    content: '\f1ee';
+}
+
+.fi-filled-rectangular-speech-bubble:before {
+    content: '\f1ef';
+}
+
+.fi-filled-rectangular-speech-bubble-1:before {
+    content: '\f1f0';
+}
+
+.fi-filled-reflex-photo-camera:before {
+    content: '\f1f1';
+}
+
+.fi-filled-refreshment-arrows:before {
+    content: '\f1f2';
+}
+
+.fi-filled-repair-spanner:before {
+    content: '\f1f3';
+}
+
+.fi-filled-repeat-arrows:before {
+    content: '\f1f4';
+}
+
+.fi-filled-resize-arrow:before {
+    content: '\f1f5';
+}
+
+.fi-filled-right-button-with-arrow:before {
+    content: '\f1f6';
+}
+
+.fi-filled-right-clicking-computer-mouse:before {
+    content: '\f1f7';
+}
+
+.fi-filled-right-side-bar:before {
+    content: '\f1f8';
+}
+
+.fi-filled-rotate-tablet:before {
+    content: '\f1f9';
+}
+
+.fi-filled-round-alarmclock:before {
+    content: '\f1fa';
+}
+
+.fi-filled-round-clock-at-nine-oclock:before {
+    content: '\f1fb';
+}
+
+.fi-filled-round-download-button:before {
+    content: '\f1fc';
+}
+
+.fi-filled-round-thermometer:before {
+    content: '\f1fd';
+}
+
+.fi-filled-round-web-cam:before {
+    content: '\f1fe';
+}
+
+.fi-filled-ruler-and-pencil-cross:before {
+    content: '\f1ff';
+}
+
+.fi-filled-sailor-anchor:before {
+    content: '\f200';
+}
+
+.fi-filled-saving-floppy-disc:before {
+    content: '\f201';
+}
+
+.fi-filled-scale-of-justice:before {
+    content: '\f202';
+}
+
+.fi-filled-scale-ruler:before {
+    content: '\f203';
+}
+
+.fi-filled-scaling:before {
+    content: '\f204';
+}
+
+.fi-filled-settings-cog:before {
+    content: '\f205';
+}
+
+.fi-filled-shop-tag:before {
+    content: '\f206';
+}
+
+.fi-filled-shopping-cart:before {
+    content: '\f207';
+}
+
+.fi-filled-shopping-cart-with-lace:before {
+    content: '\f208';
+}
+
+.fi-filled-single-cloud:before {
+    content: '\f209';
+}
+
+.fi-filled-size-measure:before {
+    content: '\f20a';
+}
+
+.fi-filled-skype-logo:before {
+    content: '\f20b';
+}
+
+.fi-filled-slanting-arrow:before {
+    content: '\f20c';
+}
+
+.fi-filled-small-keyboard:before {
+    content: '\f20d';
+}
+
+.fi-filled-smartphone-screen:before {
+    content: '\f20e';
+}
+
+.fi-filled-sound-control-buttons:before {
+    content: '\f20f';
+}
+
+.fi-filled-sound-meter:before {
+    content: '\f210';
+}
+
+.fi-filled-speaker-off:before {
+    content: '\f211';
+}
+
+.fi-filled-speakers-without-volume:before {
+    content: '\f212';
+}
+
+.fi-filled-speech-bubble-shadow-with-two-white-dialogue-lines:before {
+    content: '\f213';
+}
+
+.fi-filled-square-folder:before {
+    content: '\f214';
+}
+
+.fi-filled-square-of-four-lines:before {
+    content: '\f215';
+}
+
+.fi-filled-square-shape:before {
+    content: '\f216';
+}
+
+.fi-filled-starred-as-favourite:before {
+    content: '\f217';
+}
+
+.fi-filled-storage-box:before {
+    content: '\f218';
+}
+
+.fi-filled-store-infrastructure:before {
+    content: '\f219';
+}
+
+.fi-filled-striped-arrow-pointing-left:before {
+    content: '\f21a';
+}
+
+.fi-filled-striped-arrow-right:before {
+    content: '\f21b';
+}
+
+.fi-filled-striped-arrow-up:before {
+    content: '\f21c';
+}
+
+.fi-filled-subtract-symbol:before {
+    content: '\f21d';
+}
+
+.fi-filled-supermarket-shopping-cart:before {
+    content: '\f21e';
+}
+
+.fi-filled-synchronized:before {
+    content: '\f21f';
+}
+
+.fi-filled-tablet-screen:before {
+    content: '\f220';
+}
+
+.fi-filled-tag-with-pound-symbol:before {
+    content: '\f221';
+}
+
+.fi-filled-thought-balloon-with-three-white-dots:before {
+    content: '\f222';
+}
+
+.fi-filled-three-dots-menu:before {
+    content: '\f223';
+}
+
+.fi-filled-three-layers:before {
+    content: '\f224';
+}
+
+.fi-filled-three-polaroid-pictures:before {
+    content: '\f225';
+}
+
+.fi-filled-three-recycling-arrows:before {
+    content: '\f226';
+}
+
+.fi-filled-time:before {
+    content: '\f227';
+}
+
+.fi-filled-time-meter:before {
+    content: '\f228';
+}
+
+.fi-filled-tin-drum:before {
+    content: '\f229';
+}
+
+.fi-filled-tiny-basket:before {
+    content: '\f22a';
+}
+
+.fi-filled-top-view-open-book:before {
+    content: '\f22b';
+}
+
+.fi-filled-treble-clef-doodle:before {
+    content: '\f22c';
+}
+
+.fi-filled-trombone-instrument:before {
+    content: '\f22d';
+}
+
+.fi-filled-trumpet:before {
+    content: '\f22e';
+}
+
+.fi-filled-trumpet-instrument:before {
+    content: '\f22f';
+}
+
+.fi-filled-two-squares:before {
+    content: '\f230';
+}
+
+.fi-filled-up-arrow-button:before {
+    content: '\f231';
+}
+
+.fi-filled-up-arrow-direction:before {
+    content: '\f232';
+}
+
+.fi-filled-up-chevron:before {
+    content: '\f233';
+}
+
+.fi-filled-upload-arrow:before {
+    content: '\f234';
+}
+
+.fi-filled-uploading-curve-arrow:before {
+    content: '\f235';
+}
+
+.fi-filled-vertical-bookmark:before {
+    content: '\f236';
+}
+
+.fi-filled-video-camera:before {
+    content: '\f237';
+}
+
+.fi-filled-video-recorder:before {
+    content: '\f238';
+}
+
+.fi-filled-violin-instrument:before {
+    content: '\f239';
+}
+
+.fi-filled-visa-logo:before {
+    content: '\f23a';
+}
+
+.fi-filled-voice-mail-symbol:before {
+    content: '\f23b';
+}
+
+.fi-filled-waste-disposal:before {
+    content: '\f23c';
+}
+
+.fi-filled-web-coding:before {
+    content: '\f23d';
+}
+
+.fi-filled-website-window:before {
+    content: '\f23e';
+}
+
+.fi-filled-weighing-scale:before {
+    content: '\f23f';
+}
+
+.fi-filled-weight-in-kilogram:before {
+    content: '\f240';
+}
+
+.fi-filled-wifi-signal-full:before {
+    content: '\f241';
+}
+
+.fi-filled-zoom-glass:before {
+    content: '\f242';
+}
+
+.fi-filled-zoom-out:before {
+    content: '\f243';
+}

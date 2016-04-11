@@ -1,0 +1,78 @@
+/**
+ * Admin UX - Bootstrap Variable Overrides
+ * @author: Adarsh Pastakia
+ */
+
+$enable-rounded : true;
+$enable-shadows : true;
+//$enable-gradients : true;
+//$enable-transitions : true;
+
+$font-family-sans-serif : 'Open Sans', 'Roboto', 'Helvetica', 'Segoe UI', Arial, sans-serif;
+$font-family-serif : 'Lato', Georgia, "Times New Roman", Times, serif;
+$font-family-monospace : 'Source Code Pro', Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$font-size-base : .8rem;
+$font-size-lg : 1.2rem;
+$font-size-sm : .7rem;
+$font-size-xs : .5rem;
+
+$border-radius : .15rem;
+$border-radius-lg : .25rem;
+$border-radius-sm : .075rem;
+
+$body-bg : $ux-white;
+$body-color : $ux-black;
+
+$brand-primary : $ux-primary;
+$brand-secondary : $ux-secondary;
+$brand-info : $ux-info;
+$brand-danger : $ux-danger;
+$brand-success : $ux-success;
+$brand-warning : $ux-warning;
+
+$text-muted : $ux-gray-light;
+
+$btn-secondary-bg : #F5F7FA;
+$btn-secondary-color : $ux-gray-medium;
+$btn-secondary-border : $ux-gray-light;
+
+$btn-primary-border : $ux-primary-dark;
+$btn-info-border : $ux-info-dark;
+$btn-danger-border : $ux-danger-dark;
+$btn-success-border : $ux-success-dark;
+$btn-warning-border : $ux-warning-dark;
+
+$label-default-bg : $ux-gray-medium;
+$label-primary-bg : $ux-primary-medium;
+$label-info-bg : $ux-info-medium;
+$label-danger-bg : $ux-danger-medium;
+$label-success-bg : $ux-success-medium;
+$label-warning-bg : $ux-warning-medium;
+
+$state-info-bg : $ux-info-light;
+$state-danger-bg : $ux-danger-light;
+$state-success-bg : $ux-success-light;
+$state-warning-bg : $ux-warning-light;
+
+$state-info-text : $ux-info;
+$state-danger-text : $ux-danger;
+$state-success-text : $ux-success;
+$state-warning-text : $ux-warning;
+
+$state-info-border : $ux-info;
+$state-danger-border : $ux-danger;
+$state-success-border : $ux-success;
+$state-warning-border : $ux-warning;
+
+$input-bg : $white;
+$input-label : $ux-gray-dark;
+
+$blockquote-border-color : $brand-primary;
+
+$dropdown-link-color : $ux-gray-dark;
+$dropdown-link-hover-bg : $ux-gray-lighter;
+$dropdown-link-hover-color : $brand-primary;
+
+// Include flexgrid
+@import "bootstrap/bootstrap-flex";

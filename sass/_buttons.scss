@@ -1,0 +1,51 @@
+/**
+ * Admin UX - Buttons
+ * @author: Adarsh Pastakia
+ */
+@import "../libs/ladda/css/ladda";
+
+.btn-round {
+  border-radius : 2em;
+}
+
+.btn-icon-top {
+  text-align : center;
+  > span {
+	display : block;
+  }
+}
+
+.btn {
+  margin   : .1rem .2rem;
+  position : relative;
+  .ux-badge {
+	@include position(absolute, -.5em -.5em null null);
+  }
+}
+
+.btn-group {
+  margin   : .1rem .2rem;
+  .btn {
+	margin : 0;
+  }
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background : $ux-primary-dark;
+}
+
+.btn-info:hover, .btn-info:focus {
+  background : $ux-info-dark;
+}
+
+.btn-danger:hover, .btn-danger:focus {
+  background : $ux-danger-dark;
+}
+
+.btn-success:hover, .btn-success:focus {
+  background : $ux-success-dark;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+  background : $ux-warning-dark;
+}

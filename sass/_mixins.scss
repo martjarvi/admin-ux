@@ -1,0 +1,114 @@
+/**
+ * Admin UX - Custom MixIns
+ * @author: Adarsh Pastakia
+ */
+// Helpers
+@mixin user-select($val: text) {
+     @include __hack(user-select, $val);
+}
+@mixin backdrop-blur($value: 5px) {
+    -webkit-backdrop-filter : blur($value);
+    -moz-backdrop-filter : blur($value);
+    -ms-backdrop-filter : blur($value);
+    -o-backdrop-filter : blur($value);
+    backdrop-filter : blur($value);
+}
+// Directional
+@mixin border-start($val) {
+    border-left: $val;
+    @include __hack(border-start, $val);
+}
+@mixin border-end($val) {
+    border-right: $val;
+    @include __hack(border-end, $val);
+}
+@mixin margin-start($val) {
+    margin-left: $val;
+    @include __hack(margin-start, $val);
+}
+@mixin margin-end($val) {
+    margin-right: $val;
+    @include __hack(margin-end, $val);
+}
+@mixin padding-start($val) {
+    padding-left: $val;
+    @include __hack(padding-start, $val);
+}
+@mixin padding-end($val) {
+    padding-right: $val;
+    @include __hack(padding-end, $val);
+}
+// Layouts
+@mixin size($width: auto, $height: auto) {
+    width : $width;
+    height: $height;
+}
+@mixin position($pos:absolute, $val: 0) {
+    position: $pos;
+    @if length($val) == 1 {
+        top   : nth($val, 1);
+        right : nth($val, 1);
+        bottom: nth($val, 1);
+        left  : nth($val, 1);
+    }
+    @else if length($val) == 2 {
+        top   : nth($val, 1);
+        right : nth($val, 2);
+        bottom: nth($val, 1);
+        left  : nth($val, 2);
+    }
+    @else if length($val) == 3 {
+        top   : nth($val, 1);
+        right : nth($val, 2);
+        bottom: nth($val, 3);
+        left  : nth($val, 2);
+    }
+    @else {
+        top   : nth($val, 1);
+        right : nth($val, 2);
+        bottom: nth($val, 3);
+        left  : nth($val, 4);
+    }
+}
+// Flex MixIns
+@mixin flex-row($align:flex-start, $justify: flex-start, $wrap:true) {
+     @include __hack(display, flex);
+    @include __hack(flex-direction, row);
+    @include __hack(align-items, $align);
+    @include __hack(justify-content, $justify);
+    @include __hack(flex-wrap, if($wrap, wrap, nowrap));
+}
+@mixin flex-column($align:flex-start, $justify: flex-start) {
+     @include __hack(display, flex);
+    @include __hack(flex-direction, column);
+    @include __hack(align-items, $align);
+    @include __hack(justify-content, $justify);
+}
+@mixin flex($val: 0 0 auto) {
+     @include __hack(flex, $val);
+}
+@mixin align-self($val: center) {
+     @include __hack(align-self, $val);
+}
+/// PRIVATE
+@mixin __hack($property, $val...) {
+    -webkit-#{$property}: $val;
+    -moz-#{$property}   : $val;
+    -ms-#{$property}    : $val;
+    -o-#{$property}     : $val;
+    #{$property}        : $val;
+}
+@function __unpack($val) {
+     @if length($val) == 1{
+        @return nth($val, 1) nth($val, 1) nth($val, 1) nth($val, 1);
+    }
+    @else if length($val) == 2 {
+         @return nth($val, 1) nth($val, 2) nth($val, 1) nth($val, 2);
+    }
+    @else if length($val) == 3 {
+         @return nth($val, 1) nth($val, 2) nth($val, 3) nth($val, 2);
+    }
+    @else {
+         @return $val;
+    }
+}

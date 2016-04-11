@@ -1,0 +1,91 @@
+/**
+ * Admin UX - Popover Styles
+ * @author: Adarsh Pastakia
+ */
+
+.ux-popover-messages {
+    .popover-content {
+        padding: 0;
+    }
+
+    .ux-popover-title {
+        background   : $white;
+        font-size    : 1.5em;
+        padding      : .5em 1em;
+        border-bottom: 1px solid $ux-base-border;
+    }
+
+    .ux-popover-footer {
+        padding   : .5em 1em;
+        text-align: center;
+        border-top: 1px solid $ux-base-border;
+    }
+
+    .ux-popover-body {
+        height  : 20em;
+        overflow: auto;
+    }
+
+    .ux-message-row {
+        background: rgba($ux-gray-lighter,.3);
+        padding   : .5em 1em;
+        @include flex-row(center, flex-start, false);
+
+        &:nth-of-type(odd) {
+            background: rgba($ux-gray-lighter,.1);
+        }
+
+        &.hover:hover {
+            cursor    : pointer;
+            background: rgba($ux-gray-lighter,.6);
+        }
+
+        .ux-avatar {
+            border       : .1em solid $ux-gray-lighter;
+            overflow     : hidden;
+            color        : $ux-gray-lighter;
+            border-radius: 1em;
+            font-size    : 1.5em;
+            width        : 1.5em;
+            height       : 1.5em;
+            margin       : 0 .5em 0 0;
+            line-height  : 1.7;
+            text-align   : center;
+            @include flex(0 0 auto);
+        }
+
+        .ux-message {
+            @include flex(1 1 0);
+            position: relative;
+
+            &.unread:before {
+                content      : ' ';
+                position     : absolute;
+                top          : .75em;
+                left         : -.75em;
+                border-radius: .5em;
+                background   : $ux-danger;
+                @include size(.5em,.5em);
+            }
+
+            .ux-message-user {
+                font-size  : 1.5em;
+                font-weight: 600;
+            }
+
+            .ux-message-snippet {
+                font-size : 1.2em;
+                max-height: 2.4em * $line-height;
+                overflow  : hidden;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            .ux-message-time {
+                font-size: .9em;
+            }
+        }
+    }
+}

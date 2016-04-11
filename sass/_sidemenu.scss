@@ -1,0 +1,148 @@
+/**
+ * Admin UX - Side Menu Styles
+ * @author: Adarsh Pastakia
+ */
+
+.ux-sidemenu {
+  .collapse.in {
+	background : rgba($ux-gray-light, .1);
+  }
+
+  .nav-link {
+	font-size     : 1em;
+	padding       : .7em 1em;
+	border-radius : 0;
+	color         : $ux-sidemenu-link-text;
+	@include border-start(.4em solid transparent);
+
+	&:hover {
+	  background : $ux-sidemenu-link-hover-bg;
+	}
+
+	&.active,
+	&.active:hover {
+	  cursor       : pointer;
+	  background   : transparent;
+	  font-weight  : 600;
+	  border-color : $ux-primary;
+	  color        : $ux-primary;
+	}
+
+	span {
+	  font-size    : 1.5em;
+	  margin-right : 1em;
+	  color        : $ux-primary;
+	}
+
+	&[data-toggle="collapse"] {
+	  &:not(.collapsed) {
+		background : rgba($ux-gray-light, .1);
+	  }
+
+	  &:after {
+		content     : '\f1bd';
+		font-family : iOSFilled;
+		color       : $ux-gray-light;
+		float       : right;
+		font-size   : .8em;
+		line-height : 2rem;
+	  }
+
+	  &:not(.collapsed):after {
+		content : '\f16f';
+	  }
+	}
+  }
+
+  div > .nav-link {
+	font-size : 1em;
+  }
+
+  .ux-route-dashboard {
+	$color : #D35400;
+
+	.nav-link {
+	  span {
+		color : $color;
+	  }
+
+	  &.active,
+	  &.active:hover {
+		color : $color;
+		border-color : $color;
+	  }
+	}
+  }
+
+  .ux-route-form {
+	$color : #2980B9;
+
+	.nav-link {
+	  span {
+		color : $color;
+	  }
+
+	  &.active,
+	  &.active:hover {
+		color : $color;
+		border-color : $color;
+	  }
+
+	  &:not(.collapsed) {
+		border-color : $color;
+	  }
+	}
+
+	.collapse.in .nav-link {
+	  border-color : $color;
+	}
+  }
+
+  .ux-route-components {
+	$color : #9B59B6;
+
+	.nav-link {
+	  span {
+		color : $color;
+	  }
+
+	  &.active,
+	  &.active:hover {
+		color : $color;
+		border-color : $color;
+	  }
+
+	  &:not(.collapsed) {
+		border-color : $color;
+	  }
+	}
+
+	.collapse.in .nav-link {
+	  border-color : $color;
+	}
+  }
+
+  .ux-route-charts {
+	$color : #F39C12;
+
+	.nav-link {
+	  span {
+		color : $color;
+	  }
+
+	  &.active,
+	  &.active:hover {
+		color : $color;
+		border-color : $color;
+	  }
+
+	  &:not(.collapsed) {
+		border-color : $color;
+	  }
+	}
+
+	.collapse.in .nav-link {
+	  border-color : $color;
+	}
+  }
+}

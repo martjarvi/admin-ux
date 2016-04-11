@@ -1,0 +1,24 @@
+/**
+ * Admin UX - Styles
+ * @author: Adarsh Pastakia
+ */
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300,600,700");
+@import url("//fonts.googleapis.com/css?family=Lato:300,400");
+@import url("//fonts.googleapis.com/css?family=Source+Code+Pro:500,300");
+@import "../font/files/flaticon.css";
+@import "../font/social/flaticon.css";
+@import "../font/vaadin/flaticon.css";
+@import "../font/ios-filled/flaticon.css";
+@import "../font/ios-lined/flaticon.css";
+@import "../font/ios2-filled/flaticon.css";
+@import "../font/ios2-lined/flaticon.css";
+@import "mixins";
+@import "variables";
+@import "reset";
+@import "bootstrap";
+@import "base";
+@import "buttons";
+@import "sidemenu";
+@import "popovers";
+@import "overrides";
+@import "typography";

@@ -1,0 +1,1325 @@
+/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 19/02/2016 14:44
+  	*/
+@font-face {
+    font-family: 'iOSLined2';
+    src        : url('./Flaticon.eot');
+    src        : url('./Flaticon.eot?#iefix') format("embedded-opentype"), url('./Flaticon.woff') format("woff"), url('./Flaticon.ttf') format("truetype"), url('./Flaticon.svg#Flaticon') format("svg");
+    font-weight: normal;
+    font-style : normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+     @font-face{
+        font-family: 'iOSLined2';
+        src        : url('./Flaticon.svg#Flaticon') format("svg");
+    }
+}
+
+[class*=" fi-lined2-"]:after,
+[class*=" fi-lined2-"]:before,
+[class^="fi-lined2-"]:after,
+[class^="fi-lined2-"]:before {
+    font-family: 'iOSLined2';
+    font-style : normal;
+}
+
+.fi-lined2-ace-of-spades:before {
+    content: '\f100';
+}
+
+.fi-lined2-alcohol-bottle:before {
+    content: '\f101';
+}
+
+.fi-lined2-alien-spaceship:before {
+    content: '\f102';
+}
+
+.fi-lined2-ambulance-alert:before {
+    content: '\f103';
+}
+
+.fi-lined2-app-bug:before {
+    content: '\f104';
+}
+
+.fi-lined2-arraving-airplane:before {
+    content: '\f105';
+}
+
+.fi-lined2-arrows-inside-a-circle:before {
+    content: '\f106';
+}
+
+.fi-lined2-atomic-structure:before {
+    content: '\f107';
+}
+
+.fi-lined2-baby-bib-with-flower-design:before {
+    content: '\f108';
+}
+
+.fi-lined2-baby-cot:before {
+    content: '\f109';
+}
+
+.fi-lined2-baby-diaper:before {
+    content: '\f10a';
+}
+
+.fi-lined2-baby-milk-bottle:before {
+    content: '\f10b';
+}
+
+.fi-lined2-baby-pacifier:before {
+    content: '\f10c';
+}
+
+.fi-lined2-baby-trolley:before {
+    content: '\f10d';
+}
+
+.fi-lined2-baby-with-diaper:before {
+    content: '\f10e';
+}
+
+.fi-lined2-back-part:before {
+    content: '\f10f';
+}
+
+.fi-lined2-badminton-feather:before {
+    content: '\f110';
+}
+
+.fi-lined2-band-aid:before {
+    content: '\f111';
+}
+
+.fi-lined2-baseball-ball:before {
+    content: '\f112';
+}
+
+.fi-lined2-basket-full:before {
+    content: '\f113';
+}
+
+.fi-lined2-basketball-ball-with-line:before {
+    content: '\f114';
+}
+
+.fi-lined2-beer-jar:before {
+    content: '\f115';
+}
+
+.fi-lined2-biceps-of-a-man:before {
+    content: '\f116';
+}
+
+.fi-lined2-big-and-small-drops:before {
+    content: '\f117';
+}
+
+.fi-lined2-big-heart-and-little-heart:before {
+    content: '\f118';
+}
+
+.fi-lined2-big-opened-umbrella:before {
+    content: '\f119';
+}
+
+.fi-lined2-big-snowflake:before {
+    content: '\f11a';
+}
+
+.fi-lined2-bike-tricks:before {
+    content: '\f11b';
+}
+
+.fi-lined2-bike-with-motor-ios-7-interface-symbol:before {
+    content: '\f11c';
+}
+
+.fi-lined2-biohazard-symbol:before {
+    content: '\f11d';
+}
+
+.fi-lined2-black-bottle:before {
+    content: '\f11e';
+}
+
+.fi-lined2-black-heart-shaped:before {
+    content: '\f11f';
+}
+
+.fi-lined2-blank-thermometer:before {
+    content: '\f120';
+}
+
+.fi-lined2-block-with-letters:before {
+    content: '\f121';
+}
+
+.fi-lined2-blood-drop:before {
+    content: '\f122';
+}
+
+.fi-lined2-bluetooth-signal:before {
+    content: '\f123';
+}
+
+.fi-lined2-body-thermometer:before {
+    content: '\f124';
+}
+
+.fi-lined2-bowling-ball:before {
+    content: '\f125';
+}
+
+.fi-lined2-bowling-pins:before {
+    content: '\f126';
+}
+
+.fi-lined2-branderbourg-gate:before {
+    content: '\f127';
+}
+
+.fi-lined2-browser-shield:before {
+    content: '\f128';
+}
+
+.fi-lined2-cake-with-one-candle:before {
+    content: '\f129';
+}
+
+.fi-lined2-canvas:before {
+    content: '\f12a';
+}
+
+.fi-lined2-car:before {
+    content: '\f12b';
+}
+
+.fi-lined2-car-battery:before {
+    content: '\f12c';
+}
+
+.fi-lined2-car-steering-wheel:before {
+    content: '\f12d';
+}
+
+.fi-lined2-car-wit-chassis:before {
+    content: '\f12e';
+}
+
+.fi-lined2-cd-record:before {
+    content: '\f12f';
+}
+
+.fi-lined2-chain-tag:before {
+    content: '\f130';
+}
+
+.fi-lined2-chest:before {
+    content: '\f131';
+}
+
+.fi-lined2-chicken:before {
+    content: '\f132';
+}
+
+.fi-lined2-chinese-lantern:before {
+    content: '\f133';
+}
+
+.fi-lined2-christian-cross:before {
+    content: '\f134';
+}
+
+.fi-lined2-circles-inside-a-square:before {
+    content: '\f135';
+}
+
+.fi-lined2-circuit-board:before {
+    content: '\f136';
+}
+
+.fi-lined2-clear-night:before {
+    content: '\f137';
+}
+
+.fi-lined2-cloud-expansion:before {
+    content: '\f138';
+}
+
+.fi-lined2-cloud-night:before {
+    content: '\f139';
+}
+
+.fi-lined2-cloud-storage-drive:before {
+    content: '\f13a';
+}
+
+.fi-lined2-clouded-pronostic:before {
+    content: '\f13b';
+}
+
+.fi-lined2-cloudy-day:before {
+    content: '\f13c';
+}
+
+.fi-lined2-cloudy-night:before {
+    content: '\f13d';
+}
+
+.fi-lined2-clover-ace:before {
+    content: '\f13e';
+}
+
+.fi-lined2-cogwheel-options:before {
+    content: '\f13f';
+}
+
+.fi-lined2-cold-temperature:before {
+    content: '\f140';
+}
+
+.fi-lined2-comedy-mask:before {
+    content: '\f141';
+}
+
+.fi-lined2-compass-pointing-east:before {
+    content: '\f142';
+}
+
+.fi-lined2-compass-pointing-north:before {
+    content: '\f143';
+}
+
+.fi-lined2-compass-pointing-south:before {
+    content: '\f144';
+}
+
+.fi-lined2-compass-pointing-south-east:before {
+    content: '\f145';
+}
+
+.fi-lined2-compass-pointing-west:before {
+    content: '\f146';
+}
+
+.fi-lined2-computer-chip:before {
+    content: '\f147';
+}
+
+.fi-lined2-computer-micro-chip:before {
+    content: '\f148';
+}
+
+.fi-lined2-computer-microprocessor:before {
+    content: '\f149';
+}
+
+.fi-lined2-computer-screen-linux:before {
+    content: '\f14a';
+}
+
+.fi-lined2-computer-tower:before {
+    content: '\f14b';
+}
+
+.fi-lined2-connections:before {
+    content: '\f14c';
+}
+
+.fi-lined2-cord-lace:before {
+    content: '\f14d';
+}
+
+.fi-lined2-covered-dust-bin:before {
+    content: '\f14e';
+}
+
+.fi-lined2-crab-top-view:before {
+    content: '\f14f';
+}
+
+.fi-lined2-cruise-ship-navigating:before {
+    content: '\f150';
+}
+
+.fi-lined2-crying-baby:before {
+    content: '\f151';
+}
+
+.fi-lined2-cup-of-wine:before {
+    content: '\f152';
+}
+
+.fi-lined2-cutlery-utensils:before {
+    content: '\f153';
+}
+
+.fi-lined2-cyclist:before {
+    content: '\f154';
+}
+
+.fi-lined2-cyclist-runner:before {
+    content: '\f155';
+}
+
+.fi-lined2-dark-cup:before {
+    content: '\f156';
+}
+
+.fi-lined2-dentist-pincers:before {
+    content: '\f157';
+}
+
+.fi-lined2-detective-search:before {
+    content: '\f158';
+}
+
+.fi-lined2-dharma-chakra:before {
+    content: '\f159';
+}
+
+.fi-lined2-direct-wifi-logo:before {
+    content: '\f15a';
+}
+
+.fi-lined2-disconnected-chains:before {
+    content: '\f15b';
+}
+
+.fi-lined2-dish-signal:before {
+    content: '\f15c';
+}
+
+.fi-lined2-dish-signal-transmission:before {
+    content: '\f15d';
+}
+
+.fi-lined2-disk-storage:before {
+    content: '\f15e';
+}
+
+.fi-lined2-dna-chromosome:before {
+    content: '\f15f';
+}
+
+.fi-lined2-double-burger:before {
+    content: '\f160';
+}
+
+.fi-lined2-double-gym-dumbbell:before {
+    content: '\f161';
+}
+
+.fi-lined2-drive-link:before {
+    content: '\f162';
+}
+
+.fi-lined2-drive-with-a-crown:before {
+    content: '\f163';
+}
+
+.fi-lined2-dvd-drive:before {
+    content: '\f164';
+}
+
+.fi-lined2-eco-light-bulb:before {
+    content: '\f165';
+}
+
+.fi-lined2-eco-windmill:before {
+    content: '\f166';
+}
+
+.fi-lined2-egyptian-ankh:before {
+    content: '\f167';
+}
+
+.fi-lined2-electric-plug:before {
+    content: '\f168';
+}
+
+.fi-lined2-electrocardiogram-line:before {
+    content: '\f169';
+}
+
+.fi-lined2-emmental-cheese:before {
+    content: '\f16a';
+}
+
+.fi-lined2-engine-with-lighting-bolt:before {
+    content: '\f16b';
+}
+
+.fi-lined2-expand-square:before {
+    content: '\f16c';
+}
+
+.fi-lined2-experiment-flask-with-leaves-symbol:before {
+    content: '\f16d';
+}
+
+.fi-lined2-factory-building:before {
+    content: '\f16e';
+}
+
+.fi-lined2-favorite-wireles-conecction:before {
+    content: '\f16f';
+}
+
+.fi-lined2-female-user-with-short-hair-avatar:before {
+    content: '\f170';
+}
+
+.fi-lined2-fencing-attack:before {
+    content: '\f171';
+}
+
+.fi-lined2-ferry-with-car:before {
+    content: '\f172';
+}
+
+.fi-lined2-finger-gun:before {
+    content: '\f173';
+}
+
+.fi-lined2-finger-up:before {
+    content: '\f174';
+}
+
+.fi-lined2-fire-flame:before {
+    content: '\f175';
+}
+
+.fi-lined2-firewall-flame:before {
+    content: '\f176';
+}
+
+.fi-lined2-fish-bones:before {
+    content: '\f177';
+}
+
+.fi-lined2-fishing-boat:before {
+    content: '\f178';
+}
+
+.fi-lined2-five-fingers:before {
+    content: '\f179';
+}
+
+.fi-lined2-flame-extinguisher:before {
+    content: '\f17a';
+}
+
+.fi-lined2-flamingo:before {
+    content: '\f17b';
+}
+
+.fi-lined2-flying-aeroplane-top-view:before {
+    content: '\f17c';
+}
+
+.fi-lined2-football-ball-circular:before {
+    content: '\f17d';
+}
+
+.fi-lined2-football-player-with-ball:before {
+    content: '\f17e';
+}
+
+.fi-lined2-four-finger-in-hand:before {
+    content: '\f17f';
+}
+
+.fi-lined2-french-fries-box:before {
+    content: '\f180';
+}
+
+.fi-lined2-frequency-antenna:before {
+    content: '\f181';
+}
+
+.fi-lined2-frontal-cab:before {
+    content: '\f182';
+}
+
+.fi-lined2-frontal-large-bus:before {
+    content: '\f183';
+}
+
+.fi-lined2-frontal-solar-panel:before {
+    content: '\f184';
+}
+
+.fi-lined2-full-computer:before {
+    content: '\f185';
+}
+
+.fi-lined2-gas-mask:before {
+    content: '\f186';
+}
+
+.fi-lined2-gear-option:before {
+    content: '\f187';
+}
+
+.fi-lined2-german-hat-with-small-feather:before {
+    content: '\f188';
+}
+
+.fi-lined2-great-wall-of-china-doodle:before {
+    content: '\f189';
+}
+
+.fi-lined2-hand-gun:before {
+    content: '\f18a';
+}
+
+.fi-lined2-hang-hook:before {
+    content: '\f18b';
+}
+
+.fi-lined2-hanging-ladder:before {
+    content: '\f18c';
+}
+
+.fi-lined2-hard-drive-device:before {
+    content: '\f18d';
+}
+
+.fi-lined2-hat:before {
+    content: '\f18e';
+}
+
+.fi-lined2-hierarchical-order:before {
+    content: '\f18f';
+}
+
+.fi-lined2-hierarchical-structure:before {
+    content: '\f190';
+}
+
+.fi-lined2-hierarchy-levels:before {
+    content: '\f191';
+}
+
+.fi-lined2-high-temperature:before {
+    content: '\f192';
+}
+
+.fi-lined2-holy-book:before {
+    content: '\f193';
+}
+
+.fi-lined2-honey-jar:before {
+    content: '\f194';
+}
+
+.fi-lined2-hot-chilli-pepper:before {
+    content: '\f195';
+}
+
+.fi-lined2-hotdog-and-bread:before {
+    content: '\f196';
+}
+
+.fi-lined2-human-foot-prints:before {
+    content: '\f197';
+}
+
+.fi-lined2-hydro-power-generation:before {
+    content: '\f198';
+}
+
+.fi-lined2-increasing-temperature:before {
+    content: '\f199';
+}
+
+.fi-lined2-integrated-chip:before {
+    content: '\f19a';
+}
+
+.fi-lined2-integrated-circuit:before {
+    content: '\f19b';
+}
+
+.fi-lined2-ip-address-point-locator:before {
+    content: '\f19c';
+}
+
+.fi-lined2-iron-soldering:before {
+    content: '\f19d';
+}
+
+.fi-lined2-islamic-crescent-with-small-star:before {
+    content: '\f19e';
+}
+
+.fi-lined2-islamic-mosque:before {
+    content: '\f19f';
+}
+
+.fi-lined2-jet-ski:before {
+    content: '\f1a0';
+}
+
+.fi-lined2-joker-face:before {
+    content: '\f1a1';
+}
+
+.fi-lined2-jump-rope:before {
+    content: '\f1a2';
+}
+
+.fi-lined2-king-crown:before {
+    content: '\f1a3';
+}
+
+.fi-lined2-kitchen-pot:before {
+    content: '\f1a4';
+}
+
+.fi-lined2-knife-shape:before {
+    content: '\f1a5';
+}
+
+.fi-lined2-knife-with-blood:before {
+    content: '\f1a6';
+}
+
+.fi-lined2-ladder-with-four-steps:before {
+    content: '\f1a7';
+}
+
+.fi-lined2-large-spoon:before {
+    content: '\f1a8';
+}
+
+.fi-lined2-led-bulb:before {
+    content: '\f1a9';
+}
+
+.fi-lined2-lifter-machine:before {
+    content: '\f1aa';
+}
+
+.fi-lined2-lighting-flare:before {
+    content: '\f1ab';
+}
+
+.fi-lined2-lightning-arrow:before {
+    content: '\f1ac';
+}
+
+.fi-lined2-lightning-bolt-button:before {
+    content: '\f1ad';
+}
+
+.fi-lined2-link-chain:before {
+    content: '\f1ae';
+}
+
+.fi-lined2-loaf-of-bread:before {
+    content: '\f1af';
+}
+
+.fi-lined2-locato:before {
+    content: '\f1b0';
+}
+
+.fi-lined2-long-car:before {
+    content: '\f1b1';
+}
+
+.fi-lined2-long-leg:before {
+    content: '\f1b2';
+}
+
+.fi-lined2-low-temperature-reading:before {
+    content: '\f1b3';
+}
+
+.fi-lined2-luxury-yacht:before {
+    content: '\f1b4';
+}
+
+.fi-lined2-mac-screen:before {
+    content: '\f1b5';
+}
+
+.fi-lined2-magic-wand-with-sparkles:before {
+    content: '\f1b6';
+}
+
+.fi-lined2-male-user:before {
+    content: '\f1b7';
+}
+
+.fi-lined2-male-user-1:before {
+    content: '\f1b8';
+}
+
+.fi-lined2-male-users:before {
+    content: '\f1b9';
+}
+
+.fi-lined2-man-running:before {
+    content: '\f1ba';
+}
+
+.fi-lined2-man-with-arm-injury:before {
+    content: '\f1bb';
+}
+
+.fi-lined2-maya-pyramid:before {
+    content: '\f1bc';
+}
+
+.fi-lined2-medical-first-aid-kit:before {
+    content: '\f1bd';
+}
+
+.fi-lined2-medical-house:before {
+    content: '\f1be';
+}
+
+.fi-lined2-medical-stethoscope:before {
+    content: '\f1bf';
+}
+
+.fi-lined2-medication-capsule:before {
+    content: '\f1c0';
+}
+
+.fi-lined2-menorah:before {
+    content: '\f1c1';
+}
+
+.fi-lined2-mexican-hat-and-mustache:before {
+    content: '\f1c2';
+}
+
+.fi-lined2-microscope:before {
+    content: '\f1c3';
+}
+
+.fi-lined2-milk-bottle:before {
+    content: '\f1c4';
+}
+
+.fi-lined2-movie-camera:before {
+    content: '\f1c5';
+}
+
+.fi-lined2-musical-note-symbol:before {
+    content: '\f1c6';
+}
+
+.fi-lined2-navigation-compass:before {
+    content: '\f1c7';
+}
+
+.fi-lined2-neck-part:before {
+    content: '\f1c8';
+}
+
+.fi-lined2-nice-temperature:before {
+    content: '\f1c9';
+}
+
+.fi-lined2-nuclear-cells:before {
+    content: '\f1ca';
+}
+
+.fi-lined2-number-one-medal:before {
+    content: '\f1cb';
+}
+
+.fi-lined2-old-bicycle:before {
+    content: '\f1cc';
+}
+
+.fi-lined2-open-fan:before {
+    content: '\f1cd';
+}
+
+.fi-lined2-open-scissors:before {
+    content: '\f1ce';
+}
+
+.fi-lined2-opened-pin:before {
+    content: '\f1cf';
+}
+
+.fi-lined2-paper-bird:before {
+    content: '\f1d0';
+}
+
+.fi-lined2-paper-roll:before {
+    content: '\f1d1';
+}
+
+.fi-lined2-pc-storage:before {
+    content: '\f1d2';
+}
+
+.fi-lined2-pepper-container:before {
+    content: '\f1d3';
+}
+
+.fi-lined2-piston-on:before {
+    content: '\f1d4';
+}
+
+.fi-lined2-plane-taking-off:before {
+    content: '\f1d5';
+}
+
+.fi-lined2-plant-leaves:before {
+    content: '\f1d6';
+}
+
+.fi-lined2-power-plant:before {
+    content: '\f1d7';
+}
+
+.fi-lined2-pranava-om:before {
+    content: '\f1d8';
+}
+
+.fi-lined2-quartz:before {
+    content: '\f1d9';
+}
+
+.fi-lined2-question-mark-in-a-shield:before {
+    content: '\f1da';
+}
+
+.fi-lined2-racing-bike:before {
+    content: '\f1db';
+}
+
+.fi-lined2-racket-and-ball:before {
+    content: '\f1dc';
+}
+
+.fi-lined2-radioactive-elements:before {
+    content: '\f1dd';
+}
+
+.fi-lined2-radioactive-symbol:before {
+    content: '\f1de';
+}
+
+.fi-lined2-rainbow-behind-a-cloud:before {
+    content: '\f1df';
+}
+
+.fi-lined2-random-access-memory-chip:before {
+    content: '\f1e0';
+}
+
+.fi-lined2-rectangular-musical-note:before {
+    content: '\f1e1';
+}
+
+.fi-lined2-recycle-triangle:before {
+    content: '\f1e2';
+}
+
+.fi-lined2-remote-control-signal:before {
+    content: '\f1e3';
+}
+
+.fi-lined2-resistor:before {
+    content: '\f1e4';
+}
+
+.fi-lined2-restaurant-fork:before {
+    content: '\f1e5';
+}
+
+.fi-lined2-rhombus:before {
+    content: '\f1e6';
+}
+
+.fi-lined2-robotic-arm:before {
+    content: '\f1e7';
+}
+
+.fi-lined2-rocket-launched:before {
+    content: '\f1e8';
+}
+
+.fi-lined2-round-cloud:before {
+    content: '\f1e9';
+}
+
+.fi-lined2-round-teapot:before {
+    content: '\f1ea';
+}
+
+.fi-lined2-router-with-screen:before {
+    content: '\f1eb';
+}
+
+.fi-lined2-royal-crown:before {
+    content: '\f1ec';
+}
+
+.fi-lined2-rugby-ball:before {
+    content: '\f1ed';
+}
+
+.fi-lined2-rugby-helmet:before {
+    content: '\f1ee';
+}
+
+.fi-lined2-running-at-finish-line:before {
+    content: '\f1ef';
+}
+
+.fi-lined2-sagrada-familia-building:before {
+    content: '\f1f0';
+}
+
+.fi-lined2-sail-boat-sailing:before {
+    content: '\f1f1';
+}
+
+.fi-lined2-satellite-transmission:before {
+    content: '\f1f2';
+}
+
+.fi-lined2-school-van:before {
+    content: '\f1f3';
+}
+
+.fi-lined2-scooter-bike:before {
+    content: '\f1f4';
+}
+
+.fi-lined2-scroll-with-message-inside:before {
+    content: '\f1f5';
+}
+
+.fi-lined2-security-warning:before {
+    content: '\f1f6';
+}
+
+.fi-lined2-segment-displa:before {
+    content: '\f1f7';
+}
+
+.fi-lined2-sharp-carrot:before {
+    content: '\f1f8';
+}
+
+.fi-lined2-shield-refresh:before {
+    content: '\f1f9';
+}
+
+.fi-lined2-shield-restriction:before {
+    content: '\f1fa';
+}
+
+.fi-lined2-shield-shape:before {
+    content: '\f1fb';
+}
+
+.fi-lined2-shield-with-cross-mark:before {
+    content: '\f1fc';
+}
+
+.fi-lined2-shining-sun-with-rays:before {
+    content: '\f1fd';
+}
+
+.fi-lined2-shoulders:before {
+    content: '\f1fe';
+}
+
+.fi-lined2-signal-dish-satellite:before {
+    content: '\f1ff';
+}
+
+.fi-lined2-sitting-rabbit:before {
+    content: '\f200';
+}
+
+.fi-lined2-skiing-down-hill:before {
+    content: '\f201';
+}
+
+.fi-lined2-small-helicopter:before {
+    content: '\f202';
+}
+
+.fi-lined2-snowing-cloud:before {
+    content: '\f203';
+}
+
+.fi-lined2-space-satellite:before {
+    content: '\f204';
+}
+
+.fi-lined2-spindle:before {
+    content: '\f205';
+}
+
+.fi-lined2-star-of-david:before {
+    content: '\f206';
+}
+
+.fi-lined2-storage-device:before {
+    content: '\f207';
+}
+
+.fi-lined2-street-signals:before {
+    content: '\f208';
+}
+
+.fi-lined2-streetcar-front:before {
+    content: '\f209';
+}
+
+.fi-lined2-sugar-container:before {
+    content: '\f20a';
+}
+
+.fi-lined2-sun-cloud-and-rain:before {
+    content: '\f20b';
+}
+
+.fi-lined2-sunny-pronostic:before {
+    content: '\f20c';
+}
+
+.fi-lined2-sushi-and-chopsticks:before {
+    content: '\f20d';
+}
+
+.fi-lined2-swimmer-swimming:before {
+    content: '\f20e';
+}
+
+.fi-lined2-syringe-with-measure-marks:before {
+    content: '\f20f';
+}
+
+.fi-lined2-t-shirt-with-flowers:before {
+    content: '\f210';
+}
+
+.fi-lined2-taco:before {
+    content: '\f211';
+}
+
+.fi-lined2-television-remote-control:before {
+    content: '\f212';
+}
+
+.fi-lined2-tennis-sport-ball:before {
+    content: '\f213';
+}
+
+.fi-lined2-thermometer-and-sun:before {
+    content: '\f214';
+}
+
+.fi-lined2-thor-hammer:before {
+    content: '\f215';
+}
+
+.fi-lined2-three-fingers:before {
+    content: '\f216';
+}
+
+.fi-lined2-thumb-finger-up:before {
+    content: '\f217';
+}
+
+.fi-lined2-thumbs-down-hand:before {
+    content: '\f218';
+}
+
+.fi-lined2-thunderstorm-clouds:before {
+    content: '\f219';
+}
+
+.fi-lined2-torii:before {
+    content: '\f21a';
+}
+
+.fi-lined2-tradegy-mask:before {
+    content: '\f21b';
+}
+
+.fi-lined2-trailer-for-car:before {
+    content: '\f21c';
+}
+
+.fi-lined2-train-front:before {
+    content: '\f21d';
+}
+
+.fi-lined2-treasure-map-with-x:before {
+    content: '\f21e';
+}
+
+.fi-lined2-triangular-pizza-slice:before {
+    content: '\f21f';
+}
+
+.fi-lined2-trunk:before {
+    content: '\f220';
+}
+
+.fi-lined2-two-boxing-gloves:before {
+    content: '\f221';
+}
+
+.fi-lined2-two-eggs:before {
+    content: '\f222';
+}
+
+.fi-lined2-two-fingers-up:before {
+    content: '\f223';
+}
+
+.fi-lined2-two-overlapping-square:before {
+    content: '\f224';
+}
+
+.fi-lined2-two-pyramids:before {
+    content: '\f225';
+}
+
+.fi-lined2-two-snow-flakes:before {
+    content: '\f226';
+}
+
+.fi-lined2-two-women-on-line:before {
+    content: '\f227';
+}
+
+.fi-lined2-user-protection:before {
+    content: '\f228';
+}
+
+.fi-lined2-van-profile:before {
+    content: '\f229';
+}
+
+.fi-lined2-vehicle-speedometer:before {
+    content: '\f22a';
+}
+
+.fi-lined2-vehicle-steering-wheel:before {
+    content: '\f22b';
+}
+
+.fi-lined2-very-cold-temperature:before {
+    content: '\f22c';
+}
+
+.fi-lined2-viking-helmet:before {
+    content: '\f22d';
+}
+
+.fi-lined2-viking-ship:before {
+    content: '\f22e';
+}
+
+.fi-lined2-vintage-personal-computer:before {
+    content: '\f22f';
+}
+
+.fi-lined2-vintage-teapot:before {
+    content: '\f230';
+}
+
+.fi-lined2-voip-router:before {
+    content: '\f231';
+}
+
+.fi-lined2-volley-ball:before {
+    content: '\f232';
+}
+
+.fi-lined2-warm-black-mug:before {
+    content: '\f233';
+}
+
+.fi-lined2-web-shield:before {
+    content: '\f234';
+}
+
+.fi-lined2-weight-lifter:before {
+    content: '\f235';
+}
+
+.fi-lined2-wifi-chip:before {
+    content: '\f236';
+}
+
+.fi-lined2-wifi-logo:before {
+    content: '\f237';
+}
+
+.fi-lined2-wind-and-rain:before {
+    content: '\f238';
+}
+
+.fi-lined2-wind-swirls:before {
+    content: '\f239';
+}
+
+.fi-lined2-windows-screen:before {
+    content: '\f23a';
+}
+
+.fi-lined2-wine-glass:before {
+    content: '\f23b';
+}
+
+.fi-lined2-wireless-receptor:before {
+    content: '\f23c';
+}
+
+.fi-lined2-wireless-signal:before {
+    content: '\f23d';
+}
+
+.fi-lined2-wireless-transmitter:before {
+    content: '\f23e';
+}
+
+.fi-lined2-wolf-howling:before {
+    content: '\f23f';
+}
+
+.fi-lined2-woman-profile:before {
+    content: '\f240';
+}
+
+.fi-lined2-woman-uterus:before {
+    content: '\f241';
+}
+
+.fi-lined2-world-wide-web-on-grid:before {
+    content: '\f242';
+}
+
+.fi-lined2-yacht-navigate:before {
+    content: '\f243';
+}
+
+.fi-lined2-yin-yang-symbol:before {
+    content: '\f244';
+}
