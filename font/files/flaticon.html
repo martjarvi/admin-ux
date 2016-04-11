@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flaticon WebFont</title>
+    <link rel="stylesheet" type="text/css" href="flaticon.css">
+    <meta charset="UTF-8">
+    <style>
+    body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-size: 16px;
+        padding: 20px;
+        color:#333;
+    }
+    * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    [class^="fi-file-"]:before, [class*=" fi-file-"]:before, [class^="fi-file-"]:after, [class*=" fi-file-"]:after {
+        font-size: 30px;
+        font-style: normal;
+        margin-left: 20px;
+        color: #333;
+    }
+    .image p {
+		font-size: 12px;
+		margin: 0px;
+		clear: none;
+		width: 300px;
+		line-height: 40px;
+	}
+    .text {
+        float: left;
+        font-size:14px;
+        margin-top: 15px;
+    }
+    .text ul {
+        margin-left:0px;
+        color:#111;
+        margin-bottom:20px;
+    }
+    .text .ex {
+        font-size:12px;
+        color:#666;
+        margin-left:35px;
+        display:block;
+    }
+    .text ul li {
+        margin-top:10px;
+        list-style:none;
+    }
+    .num {
+        background:#66A523;
+        color:#fff;
+        border-radius:20px;
+        padding:1px;
+        display:inline-block;
+        width:22px;
+        height:22px;
+        text-align:center;
+        margin-right: 5px;
+    }
+    .text ul strong {
+        font-weight:normal;
+        color:#000;
+    }
+    .image {
+        width: 280px;
+        float: left;
+        margin-bottom: 15px;
+        margin-right: 30px;
+    }
+    #glyphs {
+        clear: both;
+    }
+    .image p:nth-child(even) i {
+        clear: none;
+    }
+    .glyph {
+        display: inline-block;
+        width: 120px;
+        margin: 10px;
+        text-align: center;
+        vertical-align: top;
+        background: #FFF;
+    }
+    .glyph .glyph-icon {
+        padding: 10px;
+        display: block;
+        font-family:"Flaticon";
+        font-size: 64px;
+        line-height: 1;
+    }
+    .glyph .glyph-icon:before {
+        font-size: 64px;
+        color: #666;
+        margin-left: 0;
+    }
+    .class-name {
+        font-size: 12px;
+    }
+    .author-name {
+		font-size: 10px;
+	}
+	a{
+		color: #66A523;
+	}
+    .instructions {
+        font-style:italic;
+        font-size:22px;
+        margin-bottom:10px;
+    }
+    .iconsuse {
+        font-size:22px;
+        font-style:italic;
+        padding-top:20px;
+        margin-top:20px;
+        border-top:1px solid #bbb;
+    }
+    .usetitle {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-style: italic;
+    }
+    .class-name:last-child {
+        font-size: 10px;
+        color:#888;
+    }
+    .class-name:last-child a {
+        font-size: 10px;
+        color:#555;
+    }
+    .class-name:last-child a:hover {
+        color:#66A523;
+    }
+    .glyph > input {
+        display: block;
+        width: 100px;
+        margin: 5px auto;
+        text-align: center;
+        font-size: 12px;
+        cursor: text;
+    }
+    .glyph > input.icon-input {
+        font-family:"Flaticon";
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    h1.logo {
+        font-size: 40px;
+        letter-spacing: -1px;
+        margin-top: -16px;
+        text-transform: lowercase;
+        border-bottom:1px solid #bbb;
+    }
+    h1.logo strong {
+        font-size: 16px;
+        font-family:sans-serif;
+        font-weight:normal;
+        color:#333;
+    }
+    h1.logo a {
+        color:#34302d;
+        text-decoration: none;
+    }
+    h1.logo a span {
+        color:#66A523;
+    }
+    #footer {
+        padding-top:40px;
+        clear:both;
+        text-align:center;
+    }
+    #footer a {
+        color:#66A523;
+    }
+    textarea {
+		margin: 0px;
+		width: 800px;
+		height: 150px;
+		border: 1px solid #CCC;
+		resize: none;
+		background: #EEE;
+    }
+    .author-link, .attrDiv a{
+    	font-size: 12px;
+    	color: #333;
+    	text-decoration: none;
+    }
+    .external {
+    	display: block;
+    }
+    .attrDiv {
+		font-size: 12px;
+	}
+    .attribution {
+        border-top: 1px solid #AAA;
+        margin: 10px 0;
+        padding-top: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">
+            <a href="http://www.flaticon.com">
+                <span>FLAT</span>ICON</a>
+            <strong>Font Demo</strong>
+        </h1>
+    </header>
+
+    <section class="demo">
+        <div class="text">
+
+            <div class="instructions">Instructions:</div>
+
+            <ul>
+                <li>
+                    <p>
+                        <span class="num">1</span>Copy the "Fonts" files and CSS files to your website CSS folder.
+                </li>
+                <li>
+                    <p>
+                        <span class="num">2</span>Add the CSS link to your website source code on header.
+                        <br />
+                        <span class="ex">&lt;head&gt;
+                            <br/>...
+                            <br/>&lt;link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css"&gt;
+                            <br/>...
+                            <br/>&lt;/head&gt;</span>
+                </li>
+
+                <li>
+                    <p>
+                        <span class="num">3</span>Use the icon class on "display:inline" elements:
+                        <br />
+                        <span class="ex">Use example: &lt;i class=&quot;fi-file-airplane49&quot;&gt;&lt;/i&gt; or &lt;span class=&quot;fi-file-airplane49&quot;&gt;&lt;/span&gt;</span>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="glyphs"><div class="glyph">
+		<div class="glyph-icon fi-file-3dm1"></div>
+		<div class="class-name">.fi-file-3dm1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/3dm-file-format-extension_28889">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-3ds1"></div>
+		<div class="class-name">.fi-file-3ds1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/3ds-open-file-format-extension_28887">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-3g21"></div>
+		<div class="class-name">.fi-file-3g21</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/3g2-open-file-format_28946">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-3gp1"></div>
+		<div class="class-name">.fi-file-3gp1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/3gp-file-format-symbol_29162">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-7z"></div>
+		<div class="class-name">.fi-file-7z</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/7z-file-format-symbol_29142">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-acc"></div>
+		<div class="class-name">.fi-file-acc</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/acc-file-format-symbol_29171">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-ai2"></div>
+		<div class="class-name">.fi-file-ai2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/ai-file-format-symbol_29176">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-aif2"></div>
+		<div class="class-name">.fi-file-aif2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/aif-file-format-symbol_29128">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-apk1"></div>
+		<div class="class-name">.fi-file-apk1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/apk-open-file-format_28960">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-app5"></div>
+		<div class="class-name">.fi-file-app5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/app-file-format-symbol_29108">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-asf"></div>
+		<div class="class-name">.fi-file-asf</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/asf-file-format-symbol_29183">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-asp1"></div>
+		<div class="class-name">.fi-file-asp1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/asp-file-format-symbol_29143">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-aspx1"></div>
+		<div class="class-name">.fi-file-aspx1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/aspx-file-format-symbol_29158">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-asx"></div>
+		<div class="class-name">.fi-file-asx</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/asx-file-format-symbol_29131">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-avi3"></div>
+		<div class="class-name">.fi-file-avi3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/avi-video-file-format-symbol_29121">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-bak1"></div>
+		<div class="class-name">.fi-file-bak1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/bak-file-format-symbol_29124">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-bat7"></div>
+		<div class="class-name">.fi-file-bat7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/bat-file-format-symbol_29147">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-bin7"></div>
+		<div class="class-name">.fi-file-bin7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/bin-open-file-format_28903">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-bmp"></div>
+		<div class="class-name">.fi-file-bmp</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/bmp-open-file-format_28934">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-cab2"></div>
+		<div class="class-name">.fi-file-cab2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cab-file-format-symbol_29109">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-cad2"></div>
+		<div class="class-name">.fi-file-cad2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cad-file-format-symbol_29144">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-cdr1"></div>
+		<div class="class-name">.fi-file-cdr1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cdr-file-format-symbol_29107">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-certificate9"></div>
+		<div class="class-name">.fi-file-certificate9</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/certificate-file-variant_28980">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-cfg"></div>
+		<div class="class-name">.fi-file-cfg</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cfg-open-file-format_28961">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-cfm"></div>
+		<div class="class-name">.fi-file-cfm</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cfm-file-format-extension-with-close-and-open-brackets_28888">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-cgi"></div>
+		<div class="class-name">.fi-file-cgi</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cgi-file-format-symbol_29156">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-class1"></div>
+		<div class="class-name">.fi-file-class1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/class-open-file-format_28901">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-com1"></div>
+		<div class="class-name">.fi-file-com1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/com-file-format-symbol_29140">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-cpl1"></div>
+		<div class="class-name">.fi-file-cpl1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cpl-file-format-with-cogwheels_28979">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-cpp2"></div>
+		<div class="class-name">.fi-file-cpp2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cpp-file-format-symbol_29115">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-crx1"></div>
+		<div class="class-name">.fi-file-crx1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/crx-file-format-symbol_29169">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-csr1"></div>
+		<div class="class-name">.fi-file-csr1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/csr-open-file-format_28963">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-css4"></div>
+		<div class="class-name">.fi-file-css4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/css-file-format-with-brackets_28982">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-csv1"></div>
+		<div class="class-name">.fi-file-csv1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/csv-file-variant-with-graphs_28978">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-cue"></div>
+		<div class="class-name">.fi-file-cue</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cue-open-file-format_28965">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-cur2"></div>
+		<div class="class-name">.fi-file-cur2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cur-file-format-symbol_29139">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-dat1"></div>
+		<div class="class-name">.fi-file-dat1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dat-file-format-symbol_29132">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-db1"></div>
+		<div class="class-name">.fi-file-db1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/db-file-format-symbol_29155">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-dbf1"></div>
+		<div class="class-name">.fi-file-dbf1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dbf-open-file-format_28926">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-dds1"></div>
+		<div class="class-name">.fi-file-dds1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dds-file-format-variant_28971">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-dem1"></div>
+		<div class="class-name">.fi-file-dem1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dem-file-format-symbol_29112">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-dll1"></div>
+		<div class="class-name">.fi-file-dll1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dll-system-file-interface-symbol_29120">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-dmg"></div>
+		<div class="class-name">.fi-file-dmg</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dmg-open-file-format_28922">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-dmp"></div>
+		<div class="class-name">.fi-file-dmp</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dmp-file-format-variant_28972">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-doc1"></div>
+		<div class="class-name">.fi-file-doc1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/doc-file-format-symbol_29137">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-docx2"></div>
+		<div class="class-name">.fi-file-docx2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/docx-file-variant_28975">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-drv"></div>
+		<div class="class-name">.fi-file-drv</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/drv-file-format-symbol_28977">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-dtd"></div>
+		<div class="class-name">.fi-file-dtd</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dtd-file-format-with-codes_28967">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-dwg"></div>
+		<div class="class-name">.fi-file-dwg</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dwg-open-file-format_28931">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-dxf"></div>
+		<div class="class-name">.fi-file-dxf</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dxf-file-format-symbol_28916">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-elf1"></div>
+		<div class="class-name">.fi-file-elf1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/elf-file-format-symbol_29111">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-eps1"></div>
+		<div class="class-name">.fi-file-eps1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/eps-file-format-symbol_29178">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-eps"></div>
+		<div class="class-name">.fi-file-eps</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/eps-file-format-symbol_29150">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-exe1"></div>
+		<div class="class-name">.fi-file-exe1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/exe-executable-file-format-interface-symbol_29184">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-fla1"></div>
+		<div class="class-name">.fi-file-fla1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/fla-open-file-format_28928">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-flash11"></div>
+		<div class="class-name">.fi-file-flash11</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/flash-open-file-format_28936">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-flv2"></div>
+		<div class="class-name">.fi-file-flv2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/flv-flash-file-extension-interface-symbol_29113">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-fnt1"></div>
+		<div class="class-name">.fi-file-fnt1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/fnt-open-file-format_28952">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-fon"></div>
+		<div class="class-name">.fi-file-fon</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/fon-open-file-format_28918">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-gam1"></div>
+		<div class="class-name">.fi-file-gam1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/gam-open-file-format_28929">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-gbr2"></div>
+		<div class="class-name">.fi-file-gbr2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/gbr-open-file-format_28920">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-ged1"></div>
+		<div class="class-name">.fi-file-ged1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/ged-open-file-format_28902">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-gif4"></div>
+		<div class="class-name">.fi-file-gif4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/gif-image-extension_29173">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-gpx"></div>
+		<div class="class-name">.fi-file-gpx</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/gpx-open-file-format_28943">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-gz1"></div>
+		<div class="class-name">.fi-file-gz1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/gz-file-format-symbol_29127">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-gzip"></div>
+		<div class="class-name">.fi-file-gzip</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/gzip-open-file-format-with-box_28912">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-hqz1"></div>
+		<div class="class-name">.fi-file-hqz1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hqz-open-file-format_28948">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-html7"></div>
+		<div class="class-name">.fi-file-html7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/html-open-file-format_28951">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-ibooks"></div>
+		<div class="class-name">.fi-file-ibooks</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/ibooks-symbol_28962">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-icns2"></div>
+		<div class="class-name">.fi-file-icns2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/icns-file-format-symbol_29136">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-ico"></div>
+		<div class="class-name">.fi-file-ico</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/ico-websites-icon-file-extension_29138">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-ics1"></div>
+		<div class="class-name">.fi-file-ics1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/ics-file-format-symbol_29114">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-iff1"></div>
+		<div class="class-name">.fi-file-iff1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/iff-file-open-file-format_28933">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-indd1"></div>
+		<div class="class-name">.fi-file-indd1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/indd-file-format-symbol_29159">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-iso2"></div>
+		<div class="class-name">.fi-file-iso2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/iso-open-file-variant_28897">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-iso3"></div>
+		<div class="class-name">.fi-file-iso3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/iso-open-file-format_28937">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-jar9"></div>
+		<div class="class-name">.fi-file-jar9</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/jar-open-file-format_28894">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-jpg"></div>
+		<div class="class-name">.fi-file-jpg</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/jpg-compressed-image-file-extension_29157">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-jsp"></div>
+		<div class="class-name">.fi-file-jsp</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/jsp-open-file-format-with-java-logo_28968">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-js"></div>
+		<div class="class-name">.fi-file-js</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/js-file-format-symbol_29105">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-key34"></div>
+		<div class="class-name">.fi-file-key34</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/key-open-file-format_28956">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-kml"></div>
+		<div class="class-name">.fi-file-kml</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kml-open-file-format_28959">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-kmz1"></div>
+		<div class="class-name">.fi-file-kmz1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kmz-file-format-symbol_29145">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-lnk1"></div>
+		<div class="class-name">.fi-file-lnk1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/lnk-file-variant_28984">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-log3"></div>
+		<div class="class-name">.fi-file-log3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/log-file-format-symbol_29152">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-lua1"></div>
+		<div class="class-name">.fi-file-lua1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/lua-file-format-symbol_29175">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-m3u1"></div>
+		<div class="class-name">.fi-file-m3u1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/m3u-open-file-format_28915">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-m4a"></div>
+		<div class="class-name">.fi-file-m4a</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/m4a-open-file-format_28950">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-m4v1"></div>
+		<div class="class-name">.fi-file-m4v1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/m4v-file-format-symbol_29117">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-macho1"></div>
+		<div class="class-name">.fi-file-macho1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mach-o-executable-file-symbol_29134">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-max"></div>
+		<div class="class-name">.fi-file-max</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/max-file-format-symbol_29149">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-mdb1"></div>
+		<div class="class-name">.fi-file-mdb1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mdb-file-format-symbol_29163">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-mdf1"></div>
+		<div class="class-name">.fi-file-mdf1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mdf-file-format-symbol_29179">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-mid2"></div>
+		<div class="class-name">.fi-file-mid2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mid-file-format-symbol_29130">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-mim1"></div>
+		<div class="class-name">.fi-file-mim1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mim-open-file-format_28921">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-mov3"></div>
+		<div class="class-name">.fi-file-mov3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mov-file-format-symbol_29160">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-mp35"></div>
+		<div class="class-name">.fi-file-mp35</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mp3-symbol-with-disc-and-musical-note_28924">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-mp41"></div>
+		<div class="class-name">.fi-file-mp41</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mp4-file-format-symbol_29122">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-mpa1"></div>
+		<div class="class-name">.fi-file-mpa1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mpa-open-file-format_28932">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-mpg"></div>
+		<div class="class-name">.fi-file-mpg</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mpg-open-file-format_28958">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-msg"></div>
+		<div class="class-name">.fi-file-msg</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/msg-symbol-with-envelope_28940">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-msi1"></div>
+		<div class="class-name">.fi-file-msi1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/msi-file-format-symbol_29148">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-nes"></div>
+		<div class="class-name">.fi-file-nes</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/nes-open-file-format_28944">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-obj"></div>
+		<div class="class-name">.fi-file-obj</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/obj-open-file-format_28955">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-odb"></div>
+		<div class="class-name">.fi-file-odb</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/odb-file-format-symbol_28917">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-odc"></div>
+		<div class="class-name">.fi-file-odc</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/odc-open-file-format_28930">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-odf1"></div>
+		<div class="class-name">.fi-file-odf1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/odf-file-format-symbol_29164">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-odg1"></div>
+		<div class="class-name">.fi-file-odg1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/odg-open-file-format_28907">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-odi1"></div>
+		<div class="class-name">.fi-file-odi1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/odi-open-file-format_28939">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-odp1"></div>
+		<div class="class-name">.fi-file-odp1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/odp-file-format-symbol_29166">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-ods1"></div>
+		<div class="class-name">.fi-file-ods1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/ods-file-format-symbol_29118">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-odt2"></div>
+		<div class="class-name">.fi-file-odt2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/odt-open-file-variant_28899">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-odt3"></div>
+		<div class="class-name">.fi-file-odt3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/odt-file-format-symbol_29146">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-odx1"></div>
+		<div class="class-name">.fi-file-odx1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/odx-open-file-format_28900">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-ogg1"></div>
+		<div class="class-name">.fi-file-ogg1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/ogg-audio-file-format-symbol_29168">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-otf2"></div>
+		<div class="class-name">.fi-file-otf2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/otf-open-file-format_28925">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-otf3"></div>
+		<div class="class-name">.fi-file-otf3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/otf-file-format_29034">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-pages3"></div>
+		<div class="class-name">.fi-file-pages3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pages-symbol_29167">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-pct"></div>
+		<div class="class-name">.fi-file-pct</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pct-open-file-format_28927">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-pdb1"></div>
+		<div class="class-name">.fi-file-pdb1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pdb-file-format-symbol_29110">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-pdf18"></div>
+		<div class="class-name">.fi-file-pdf18</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pdf-file-format-symbol_29153">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-pif"></div>
+		<div class="class-name">.fi-file-pif</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pif-open-file-format_28964">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-pkg"></div>
+		<div class="class-name">.fi-file-pkg</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pkg-open-file-format_28938">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-pl"></div>
+		<div class="class-name">.fi-file-pl</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pl-file-format-symbol_29180">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-png2"></div>
+		<div class="class-name">.fi-file-png2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/png-file-format-symbol-variant_28891">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-pps1"></div>
+		<div class="class-name">.fi-file-pps1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pps-file-format-variant_28973">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-ppt1"></div>
+		<div class="class-name">.fi-file-ppt1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/ppt-open-file-format-with-pie-chart_28957">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-pptx1"></div>
+		<div class="class-name">.fi-file-pptx1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pptx-presentation-file-extension_29141">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-ps1"></div>
+		<div class="class-name">.fi-file-ps1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/ps-file-format-variant_28981">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-psd2"></div>
+		<div class="class-name">.fi-file-psd2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/psd-open-file-format_28911">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-pub1"></div>
+		<div class="class-name">.fi-file-pub1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pub-file-format-symbol_29116">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-py1"></div>
+		<div class="class-name">.fi-file-py1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/py-file-format-symbol_29161">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-ra2"></div>
+		<div class="class-name">.fi-file-ra2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/ra-file-format-symbol_29181">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-rar3"></div>
+		<div class="class-name">.fi-file-rar3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/rar-file-format-symbol_29151">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-raw"></div>
+		<div class="class-name">.fi-file-raw</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/raw-open-file-format_28905">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-rm2"></div>
+		<div class="class-name">.fi-file-rm2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/rm-open-file-format_28966">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-rom1"></div>
+		<div class="class-name">.fi-file-rom1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/rom-file-format-symbol_29154">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-rpm"></div>
+		<div class="class-name">.fi-file-rpm</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/rpm-file-format-symbol_28890">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-rss28"></div>
+		<div class="class-name">.fi-file-rss28</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/rss-feed-symbol-variant_28892">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-rtf2"></div>
+		<div class="class-name">.fi-file-rtf2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/rtf-open-file-format_28945">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-sav1"></div>
+		<div class="class-name">.fi-file-sav1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sav-open-file-variant_28898">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-sdf2"></div>
+		<div class="class-name">.fi-file-sdf2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sdf-file-format-symbol_29174">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-sitx1"></div>
+		<div class="class-name">.fi-file-sitx1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sitx-open-file-format_28941">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-sql1"></div>
+		<div class="class-name">.fi-file-sql1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sql-open-file-format_28954">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-sql2"></div>
+		<div class="class-name">.fi-file-sql2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sql-file-format-symbol_29165">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-srt1"></div>
+		<div class="class-name">.fi-file-srt1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/srt-file-format-variant_28983">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-svg"></div>
+		<div class="class-name">.fi-file-svg</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/svg-open-file-format_28896">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-swf"></div>
+		<div class="class-name">.fi-file-swf</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/swf-open-file-format_28919">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-sys1"></div>
+		<div class="class-name">.fi-file-sys1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sys-file-format-variant_28974">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-tar"></div>
+		<div class="class-name">.fi-file-tar</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/tar-open-file-format_28906">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-tex1"></div>
+		<div class="class-name">.fi-file-tex1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/tex-open-file-format_28935">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-tga1"></div>
+		<div class="class-name">.fi-file-tga1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/tga-file-format_28976">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-thm2"></div>
+		<div class="class-name">.fi-file-thm2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/thm-file-format-symbol_29133">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-tiff2"></div>
+		<div class="class-name">.fi-file-tiff2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/tiff-image-extension-interface-symbol_29106">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-tmp1"></div>
+		<div class="class-name">.fi-file-tmp1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/tmp-file-format-symbol_29172">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-torrent2"></div>
+		<div class="class-name">.fi-file-torrent2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/torrent-file-format-symbol_29129">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-ttf"></div>
+		<div class="class-name">.fi-file-ttf</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/ttf-open-file-format_28914">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-txt1"></div>
+		<div class="class-name">.fi-file-txt1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/txt-open-file-format_28947">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-uue1"></div>
+		<div class="class-name">.fi-file-uue1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/uue-open-file-format_28949">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-vb1"></div>
+		<div class="class-name">.fi-file-vb1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/vb-open-file-symbol_28908">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-vcd"></div>
+		<div class="class-name">.fi-file-vcd</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/vcd-file-format-symbol_29123">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-vcf1"></div>
+		<div class="class-name">.fi-file-vcf1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/vcf-open-file-format_28895">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-vob1"></div>
+		<div class="class-name">.fi-file-vob1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/vob-file-format-symbol_29177">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-wav"></div>
+		<div class="class-name">.fi-file-wav</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wav-file-format-variant_28970">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-wma"></div>
+		<div class="class-name">.fi-file-wma</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wma-open-file-format_28904">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-wmv1"></div>
+		<div class="class-name">.fi-file-wmv1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wmv-file-format-symbol_29170">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-wpd1"></div>
+		<div class="class-name">.fi-file-wpd1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wpd-open-file-format_28913">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-wps1"></div>
+		<div class="class-name">.fi-file-wps1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wps-open-file-format_28910">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-wsf1"></div>
+		<div class="class-name">.fi-file-wsf1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wsf-open-file-format_28893">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-xhtml1"></div>
+		<div class="class-name">.fi-file-xhtml1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/xhtml-open-file-format_28909">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-xlr"></div>
+		<div class="class-name">.fi-file-xlr</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/xlr-file-format-symbol_29126">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-xls"></div>
+		<div class="class-name">.fi-file-xls</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/xls-open-file-format_28942">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-xlsx2"></div>
+		<div class="class-name">.fi-file-xlsx2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/xlsx-file-format-symbol_29135">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-xml4"></div>
+		<div class="class-name">.fi-file-xml4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/xml-file-format-symbol_29182">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-yuv1"></div>
+		<div class="class-name">.fi-file-yuv1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/yuv-open-file-format_28953">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon fi-file-zip7"></div>
+		<div class="class-name">.fi-file-zip7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/zip-compressed-file-format-interface-symbol_29119">Freepik</a></div></div></section>
+
+<section class="attribution">
+
+	<div class="usetitle">License and attribution:</div><div class="attrDiv">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>
+ under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY</a>. The authors are: <a href="http://www.freepik.com">Freepik</a>.</div><div class="usetitle">Copy the Attribution License:</div>
+
+<textarea onclick="this.focus();this.select();">Font generated by &lt;a href=&quot;http://www.flaticon.com&quot;&gt;flaticon.com&lt;/a&gt;
+ under &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY&lt;/a&gt;. The authors are: &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;.</textarea>
+
+</section>
+
+<section class="iconsuse">
+    	<div class="usetitle">Examples:</div>
+		<div class="image"><p>&lt;i class=&quot;fi-file-3dm1&quot;&gt;&lt;/i&gt; <i class="fi-file-3dm1"></i></p><p>&lt;i class=&quot;fi-file-3ds1&quot;&gt;&lt;/i&gt; <i class="fi-file-3ds1"></i></p><p>&lt;i class=&quot;fi-file-3g21&quot;&gt;&lt;/i&gt; <i class="fi-file-3g21"></i></p><p>&lt;i class=&quot;fi-file-3gp1&quot;&gt;&lt;/i&gt; <i class="fi-file-3gp1"></i></p><p>&lt;i class=&quot;fi-file-7z&quot;&gt;&lt;/i&gt; <i class="fi-file-7z"></i></p></div><div class="image"><p>&lt;span class=&quot;fi-file-acc&quot;&gt;&lt;/span&gt; <span class="fi-file-acc"></span></p><p>&lt;span class=&quot;fi-file-ai2&quot;&gt;&lt;/span&gt; <span class="fi-file-ai2"></span></p><p>&lt;span class=&quot;fi-file-aif2&quot;&gt;&lt;/span&gt; <span class="fi-file-aif2"></span></p><p>&lt;span class=&quot;fi-file-apk1&quot;&gt;&lt;/span&gt; <span class="fi-file-apk1"></span></p><p>&lt;span class=&quot;fi-file-app5&quot;&gt;&lt;/span&gt; <span class="fi-file-app5"></span></p></div><div class="image"><p>&lt;span class=&quot;fi-file-asf&quot;&gt;&lt;/span&gt; <span class="fi-file-asf"></span></p><p>&lt;i class=&quot;fi-file-asp1&quot;&gt;&lt;/i&gt; <i class="fi-file-asp1"></i></p><p>&lt;i class=&quot;fi-file-aspx1&quot;&gt;&lt;/i&gt; <i class="fi-file-aspx1"></i></p><p>&lt;i class=&quot;fi-file-asx&quot;&gt;&lt;/i&gt; <i class="fi-file-asx"></i></p><p>&lt;i class=&quot;fi-file-avi3&quot;&gt;&lt;/i&gt; <i class="fi-file-avi3"></i></p></div><div class="image"><p>&lt;span class=&quot;fi-file-bak1&quot;&gt;&lt;/span&gt; <span class="fi-file-bak1"></span></p><p>&lt;span class=&quot;fi-file-bat7&quot;&gt;&lt;/span&gt; <span class="fi-file-bat7"></span></p><p>&lt;span class=&quot;fi-file-bin7&quot;&gt;&lt;/span&gt; <span class="fi-file-bin7"></span></p><p>&lt;span class=&quot;fi-file-bmp&quot;&gt;&lt;/span&gt; <span class="fi-file-bmp"></span></p><p>&lt;span class=&quot;fi-file-cab2&quot;&gt;&lt;/span&gt; <span class="fi-file-cab2"></span></p></div><div class="image"></div>
+</section>
+<div id="footer">
+    <div>Generated by <a href="http://www.flaticon.com">flaticon.com</a>
+    </div>
+</div>
+	</body>
+</html>
