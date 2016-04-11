@@ -1,4 +1,6 @@
-.architect
-bootstrap.json
+
 build/
-ext/
+dist/
+jspm_packages/
+node_modules/
+libs/
