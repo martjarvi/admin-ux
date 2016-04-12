@@ -1,35 +1,33 @@
 System.config({
   baseURL: ".",
   defaultJSExtensions: true,
-  transpiler: "babel",
-  babelOptions: {
-    "optional": [
-      "runtime",
-      "optimisation.modules.system"
-    ]
-  },
+  transpiler: "typescript",
   paths: {
-    "*": "dist/*",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
   map: {
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.2.0",
-    "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.0",
+    "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.1",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.1",
     "aurelia-router": "npm:aurelia-router@1.0.0-beta.1.2.0",
     "aurelia-validation": "npm:aurelia-validation@0.6.6",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "bootstrap": "github:twbs/bootstrap@4.0.0-alpha.2",
+    "bootstrap-notify": "npm:bootstrap-notify@3.1.3",
     "clean-css": "npm:clean-css@3.4.12",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
     "jquery": "npm:jquery@2.2.3",
-    "lodash": "npm:lodash@4.8.2",
+    "ladda": "npm:ladda@1.0.0",
+    "lodash": "npm:lodash@4.10.0",
+    "marked": "npm:marked@0.3.5",
     "moment": "npm:moment@2.12.0",
     "numeral": "npm:numeral@1.5.3",
+    "sweetalert": "npm:sweetalert@1.1.3",
     "text": "github:systemjs/plugin-text@0.0.7",
+    "typescript": "npm:typescript@1.8.9",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -253,7 +251,10 @@ System.config({
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
-    "npm:lodash@4.8.2": {
+    "npm:ladda@1.0.0": {
+      "spin.js": "npm:spin.js@2.3.2"
+    },
+    "npm:lodash@4.10.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
@@ -294,6 +295,12 @@ System.config({
     "npm:string_decoder@0.10.31": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
+    "npm:sweetalert@1.1.3": {
+      "path": "github:jspm/nodelibs-path@0.1.0"
+    },
+    "npm:typescript@1.8.9": {
+      "os": "github:jspm/nodelibs-os@0.1.0"
+    },
     "npm:url@0.10.3": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
       "punycode": "npm:punycode@1.3.2",
@@ -306,7 +313,7 @@ System.config({
     }
   },
   bundles: {
-    "app.js": [
+    "dist/app.js": [
       "github:HubSpot/tether@1.2.0.js",
       "github:HubSpot/tether@1.2.0/js/tether.js",
       "github:components/jquery@2.2.1.js",
@@ -317,12 +324,14 @@ System.config({
       "github:jspm/nodelibs-process@0.1.2/index.js",
       "github:twbs/bootstrap@4.0.0-alpha.2.js",
       "github:twbs/bootstrap@4.0.0-alpha.2/js/bootstrap.js",
-      "libs/ladda/js/ladda.jquery.js",
-      "libs/ladda/js/ladda.js",
-      "libs/ladda/js/spin.js",
-      "libs/marked/marked.min.js",
+      "libs/countries.js",
+      "libs/currencies.js",
+      "libs/phonelib.js",
+      "main.js",
       "npm:base64-js@0.0.8.js",
       "npm:base64-js@0.0.8/lib/b64.js",
+      "npm:bootstrap-notify@3.1.3.js",
+      "npm:bootstrap-notify@3.1.3/bootstrap-notify.js",
       "npm:buffer@3.6.0.js",
       "npm:buffer@3.6.0/index.js",
       "npm:ieee754@1.1.6.js",
@@ -331,14 +340,32 @@ System.config({
       "npm:isarray@1.0.0/index.js",
       "npm:jquery@2.2.3.js",
       "npm:jquery@2.2.3/dist/jquery.js",
-      "npm:lodash@4.8.2.js",
-      "npm:lodash@4.8.2/lodash.js",
+      "npm:ladda@1.0.0.js",
+      "npm:ladda@1.0.0/dist/ladda.jquery.min.js",
+      "npm:ladda@1.0.0/dist/ladda.min.js",
+      "npm:lodash@4.10.0.js",
+      "npm:lodash@4.10.0/lodash.js",
+      "npm:marked@0.3.5.js",
+      "npm:marked@0.3.5/lib/marked.js",
       "npm:moment@2.12.0.js",
       "npm:moment@2.12.0/moment.js",
       "npm:numeral@1.5.3.js",
       "npm:numeral@1.5.3/numeral.js",
       "npm:process@0.11.2.js",
       "npm:process@0.11.2/browser.js",
+      "npm:spin.js@2.3.2.js",
+      "npm:spin.js@2.3.2/spin.js",
+      "npm:sweetalert@1.1.3.js",
+      "npm:sweetalert@1.1.3/dist/sweetalert.css!github:systemjs/plugin-css@0.1.20.js",
+      "npm:sweetalert@1.1.3/lib/modules/default-params.js",
+      "npm:sweetalert@1.1.3/lib/modules/handle-click.js",
+      "npm:sweetalert@1.1.3/lib/modules/handle-dom.js",
+      "npm:sweetalert@1.1.3/lib/modules/handle-key.js",
+      "npm:sweetalert@1.1.3/lib/modules/handle-swal-dom.js",
+      "npm:sweetalert@1.1.3/lib/modules/injected-html.js",
+      "npm:sweetalert@1.1.3/lib/modules/set-params.js",
+      "npm:sweetalert@1.1.3/lib/modules/utils.js",
+      "npm:sweetalert@1.1.3/lib/sweetalert.js",
       "src/app.html!github:systemjs/plugin-text@0.0.7.js",
       "src/app.js",
       "src/bootstrap/_btnsplit.html!github:systemjs/plugin-text@0.0.7.js",
@@ -348,10 +375,9 @@ System.config({
       "src/dashboard/view.js",
       "src/home/view.html!github:systemjs/plugin-text@0.0.7.js",
       "src/home/view.js",
-      "src/main.js",
       "src/utils.js"
     ],
-    "aurelia.js": [
+    "dist/aurelia.js": [
       "npm:aurelia-binding@1.0.0-beta.1.3.1.js",
       "npm:aurelia-binding@1.0.0-beta.1.3.1/aurelia-binding.js",
       "npm:aurelia-bootstrapper@1.0.0-beta.1.2.0.js",
@@ -360,8 +386,8 @@ System.config({
       "npm:aurelia-dependency-injection@1.0.0-beta.1.2.0/aurelia-dependency-injection.js",
       "npm:aurelia-event-aggregator@1.0.0-beta.1.2.0.js",
       "npm:aurelia-event-aggregator@1.0.0-beta.1.2.0/aurelia-event-aggregator.js",
-      "npm:aurelia-fetch-client@1.0.0-beta.1.2.0.js",
-      "npm:aurelia-fetch-client@1.0.0-beta.1.2.0/aurelia-fetch-client.js",
+      "npm:aurelia-fetch-client@1.0.0-beta.1.2.1.js",
+      "npm:aurelia-fetch-client@1.0.0-beta.1.2.1/aurelia-fetch-client.js",
       "npm:aurelia-framework@1.0.0-beta.1.2.1.js",
       "npm:aurelia-framework@1.0.0-beta.1.2.1/aurelia-framework.js",
       "npm:aurelia-history-browser@1.0.0-beta.1.2.0.js",
