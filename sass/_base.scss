@@ -3,362 +3,367 @@
  * @author: Adarsh Pastakia
  */
 .ux-viewport {
-  @include position(absolute, 0);
-  @include flex-column(stretch, flex-start);
+    @include position(absolute, 0);
+    @include flex-column(stretch, flex-start);
 
-  .ux-header {
-	font-size     : 1.25em;
-	height        : $ux-header-height;
-	background    : $ux-header-bg;
-	border-bottom : 1px solid $ux-header-border;
-	@include flex(0 0 auto);
-	@include flex-row(center, flex-start, false);
+    .ux-header {
+        font-size    : 1.25em;
+        height       : $ux-header-height;
+        background   : $ux-header-bg;
+        border-bottom: 1px solid $ux-header-border;
+        @include flex(0 0 auto);
+        @include flex-row(center, flex-start, false);
 
-	.ux-filler {
-	  display : none;
-	}
-  }
+        .ux-filler {
+            display: none;
+        }
+    }
 
-  .ux-footer {
-	color       : $ux-footer-text;
-	height      : $ux-footer-height;
-	background  : $ux-footer-bg;
-	text-align  : right;
-	text-align  : end;
-	padding     : .25em .5em;
-	font-size   : .6em;
-	line-height : 1;
-	@include flex(0 0 auto);
-  }
+    .ux-footer {
+        color      : $ux-footer-text;
+        height     : $ux-footer-height;
+        background : $ux-footer-bg;
+        text-align : right;
+        text-align : end;
+        padding    : .25em .5em;
+        font-size  : .6em;
+        line-height: 1;
+        @include flex(0 0 auto);
+    }
 
-  .ux-viewport-body {
-	position : relative;
-	@include flex(1 1 0);
-	@include flex-row(stretch, flex-start, false);
+    .ux-viewport-body {
+        position: relative;
+        @include flex(1 1 0);
+        @include flex-row(stretch, flex-start, false);
 
-	.ux-sidemenu {
-	  overflow   : auto;
-	  padding    : 1em 0;
-	  color      : $ux-sidemenu-text;
-	  background : $ux-sidemenu-bg;
-	  left       : -1 * $ux-sidemenu-width;
-	  @include flex(0 0 $ux-sidemenu-width);
-	  @include border-end(1px solid $ux-sidemenu-border);
-	}
+        .ux-sidemenu {
+            overflow  : auto;
+            padding   : 1em 0;
+            color     : $ux-sidemenu-text;
+            background: $ux-sidemenu-bg;
+            left      : -1 * $ux-sidemenu-width;
+            @include flex(0 0 $ux-sidemenu-width);
+            @include border-end(1px solid $ux-sidemenu-border);
+        }
 
-	.ux-menushim {
-	  display    : none;
-	  transition : opacity .5s;
-	}
+        .ux-menushim {
+            display   : none;
+            transition: opacity .5s;
+        }
 
-	.ux-jumbo-banner {
-	  overflow   : hidden;
-	  position   : relative;
-	  background : url('../images/bg-light.png');
-	  .ux-spacer > div {
-		height : .5rem;
-	  }
-	}
+        .ux-jumbo-banner {
+            overflow  : hidden;
+            position  : relative;
+            background: url('../images/bg-white-wall.png');
 
-	.ux-body {
-	  @include flex(1 1 0);
-	  position : relative;
-	  overflow : auto;
+            .ux-spacer > div {
+                height: .5rem;
+            }
+        }
 
-	  .ux-page {
-		padding : 1em .5em;
+        .ux-body {
+            @include flex(1 1 0);
+            position: relative;
+            overflow: auto;
 
-		> h3 {
-		  margin : .5em 1em;
-		}
-	  }
-	}
-  }
+            .ux-page {
+                padding: 1em .5em;
 
-  .ux-banner {
-	@include flex(0 0 $ux-sidemenu-width);
-	@include align-self(stretch);
-	background     : $ux-sidemenu-bg;
-	padding        : 0 .5em;
-	line-height    : 2.5;
-	position       : relative;
-	text-transform : uppercase;
+                > h1 {
+                    color : $ux-primary-light;
+                    margin: .5rem 1rem;
+                    @extend .display-4;
+                }
+            }
+        }
+    }
 
-	.ux-home-link {
-	  padding    : 0 .5em;
-	  margin     : 0 .5em;
-	  font-size  : 1.5rem;
-	  color      : $ux-header-banner-text;
-	  background : $ux-header-banner-bg;
-	  @if $enable-rounded {
-		border-radius : $border-radius;
-	  }
-	  &:hover {
-		text-decoration : none;
-		background      : darken($ux-header-banner-bg, 3%);
-	  }
+    .ux-banner {
+        @include flex(0 0 $ux-sidemenu-width);
+        @include align-self(stretch);
+        padding       : 0 .5em;
+        line-height   : 2.5;
+        position      : relative;
+        text-transform: uppercase;
+        background    : $ux-sidemenu-bg;
 
-	  &:active {
-		text-decoration : none;
-		background      : darken($ux-header-banner-bg, 9%);
-	  }
-	}
+        .ux-home-link {
+            padding   : 0 .5em;
+            margin    : 0 .5em;
+            font-size : 1.5rem;
+            color     : $ux-header-banner-text;
+            background: $ux-header-banner-bg;
+            @if $enable-rounded {
+                border-radius: $border-radius;
+            }
 
-	.ux-menu {
-	  font-size : 1.25rem;
-	  display   : none;
-	}
-  }
+            &:hover {
+                text-decoration: none;
+                background     : darken($ux-header-banner-bg, 3%);
+            }
 
-  .ux-spacer {
-	z-index : 2;
-	@include position(absolute, null 0 0 0);
-	@include flex-row(stretch, flex-start, false);
+            &:active {
+                text-decoration: none;
+                background     : darken($ux-header-banner-bg, 9%);
+            }
+        }
 
-	> div {
-	  height : .2em;
-	  @include flex(1 1 0);
-	}
+        .ux-menu {
+            font-size: 1.25rem;
+            display  : none;
+        }
+    }
 
-	.primary {
-	  background : $ux-primary;
-	}
+    .ux-spacer {
+        z-index: 2;
+        @include position(absolute, null 0 0 0);
+        @include flex-row(stretch, flex-start, false);
 
-	.info {
-	  background : $ux-info;
-	}
+        > div {
+            height: .2em;
+            @include flex(1 1 0);
+        }
 
-	.success {
-	  background : $ux-success;
-	}
+        .primary {
+            background: $ux-primary;
+        }
 
-	.danger {
-	  background : $ux-danger;
-	}
+        .info {
+            background: $ux-info;
+        }
 
-	.warning {
-	  background : $ux-warning;
-	}
-  }
+        .success {
+            background: $ux-success;
+        }
 
-  .ux-search-bar {
-	overflow   : hidden;
-	margin     : 0 .5em;
-	border     : 1px solid transparent;
-	transition : border-color .5s;
-	background : $ux-header-bg;
-	@include flex(0 0 auto);
-	@if $enable-rounded {
-	  border-radius : 1em;
-	}
-	input {
-	  transition : width .5s;
-	  border     : none;
-	  background : none;
-	  width      : 0;
-	  font-size  : $font-size-base;
-	}
+        .danger {
+            background: $ux-danger;
+        }
 
-	a {
-	  cursor     : pointer;
-	  padding    : .5em .35em;
-	  font-size  : 1.1em;
-	  transition : all .5s;
-	  color      : $ux-header-option-link-text;
+        .warning {
+            background: $ux-warning;
+        }
+    }
 
-	  &:focus,
-	  &:hover {
-		color : $ux-header-option-link-hover;
-	  }
-	}
+    .ux-search-bar {
+        overflow  : hidden;
+        margin    : 0 .5em;
+        border    : 1px solid transparent;
+        transition: border-color .5s;
+        background: $ux-header-bg;
+        @include flex(0 0 auto);
+        @if $enable-rounded {
+            border-radius: 1em;
+        }
 
-	&.show-search {
-	  border-color : $ux-header-option-link-hover;
-	  box-shadow   : 0 1px 2px 0 $ux-gray-lighter inset;
+        input {
+            transition: width .5s;
+            border    : none;
+            background: none;
+            width     : 0;
+            font-size : $font-size-base;
+        }
 
-	  a {
-		color      : $ux-white;
-		background : $ux-header-option-link-hover;
+        a {
+            cursor    : pointer;
+            padding   : .5em .35em;
+            font-size : 1.1em;
+            transition: all .5s;
+            color     : $ux-header-option-link-text;
 
-		&:focus,
-		&:hover {
-		  background : $ux-header-option-link-hover;
-		}
-	  }
+            &:focus,
+            &:hover {
+                color: $ux-header-option-link-hover;
+            }
+        }
 
-	  input {
-		width : 12em;
-	  }
-	}
-  }
+        &.show-search {
+            border-color: $ux-header-option-link-hover;
+            box-shadow  : 0 1px 2px 0 $ux-gray-lighter inset;
 
-  .ux-general-menu {
-	@include flex(1 1 0);
-	@include flex-row(center, flex-start, false);
-  }
+            a {
+                color     : $ux-white;
+                background: $ux-header-option-link-hover;
 
-  .ux-options {
-	font-size : 1.2rem;
-	padding   : 0 .5em;
-	@include flex(0 0 auto);
-	@include flex-row(center, flex-start, false);
+                &:focus,
+                &:hover {
+                    background: $ux-header-option-link-hover;
+                }
+            }
 
-	> a,
-	> div > a {
-	  position : relative;
-	  margin   : 0 .5em;
-	  cursor   : pointer;
-	  color    : $ux-header-option-link-text;
+            input {
+                width: 12em;
+            }
+        }
+    }
 
-	  &.ux-indicator:after {
-		content       : ' ';
-		border-radius : .15em;
-		background    : $ux-danger;
-		@include size(0.3em, 0.3em);
-		@include position(absolute, .15em -.15em null null);
-	  }
+    .ux-general-menu {
+        @include flex(1 1 0);
+        @include flex-row(center, flex-start, false);
+    }
 
-	  &.ux-disabled {
-		pointer-events : none;
-		color          : $ux-header-option-link-disabled;
-	  }
+    .ux-options {
+        font-size: 1.2rem;
+        padding  : 0 .5em;
+        @include flex(0 0 auto);
+        @include flex-row(center, flex-start, false);
 
-	  &:focus,
-	  &:hover {
-		color : $ux-header-option-link-hover;
-	  }
-	}
+         > div > a,
+        > a {
+            position: relative;
+            margin  : 0 .5em;
+            cursor  : pointer;
+            color   : $ux-header-option-link-text;
 
-	.ux-profile {
-	  > .dropdown-toggle {
-		font-size : 2rem;
+            &.ux-indicator:after {
+                content      : ' ';
+                border-radius: .15em;
+                background   : $ux-danger;
+                @include size(0.3em, 0.3em);
+                @include position(absolute, .15em -.15em null null);
+            }
 
-		&:after {
-		  font-size : .5em;
-		}
-	  }
+            &.ux-disabled {
+                pointer-events: none;
+                color         : $ux-header-option-link-disabled;
+            }
 
-	  &.open > .dropdown-toggle {
-		color : $ux-header-option-link-hover;
-	  }
-	}
+            &:focus,
+            &:hover {
+                color: $ux-header-option-link-hover;
+            }
+        }
 
-	.dropdown-menu > .dropdown-item {
-	  font-size : $font-size-base;
+        .ux-profile {
+            > .dropdown-toggle {
+                font-size: 2rem;
 
-	  span {
-		font-size : 1.2em;
-		@include margin-end(.5em);
-	  }
-	}
+                &:after {
+                    font-size: .5em;
+                }
+            }
 
-	.ux-general-menu-link {
-	  display : none;
-	}
-  }
-  @media (max-width : 64em - 1) {
-	.ux-header .ux-banner {
-	  @include flex(0 0 auto);
-	  background : $ux-header-bg;
+            &.open > .dropdown-toggle {
+                color: $ux-header-option-link-hover;
+            }
+        }
 
-	  .title {
-		display : none;
-	  }
+        .dropdown-menu > .dropdown-item {
+            font-size: $font-size-base;
 
-	  .ux-menu {
-		display : inline-block;
-	  }
-	}
+            span {
+                font-size: 1.2em;
+                @include margin-end(.5em);
+            }
+        }
 
-	.ux-header .ux-filler {
-	  display : block;
-	  @include flex(1 1 0);
-	}
+        .ux-general-menu-link {
+            display: none;
+        }
+    }
+    @media (max-width : 64em - 1) {
+        .ux-header .ux-banner {
+            @include flex(0 0 auto);
+            background: $ux-header-bg;
 
-	.ux-options .ux-general-menu-link {
-	  display : block;
-	}
+            .title {
+                display: none;
+            }
 
-	.ux-general-menu {
-	  transition : right .5s;
-	  z-index    : 500;
-	  overflow   : auto;
-	  padding    : 1em 0;
-	  width      : $ux-sidemenu-width;
-	  color      : $ux-sidemenu-text;
-	  background : $ux-sidemenu-bg;
-	  @include flex-column(stretch, flex-start);
-	  @include border-start(1px solid $ux-sidemenu-border);
-	  @include position(absolute, $ux-header-height -1 * $ux-sidemenu-width $ux-footer-height null);
+            .ux-menu {
+                display: inline-block;
+            }
+        }
 
-	  .ux-col-fill {
-		display : none;
-	  }
-	}
+        .ux-header .ux-filler {
+            display: block;
+            @include flex(1 1 0);
+        }
 
-	.ux-search-bar {
-	  border-color : $ux-header-option-link-text;
-	  box-shadow   : 0 1px 2px 0 $ux-gray-lighter inset;
-	  @include align-self(center);
+        .ux-options .ux-general-menu-link {
+            display: block;
+        }
 
-	  a {
-		color      : $ux-white;
-		background : $ux-header-option-link-text;
+        .ux-general-menu {
+            transition: right .5s;
+            z-index   : 500;
+            overflow  : auto;
+            padding   : 1em 0;
+            width     : $ux-sidemenu-width;
+            color     : $ux-sidemenu-text;
+            background: $ux-sidemenu-bg;
+            @include flex-column(stretch, flex-start);
+            @include border-start(1px solid $ux-sidemenu-border);
+            @include position(absolute, $ux-header-height -1 * $ux-sidemenu-width $ux-footer-height null);
 
-		&:focus,
-		&:hover {
-		  color      : $ux-white;
-		  background : $ux-header-option-link-hover;
-		}
-	  }
+            .ux-col-fill {
+                display: none;
+            }
+        }
 
-	  input {
-		width : $ux-sidemenu-width - 4rem !important;
-	  }
-	}
+        .ux-search-bar {
+            border-color: $ux-header-option-link-text;
+            box-shadow  : 0 1px 2px 0 $ux-gray-lighter inset;
+            @include align-self(center);
 
-	.ux-viewport-body {
-	  .ux-sidemenu {
-		transition : left .5s;
-		z-index    : 500;
-		width      : $ux-sidemenu-width;
-		@include position(absolute, 0 null 0 -1 * $ux-sidemenu-width);
-	  }
+            a {
+                color     : $ux-white;
+                background: $ux-header-option-link-text;
 
-	  .ux-menushim {
-		display    : block;
-		z-index    : -1;
-		opacity    : 0;
-		background : rgba(#43403C, .8);
-		@include backdrop-blur();
-		@include position(absolute, 0);
-	  }
-	}
+                &:focus,
+                &:hover {
+                    color     : $ux-white;
+                    background: $ux-header-option-link-hover;
+                }
+            }
 
-	&.show-menu {
-	  .ux-header .ux-banner .ux-menu span:before {
-		content : '\f114';
-	  }
+            input {
+                width: $ux-sidemenu-width - 4rem !important;
+            }
+        }
 
-	  .ux-viewport-body .ux-sidemenu {
-		left : 0;
-	  }
+        .ux-viewport-body {
+            .ux-sidemenu {
+                transition: left .5s;
+                z-index   : 500;
+                width     : $ux-sidemenu-width;
+                @include position(absolute, 0 null 0 -1 * $ux-sidemenu-width);
+            }
 
-	  .ux-viewport-body .ux-menushim {
-		opacity : 1;
-		z-index : 499;
-	  }
-	}
+            .ux-menushim {
+                display   : block;
+                z-index   : -1;
+                opacity   : 0;
+                background: rgba(#43403C, .8);
+                @include backdrop-blur();
+                @include position(absolute, 0);
+            }
+        }
 
-	&.show-general-menu {
-	  .ux-general-menu {
-		right : 0;
-	  }
+        &.show-menu {
+            .ux-header .ux-banner .ux-menu span:before {
+                content: '\f114';
+            }
 
-	  .ux-viewport-body .ux-menushim {
-		opacity : 1;
-		z-index : 499;
-	  }
-	}
-  }
+            .ux-viewport-body .ux-sidemenu {
+                left: 0;
+            }
+
+            .ux-viewport-body .ux-menushim {
+                opacity: 1;
+                z-index: 499;
+            }
+        }
+
+        &.show-general-menu {
+            .ux-general-menu {
+                right: 0;
+            }
+
+            .ux-viewport-body .ux-menushim {
+                opacity: 1;
+                z-index: 499;
+            }
+        }
+    }
 }

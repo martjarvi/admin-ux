@@ -1,117 +1,98 @@
 <template>
-  <div class="ux-viewport" ref="__element" mouseup.delegate="resetElements($event)">
-	<header class="ux-header">
-	  <div class="ux-banner">
-		<a class="ux-menu"><span class="fi-filled-list-menu" click.trigger="toggleMenu($event)"></span></a>
-		<a class="ux-home-link" href="#/">
-		  <span class="title">Admin</span>
-		  <span>UX</span>
-		</a>
-		<div class="ux-spacer">
-		  <div class="primary"></div>
-		  <div class="info"></div>
-		  <div class="success"></div>
-		  <div class="danger"></div>
-		  <div class="warning"></div>
-		</div>
-	  </div>
-	  <div class="ux-general-menu">
-		<div class="ux-col-fill"></div>
-		<form class="ux-search-bar" ref="__searchForm">
-		  <input ref="__searchInput" placeholder="Search..."/>
-		  <a click.trigger="search($event)"><span class="fi-vaadin-search"></span></a>
-		</form>
-	  </div>
-	  <div class="ux-filler"></div>
-	  <div class="ux-options">
-		<a class="ux-indicator" data-toggle="popover" data-trigger="focus" data-placement="bottom" id="btnMessages"
-		   tabindex="0">
-		  <span class="fi-vaadin-chat"></span></a>
-		<a class="ux-indicator" data-toggle="popover" data-trigger="focus" data-placement="bottom" id="btnMails"
-		   tabindex="0">
-		  <span class="fi-vaadin-envelope"></span></a>
-		<a class="ux-disabled"><span class="fi-vaadin-bell-1"></span></a>
-		<div class="ux-profile dropdown">
-		  <a class="dropdown-toggle collapsed" data-toggle="dropdown"><span class="fi-filled2-male-user"></span></a>
-		  <div class="dropdown-menu dropdown-menu-right">
-			<div class="dropdown-header">${user.username}</div>
-			<a class="dropdown-item"><span class="fi-vaadin-user"></span> Profile</a>
-			<a class="dropdown-item"><span class="fi-vaadin-cogwheel-1"></span> Settings</a>
-			<div class="dropdown-divider"></div>
-			<a class="dropdown-item"><span class="fi-vaadin-sign-out"></span> Logout</a>
-		  </div>
-		</div>
-		<a class="ux-general-menu-link" click.trigger="toggleGeneralMenu($event)"><span
+    <div class="ux-viewport" ref="__element" mouseup.delegate="resetElements($event)">
+        <header class="ux-header">
+            <div class="ux-banner">
+                <a class="ux-menu"><span class="fi-filled-list-menu" click.trigger="toggleMenu($event)"></span></a>
+                <a class="ux-home-link" href="#/">
+                    <span class="title">Admin</span>
+                    <span>UX</span>
+                </a>
+                <div class="ux-spacer">
+                    <div class="primary"></div>
+                    <div class="info"></div>
+                    <div class="success"></div>
+                    <div class="danger"></div>
+                    <div class="warning"></div>
+                </div>
+            </div>
+            <div class="ux-general-menu">
+                <div class="ux-col-fill"></div>
+                <form class="ux-search-bar" ref="__searchForm">
+                    <input ref="__searchInput" placeholder="Search..." />
+                    <a click.trigger="search($event)"><span class="fi-vaadin-search"></span></a>
+                </form>
+            </div>
+            <div class="ux-filler"></div>
+            <div class="ux-options">
+                <a class="ux-indicator" data-toggle="popover" data-trigger="focus" data-placement="bottom" id="btnMessages" tabindex="0">
+                    <span class="fi-vaadin-chat"></span></a>
+                <a class="ux-indicator" data-toggle="popover" data-trigger="focus" data-placement="bottom" id="btnMails" tabindex="0">
+                    <span class="fi-vaadin-envelope"></span></a>
+                <a class="ux-disabled"><span class="fi-vaadin-bell-1"></span></a>
+                <div class="ux-profile dropdown">
+                    <a class="dropdown-toggle collapsed" data-toggle="dropdown"><span class="fi-filled2-male-user"></span></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header">${user.username}</div>
+                        <a class="dropdown-item"><span class="fi-vaadin-user"></span> Profile</a>
+                        <a class="dropdown-item"><span class="fi-vaadin-cogwheel-1"></span> Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item"><span class="fi-vaadin-sign-out"></span> Logout</a>
+                    </div>
+                </div>
+                <a class="ux-general-menu-link" click.trigger="toggleGeneralMenu($event)"><span
 			class="fi-vaadin-ellipsis"></span></a>
-	  </div>
-	</header>
-	<section class="ux-viewport-body">
-	  <div class="ux-menushim" click.trigger="closeMenus($event)"></div>
-	  <aside class="ux-sidemenu" ref="__sidemenu">
-		<ul class="nav nav-pills nav-stacked" id="sidemenu">
-		  <li class="nav-item ux-route-home">
-			<a class="nav-link ${router.currentInstruction.fragment==='/home'?'active':''}" href="#/home"><span class="fi-lined-home"></span> Home</a>
-		  </li>
-		  <li class="nav-item ux-route-dashboard">
-			<a class="nav-link" href="#/dashboard"><span class="fi-lined-presentation"></span> Dashboard</a>
-		  </li>
-		  <li class="nav-item ux-route-form">
-			<a class="nav-link collapsed" data-toggle="collapse" data-parent="#sidemenu"
-			   data-target="#routeFormElements" aria-expanded="false">
-			  <span class="fi-lined-codings"></span> Form Elements</a>
-			<div id="routeFormElements" class="collapse">
-			  <a class="nav-link" href="#/form"> Inputs</a>
-			  <a class="nav-link" href="#/button"> Buttons</a>
-			  <a class="nav-link" href="#/checkbox"> Checkboxes</a>
-			  <a class="nav-link" href="#/select"> Select</a>
-			</div>
-		  </li>
-		  <li class="nav-item ux-route-components">
-			<a class="nav-link collapsed" data-toggle="collapse" data-parent="#sidemenu" data-target="#routeComponents"
-			   aria-expanded="false">
-			  <span class="fi-lined-list-1"></span> Components</a>
-			<div id="routeComponents" class="collapse">
-			  <a class="nav-link" href="#/form"> Widgets</a>
-			  <a class="nav-link ${router.currentInstruction.fragment==='/components.bootstrap'?'active':''}" href="#/components.bootstrap"> Bootstrap</a>
-			  <a class="nav-link" href="#/checkbox"> Chosen</a>
-			  <a class="nav-link" href="#/select"> Date/Time Pickers</a>
-			</div>
-		  </li>
-		</ul>
-	  </aside>
-	  <router-view class="ux-body"></router-view>
-	</section>
-	<footer class="ux-footer">
-	  <span>Copyright &copy; Adarsh Pastakia, 2016</span>
-	</footer>
-  </div>
-  <div class="ux-hide">
-	<div id="popoverMessages">
-	  <div class="ux-popover-title">Messages <span class="ux-badge danger">${user.messages.length}</span></div>
-	  <div class="ux-popover-body">
-		<div class="ux-message-row" repeat.for="msg of user.messages">
-		  <span class="ux-avatar fi-vaadin-user"></span>
-		  <div class="ux-message ${msg.read?'':'unread'}">
-			<div class="ux-message-snippet" innerhtml.bind="msg.message | markdown"></div>
-			<div class="ux-message-time text-muted">${msg.postTime | fromNow}</div>
-		  </div>
-		</div>
-	  </div>
-	  <div class="ux-popover-footer"><a>See More</a></div>
-	</div>
-	<div id="popoverMails">
-	  <div class="ux-popover-title">Inbox <span class="ux-badge danger">${user.mails.length}</span></div>
-	  <div class="ux-popover-body">
-		<div class="ux-message-row hover" repeat.for="msg of user.mails">
-		  <span class="ux-avatar fi-vaadin-user"></span>
-		  <div class="ux-message ${msg.read?'':'unread'}">
-			<div class="ux-message-user">${msg.user}</div>
-			<div class="ux-message-snippet text-truncate" innerhtml.bind="msg.subject"></div>
-			<div class="ux-message-time text-muted">${msg.postTime | fromNow}</div>
-		  </div>
-		</div>
-	  </div>
-	  <div class="ux-popover-footer"><a>See More</a></div>
-	</div>
-  </div>
+            </div>
+        </header>
+        <section class="ux-viewport-body">
+            <div class="ux-menushim" click.trigger="closeMenus($event)"></div>
+            <aside class="ux-sidemenu" ref="__sidemenu">
+                <ul class="nav nav-pills nav-stacked" id="sidemenu">
+                    <li class="nav-item ${nav.cls}" repeat.for="nav of routes">
+                        <a if.bind="!nav.children" class="nav-link ${router.currentInstruction.fragment===nav.href?'active':''}" href="#${nav.href}">
+                            <span class="${nav.icon}"></span> ${nav.title}</a>
+
+                        <!-- Nav with children -->
+                        <a if.bind="nav.children" class="nav-link ${router.currentInstruction.fragment.indexOf(nav.href)==0?'active':'collapsed'}" data-toggle="collapse" data-target="#route_${$index}" aria-expanded="false">
+                            <span class="${nav.icon}"></span> ${nav.title}</a>
+                        <div if.bind="nav.children" id="route_${$index}" class="collapse ${router.currentInstruction.fragment.indexOf(nav.href)==0?'in':''}">
+                            <a repeat.for="chl of nav.children" class="nav-link ${router.currentInstruction.fragment===nav.href+'.'+chl.href?'active':''}" href="#${nav.href}.${chl.href}"> ${chl.title}</a>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+            <router-view class="ux-body"></router-view>
+        </section>
+        <footer class="ux-footer">
+            <span>Copyright &copy; Adarsh Pastakia, 2016</span>
+        </footer>
+    </div>
+    <div class="ux-hide">
+        <div id="popoverMessages">
+            <div class="ux-popover-title">Messages <span class="ux-badge danger">${user.messages.length}</span></div>
+            <div class="ux-popover-body">
+                <div class="ux-message-row" repeat.for="msg of user.messages">
+                    <span class="ux-avatar fi-vaadin-user"></span>
+                    <div class="ux-message ${msg.read?'':'unread'}">
+                        <div class="ux-message-snippet" innerhtml.bind="msg.message | markdown"></div>
+                        <div class="ux-message-time text-muted">${msg.postTime | fromNow}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ux-popover-footer"><a>See More</a></div>
+        </div>
+        <div id="popoverMails">
+            <div class="ux-popover-title">Inbox <span class="ux-badge danger">${user.mails.length}</span></div>
+            <div class="ux-popover-body">
+                <div class="ux-message-row hover" repeat.for="msg of user.mails">
+                    <span class="ux-avatar fi-vaadin-user"></span>
+                    <div class="ux-message ${msg.read?'':'unread'}">
+                        <div class="ux-message-user">${msg.user}</div>
+                        <div class="ux-message-snippet text-truncate" innerhtml.bind="msg.subject"></div>
+                        <div class="ux-message-time text-muted">${msg.postTime | fromNow}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ux-popover-footer"><a>See More</a></div>
+        </div>
+    </div>
 </template>

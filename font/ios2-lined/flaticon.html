@@ -13,291 +13,424 @@
     <link rel="stylesheet" type="text/css" href="flaticon.css">
     <meta charset="UTF-8">
     <style>
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed,
-    figure, figcaption, footer, header, hgroup,
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
-    article, aside, details, figcaption, figure,
-    footer, header, hgroup, menu, nav, section {
-        display: block;
-    }
-    body {
-        line-height: 1;
-    }
-    ol, ul {
-        list-style: none;
-    }
-    blockquote, q {
-        quotes: none;
-    }
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-        content: '';
-        content: none;
-    }
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-    body {
-        font-family: 'Varela Round', Helvetica, Arial, sans-serif;
-        font-size: 16px;
-        color: #222;
-    }
-    a {
-        color: #333;
-        border-bottom: 1px solid #a9fd00;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    * {
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    [class^="fi-lined2-"]:before, [class*=" fi-lined2-"]:before, [class^="fi-lined2-"]:after, [class*=" fi-lined2-"]:after {
-        font-size: 30px;
-        font-style: normal;
-        margin-left: 20px;
-        color: #333;
-    }
-    .wrapper {
-        max-width: 600px;
-        margin: auto;
-        padding: 0 1em;
-    }
-    .title {
-        font-size: 1.25em;
-        text-align: center;
-        margin-bottom: 1em;
-        text-transform: uppercase;
-    }
-    header {
-        text-align: center;
-        background-color: #222;
-        color: #fff;
-        padding: 1em;
-    }
-    header .logo {
-        width: 210px;
-        height: 38px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 1em;
-        border: none;
-    }
-    header strong {
-        font-size: 1.95em;
-        font-weight: bold;
-        vertical-align: middle;
-        margin-top: 5px;
-        display: inline-block;
-    }
-    .demo {
-        margin: 2em auto;
-        line-height: 1.25em;
-    }
-    .demo ul li {
-        margin-bottom: 1em;
-    }
-    .demo ul li .num {
-        color: #222;
-        border-radius: 20px;
-        display: inline-block;
-        width: 26px;
-        padding: 3px;
-        height: 26px;
-        text-align: center;
-        margin-right: 0.5em;
-        border: 1px solid #222;
-    }
-    .demo ul li code {
-        background-color: #222;
-        border-radius: 4px;
-        padding: 0.25em 0.5em;
-        display: inline-block;
-        color: #fff;
-        font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-        font-weight: lighter;
-        margin-top: 1em;
-        font-size: 0.8em;
-        word-break: break-all;
-    }
-    .demo ul li code.big {
-        padding: 1em;
-        font-size: 0.9em;
-    }
-    .demo ul li code .red {
-        color: #EF3159;
-    }
-    .demo ul li code .green {
-        color: #ACFF65;
-    }
-    .demo ul li code .yellow {
-        color: #FFFF99;
-    }
-    .demo ul li code .blue {
-        color: #99D3FF;
-    }
-    .demo ul li code .purple {
-        color: #A295FF;
-    }
-    .demo ul li code .dots {
-        margin-top: 0.5em;
-        display: block;
-    }
-    #glyphs {
-        border-bottom: 1px solid #ccc;
-        padding: 2em 0;
-        text-align: center;
-    }
-    .glyph {
-        display: inline-block;
-        width: 9em;
-        margin: 1em;
-        text-align: center;
-        vertical-align: top;
-        background: #FFF;
-    }
-    .glyph .glyph-icon {
-        padding: 10px;
-        display: block;
-        font-family:"Flaticon";
-        font-size: 64px;
-        line-height: 1;
-    }
-    .glyph .glyph-icon:before {
-        font-size: 64px;
-        color: #222;
-        margin-left: 0;
-    }
-    .class-name {
-        font-size: 0.65em;
-        background-color: #222;
-        color: #fff;
-        border-radius: 4px 4px 0 0;
-        padding: 0.5em;
-        color: #FFFF99;
-        font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-    }
-    .author-name {
-        font-size: 0.6em;
-        background-color: #fcfcfd;
-        border: 1px solid #DEDEE4;
-        border-top: 0;
-        border-radius: 0 0 4px 4px;
-        padding: 0.5em;
-    }
-    .class-name:last-child {
-        font-size: 10px;
-        color:#888;
-    }
-    .class-name:last-child a {
-        font-size: 10px;
-        color:#555;
-    }
-    .class-name:last-child a:hover {
-        color:#a9fd00;
-    }
-    .glyph > input {
-        display: block;
-        width: 100px;
-        margin: 5px auto;
-        text-align: center;
-        font-size: 12px;
-        cursor: text;
-    }
-    .glyph > input.icon-input {
-        font-family:"Flaticon";
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    .attribution .title {
-        margin-top: 2em;
-    }
-    .attribution textarea {
-        background-color: #fcfcfd;
-        padding: 1em;
-        border: none;
-        box-shadow: none;
-        border: 1px solid #DEDEE4;
-        border-radius: 4px;
-        resize: none;
-        width: 100%;
-        height: 150px;
-        font-size: 0.8em;
-        font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-        -webkit-appearance: none;
-    }
-    .iconsuse {
-        margin: 2em auto;
-        text-align: center;
-        max-width: 1200px;
-    }
-    .iconsuse:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-    .iconsuse .image {
-        float: left;
-        width: 25%;
-        padding: 0 1em;
-    }
-    .iconsuse .image p {
-        margin-bottom: 1em;
-    }
-    .iconsuse .image span {
-        display: block;
-        font-size: 0.65em;
-        background-color: #222;
-        color: #fff;
-        border-radius: 4px;
-        padding: 0.5em;
-        color: #FFFF99;
-        margin-top: 1em;
-        font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-    }
-    #footer {
-        text-align: center;
-        background-color: #4C5B5C;
-        color: #7c9192;
-        padding: 1em;
-    }
-    #footer a {
-        border: none;
-        color: #a9fd00;
-        font-weight: normal;
-    }
-    @media (max-width: 960px) {
-        .iconsuse .image {
-            width: 50%;
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
         }
-    }
-    @media (max-width: 560px) {
-        .iconsuse .image {
+        /* HTML5 display-role reset for older browsers */
+        
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+        
+        body {
+            line-height: 1;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        
+        blockquote,
+        q {
+            quotes: none;
+        }
+        
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        body {
+            font-family: 'Varela Round', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            color: #222;
+        }
+        
+        a {
+            color: #333;
+            border-bottom: 1px solid #a9fd00;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        [class^="fi-lined2-"]:before,
+        [class*=" fi-lined2-"]:before,
+        [class^="fi-lined2-"]:after,
+        [class*=" fi-lined2-"]:after {
+            font-family: iOSLined2;
+            font-size: 30px;
+            font-style: normal;
+            margin-left: 20px;
+            color: #333;
+        }
+        
+        .wrapper {
+            max-width: 600px;
+            margin: auto;
+            padding: 0 1em;
+        }
+        
+        .title {
+            font-size: 1.25em;
+            text-align: center;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+        }
+        
+        header {
+            text-align: center;
+            background-color: #222;
+            color: #fff;
+            padding: 1em;
+        }
+        
+        header .logo {
+            width: 210px;
+            height: 38px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 1em;
+            border: none;
+        }
+        
+        header strong {
+            font-size: 1.95em;
+            font-weight: bold;
+            vertical-align: middle;
+            margin-top: 5px;
+            display: inline-block;
+        }
+        
+        .demo {
+            margin: 2em auto;
+            line-height: 1.25em;
+        }
+        
+        .demo ul li {
+            margin-bottom: 1em;
+        }
+        
+        .demo ul li .num {
+            color: #222;
+            border-radius: 20px;
+            display: inline-block;
+            width: 26px;
+            padding: 3px;
+            height: 26px;
+            text-align: center;
+            margin-right: 0.5em;
+            border: 1px solid #222;
+        }
+        
+        .demo ul li code {
+            background-color: #222;
+            border-radius: 4px;
+            padding: 0.25em 0.5em;
+            display: inline-block;
+            color: #fff;
+            font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+            font-weight: lighter;
+            margin-top: 1em;
+            font-size: 0.8em;
+            word-break: break-all;
+        }
+        
+        .demo ul li code.big {
+            padding: 1em;
+            font-size: 0.9em;
+        }
+        
+        .demo ul li code .red {
+            color: #EF3159;
+        }
+        
+        .demo ul li code .green {
+            color: #ACFF65;
+        }
+        
+        .demo ul li code .yellow {
+            color: #FFFF99;
+        }
+        
+        .demo ul li code .blue {
+            color: #99D3FF;
+        }
+        
+        .demo ul li code .purple {
+            color: #A295FF;
+        }
+        
+        .demo ul li code .dots {
+            margin-top: 0.5em;
+            display: block;
+        }
+        
+        #glyphs {
+            border-bottom: 1px solid #ccc;
+            padding: 2em 0;
+            text-align: center;
+        }
+        
+        .glyph {
+            display: inline-block;
+            width: 9em;
+            margin: 1em;
+            text-align: center;
+            vertical-align: top;
+            background: #FFF;
+        }
+        
+        .glyph .glyph-icon {
+            padding: 10px;
+            display: block;
+            font-family: "Flaticon";
+            font-size: 64px;
+            line-height: 1;
+        }
+        
+        .glyph .glyph-icon:before {
+            font-size: 64px;
+            color: #222;
+            margin-left: 0;
+        }
+        
+        .class-name {
+            font-size: 0.65em;
+            background-color: #222;
+            color: #fff;
+            border-radius: 4px 4px 0 0;
+            padding: 0.5em;
+            color: #FFFF99;
+            font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        }
+        
+        .author-name {
+            font-size: 0.6em;
+            background-color: #fcfcfd;
+            border: 1px solid #DEDEE4;
+            border-top: 0;
+            border-radius: 0 0 4px 4px;
+            padding: 0.5em;
+        }
+        
+        .class-name:last-child {
+            font-size: 10px;
+            color: #888;
+        }
+        
+        .class-name:last-child a {
+            font-size: 10px;
+            color: #555;
+        }
+        
+        .class-name:last-child a:hover {
+            color: #a9fd00;
+        }
+        
+        .glyph > input {
+            display: block;
+            width: 100px;
+            margin: 5px auto;
+            text-align: center;
+            font-size: 12px;
+            cursor: text;
+        }
+        
+        .glyph > input.icon-input {
+            font-family: "Flaticon";
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .attribution .title {
+            margin-top: 2em;
+        }
+        
+        .attribution textarea {
+            background-color: #fcfcfd;
+            padding: 1em;
+            border: none;
+            box-shadow: none;
+            border: 1px solid #DEDEE4;
+            border-radius: 4px;
+            resize: none;
             width: 100%;
+            height: 150px;
+            font-size: 0.8em;
+            font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+            -webkit-appearance: none;
         }
-    }
+        
+        .iconsuse {
+            margin: 2em auto;
+            text-align: center;
+            max-width: 1200px;
+        }
+        
+        .iconsuse:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+        .iconsuse .image {
+            float: left;
+            width: 25%;
+            padding: 0 1em;
+        }
+        
+        .iconsuse .image p {
+            margin-bottom: 1em;
+        }
+        
+        .iconsuse .image span {
+            display: block;
+            font-size: 0.65em;
+            background-color: #222;
+            color: #fff;
+            border-radius: 4px;
+            padding: 0.5em;
+            color: #FFFF99;
+            margin-top: 1em;
+            font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        }
+        
+        #footer {
+            text-align: center;
+            background-color: #4C5B5C;
+            color: #7c9192;
+            padding: 1em;
+        }
+        
+        #footer a {
+            border: none;
+            color: #a9fd00;
+            font-weight: normal;
+        }
+        
+        @media (max-width: 960px) {
+            .iconsuse .image {
+                width: 50%;
+            }
+        }
+        
+        @media (max-width: 560px) {
+            .iconsuse .image {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -378,8 +511,7 @@
             <li>
                 <p>
                     <span class="num">3</span>Use the icon class on <code>"<span class="blue">display</span>:<span class="purple"> inline</span>"</code> elements:
-                    <br />
-                    Use example: <code>&lt;<span class="red">i</span> <span class="green">class</span>=<span class="yellow">&quot;fi-lined2-airplane49&quot;</span>&gt;&lt;/<span class="red">i</span>&gt;</code> or <code>&lt;<span class="red">span</span> <span class="green">class</span>=<span class="yellow">&quot;fi-lined2-airplane49&quot;</span>&gt;&lt;/<span class="red">span</span>&gt;</code>
+                    <br /> Use example: <code>&lt;<span class="red">i</span> <span class="green">class</span>=<span class="yellow">&quot;fi-lined2-airplane49&quot;</span>&gt;&lt;/<span class="red">i</span>&gt;</code> or <code>&lt;<span class="red">span</span> <span class="green">class</span>=<span class="yellow">&quot;fi-lined2-airplane49&quot;</span>&gt;&lt;/<span class="red">span</span>&gt;</code>
             </li>
         </ul>
 
@@ -388,1632 +520,1957 @@
 
 
 
-   <section id="glyphs">
+    <section id="glyphs">
 
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-ace-of-spades"></div>
-            <div class="class-name">.fi-lined2-ace-of-spades</div>
-            <div class="author-name">Author: <a data-file="ace-of-spades" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-aeroplane"></div>
+            <div class="class-name">.fi-lined2-aeroplane</div>
+            <div class="author-name">Author: <a data-file="aeroplane" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-alcohol-bottle"></div>
-            <div class="class-name">.fi-lined2-alcohol-bottle</div>
-            <div class="author-name">Author: <a data-file="alcohol-bottle" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-airplane"></div>
+            <div class="class-name">.fi-lined2-airplane</div>
+            <div class="author-name">Author: <a data-file="airplane" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-alien-spaceship"></div>
-            <div class="class-name">.fi-lined2-alien-spaceship</div>
-            <div class="author-name">Author: <a data-file="alien-spaceship" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-airplane-1"></div>
+            <div class="class-name">.fi-lined2-airplane-1</div>
+            <div class="author-name">Author: <a data-file="airplane-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-ambulance-alert"></div>
-            <div class="class-name">.fi-lined2-ambulance-alert</div>
-            <div class="author-name">Author: <a data-file="ambulance-alert" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-ambulance"></div>
+            <div class="class-name">.fi-lined2-ambulance</div>
+            <div class="author-name">Author: <a data-file="ambulance" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-app-bug"></div>
-            <div class="class-name">.fi-lined2-app-bug</div>
-            <div class="author-name">Author: <a data-file="app-bug" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-ankh"></div>
+            <div class="class-name">.fi-lined2-ankh</div>
+            <div class="author-name">Author: <a data-file="ankh" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-arraving-airplane"></div>
-            <div class="class-name">.fi-lined2-arraving-airplane</div>
-            <div class="author-name">Author: <a data-file="arraving-airplane" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-antenna"></div>
+            <div class="class-name">.fi-lined2-antenna</div>
+            <div class="author-name">Author: <a data-file="antenna" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-arrows-inside-a-circle"></div>
-            <div class="class-name">.fi-lined2-arrows-inside-a-circle</div>
-            <div class="author-name">Author: <a data-file="arrows-inside-a-circle" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-arc"></div>
+            <div class="class-name">.fi-lined2-arc</div>
+            <div class="author-name">Author: <a data-file="arc" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-atomic-structure"></div>
-            <div class="class-name">.fi-lined2-atomic-structure</div>
-            <div class="author-name">Author: <a data-file="atomic-structure" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-atom"></div>
+            <div class="class-name">.fi-lined2-atom</div>
+            <div class="author-name">Author: <a data-file="atom" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-baby-bib-with-flower-design"></div>
-            <div class="class-name">.fi-lined2-baby-bib-with-flower-design</div>
-            <div class="author-name">Author: <a data-file="baby-bib-with-flower-design" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-baby"></div>
+            <div class="class-name">.fi-lined2-baby</div>
+            <div class="author-name">Author: <a data-file="baby" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-baby-cot"></div>
-            <div class="class-name">.fi-lined2-baby-cot</div>
-            <div class="author-name">Author: <a data-file="baby-cot" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-baby-bib"></div>
+            <div class="class-name">.fi-lined2-baby-bib</div>
+            <div class="author-name">Author: <a data-file="baby-bib" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-baby-diaper"></div>
-            <div class="class-name">.fi-lined2-baby-diaper</div>
-            <div class="author-name">Author: <a data-file="baby-diaper" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-baby-cradle"></div>
+            <div class="class-name">.fi-lined2-baby-cradle</div>
+            <div class="author-name">Author: <a data-file="baby-cradle" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-baby-milk-bottle"></div>
-            <div class="class-name">.fi-lined2-baby-milk-bottle</div>
-            <div class="author-name">Author: <a data-file="baby-milk-bottle" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-baby-nipple"></div>
+            <div class="class-name">.fi-lined2-baby-nipple</div>
+            <div class="author-name">Author: <a data-file="baby-nipple" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-baby-pacifier"></div>
-            <div class="class-name">.fi-lined2-baby-pacifier</div>
-            <div class="author-name">Author: <a data-file="baby-pacifier" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-baby-trolley"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-baby-trolley"></div>
             <div class="class-name">.fi-lined2-baby-trolley</div>
             <div class="author-name">Author: <a data-file="baby-trolley" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-baby-with-diaper"></div>
-            <div class="class-name">.fi-lined2-baby-with-diaper</div>
-            <div class="author-name">Author: <a data-file="baby-with-diaper" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-badminton"></div>
+            <div class="class-name">.fi-lined2-badminton</div>
+            <div class="author-name">Author: <a data-file="badminton" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-back-part"></div>
-            <div class="class-name">.fi-lined2-back-part</div>
-            <div class="author-name">Author: <a data-file="back-part" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-badminton-feather"></div>
-            <div class="class-name">.fi-lined2-badminton-feather</div>
-            <div class="author-name">Author: <a data-file="badminton-feather" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-band-aid"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-band-aid"></div>
             <div class="class-name">.fi-lined2-band-aid</div>
             <div class="author-name">Author: <a data-file="band-aid" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-baseball-ball"></div>
-            <div class="class-name">.fi-lined2-baseball-ball</div>
-            <div class="author-name">Author: <a data-file="baseball-ball" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-baseball"></div>
+            <div class="class-name">.fi-lined2-baseball</div>
+            <div class="author-name">Author: <a data-file="baseball" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-basket-full"></div>
-            <div class="class-name">.fi-lined2-basket-full</div>
-            <div class="author-name">Author: <a data-file="basket-full" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-basketball"></div>
+            <div class="class-name">.fi-lined2-basketball</div>
+            <div class="author-name">Author: <a data-file="basketball" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-basketball-ball-with-line"></div>
-            <div class="class-name">.fi-lined2-basketball-ball-with-line</div>
-            <div class="author-name">Author: <a data-file="basketball-ball-with-line" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-battery"></div>
+            <div class="class-name">.fi-lined2-battery</div>
+            <div class="author-name">Author: <a data-file="battery" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-beer-jar"></div>
-            <div class="class-name">.fi-lined2-beer-jar</div>
-            <div class="author-name">Author: <a data-file="beer-jar" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-beer"></div>
+            <div class="class-name">.fi-lined2-beer</div>
+            <div class="author-name">Author: <a data-file="beer" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-biceps-of-a-man"></div>
-            <div class="class-name">.fi-lined2-biceps-of-a-man</div>
-            <div class="author-name">Author: <a data-file="biceps-of-a-man" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-biceps"></div>
+            <div class="class-name">.fi-lined2-biceps</div>
+            <div class="author-name">Author: <a data-file="biceps" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-big-and-small-drops"></div>
-            <div class="class-name">.fi-lined2-big-and-small-drops</div>
-            <div class="author-name">Author: <a data-file="big-and-small-drops" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-bicycle"></div>
+            <div class="class-name">.fi-lined2-bicycle</div>
+            <div class="author-name">Author: <a data-file="bicycle" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-big-heart-and-little-heart"></div>
-            <div class="class-name">.fi-lined2-big-heart-and-little-heart</div>
-            <div class="author-name">Author: <a data-file="big-heart-and-little-heart" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-blades"></div>
+            <div class="class-name">.fi-lined2-blades</div>
+            <div class="author-name">Author: <a data-file="blades" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-big-opened-umbrella"></div>
-            <div class="class-name">.fi-lined2-big-opened-umbrella</div>
-            <div class="author-name">Author: <a data-file="big-opened-umbrella" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-blocks"></div>
+            <div class="class-name">.fi-lined2-blocks</div>
+            <div class="author-name">Author: <a data-file="blocks" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-big-snowflake"></div>
-            <div class="class-name">.fi-lined2-big-snowflake</div>
-            <div class="author-name">Author: <a data-file="big-snowflake" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-bluetooth"></div>
+            <div class="class-name">.fi-lined2-bluetooth</div>
+            <div class="author-name">Author: <a data-file="bluetooth" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-bike-tricks"></div>
-            <div class="class-name">.fi-lined2-bike-tricks</div>
-            <div class="author-name">Author: <a data-file="bike-tricks" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-bottle"></div>
+            <div class="class-name">.fi-lined2-bottle</div>
+            <div class="author-name">Author: <a data-file="bottle" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-bike-with-motor-ios-7-interface-symbol"></div>
-            <div class="class-name">.fi-lined2-bike-with-motor-ios-7-interface-symbol</div>
-            <div class="author-name">Author: <a data-file="bike-with-motor-ios-7-interface-symbol" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-bottle-1"></div>
+            <div class="class-name">.fi-lined2-bottle-1</div>
+            <div class="author-name">Author: <a data-file="bottle-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-biohazard-symbol"></div>
-            <div class="class-name">.fi-lined2-biohazard-symbol</div>
-            <div class="author-name">Author: <a data-file="biohazard-symbol" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-bottle-2"></div>
+            <div class="class-name">.fi-lined2-bottle-2</div>
+            <div class="author-name">Author: <a data-file="bottle-2" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-black-bottle"></div>
-            <div class="class-name">.fi-lined2-black-bottle</div>
-            <div class="author-name">Author: <a data-file="black-bottle" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-bowling"></div>
+            <div class="class-name">.fi-lined2-bowling</div>
+            <div class="author-name">Author: <a data-file="bowling" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-black-heart-shaped"></div>
-            <div class="class-name">.fi-lined2-black-heart-shaped</div>
-            <div class="author-name">Author: <a data-file="black-heart-shaped" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-blank-thermometer"></div>
-            <div class="class-name">.fi-lined2-blank-thermometer</div>
-            <div class="author-name">Author: <a data-file="blank-thermometer" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-block-with-letters"></div>
-            <div class="class-name">.fi-lined2-block-with-letters</div>
-            <div class="author-name">Author: <a data-file="block-with-letters" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-blood-drop"></div>
-            <div class="class-name">.fi-lined2-blood-drop</div>
-            <div class="author-name">Author: <a data-file="blood-drop" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-bluetooth-signal"></div>
-            <div class="class-name">.fi-lined2-bluetooth-signal</div>
-            <div class="author-name">Author: <a data-file="bluetooth-signal" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-body-thermometer"></div>
-            <div class="class-name">.fi-lined2-body-thermometer</div>
-            <div class="author-name">Author: <a data-file="body-thermometer" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-bowling-ball"></div>
-            <div class="class-name">.fi-lined2-bowling-ball</div>
-            <div class="author-name">Author: <a data-file="bowling-ball" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-bowling-pins"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-bowling-pins"></div>
             <div class="class-name">.fi-lined2-bowling-pins</div>
             <div class="author-name">Author: <a data-file="bowling-pins" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-branderbourg-gate"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-boxing-gloves"></div>
+            <div class="class-name">.fi-lined2-boxing-gloves</div>
+            <div class="author-name">Author: <a data-file="boxing-gloves" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-branderbourg-gate"></div>
             <div class="class-name">.fi-lined2-branderbourg-gate</div>
             <div class="author-name">Author: <a data-file="branderbourg-gate" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-browser-shield"></div>
-            <div class="class-name">.fi-lined2-browser-shield</div>
-            <div class="author-name">Author: <a data-file="browser-shield" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-bread"></div>
+            <div class="class-name">.fi-lined2-bread</div>
+            <div class="author-name">Author: <a data-file="bread" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cake-with-one-candle"></div>
-            <div class="class-name">.fi-lined2-cake-with-one-candle</div>
-            <div class="author-name">Author: <a data-file="cake-with-one-candle" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-broken-link"></div>
+            <div class="class-name">.fi-lined2-broken-link</div>
+            <div class="author-name">Author: <a data-file="broken-link" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-canvas"></div>
-            <div class="class-name">.fi-lined2-canvas</div>
-            <div class="author-name">Author: <a data-file="canvas" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-bug"></div>
+            <div class="class-name">.fi-lined2-bug</div>
+            <div class="author-name">Author: <a data-file="bug" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-car"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-bus"></div>
+            <div class="class-name">.fi-lined2-bus</div>
+            <div class="author-name">Author: <a data-file="bus" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cake"></div>
+            <div class="class-name">.fi-lined2-cake</div>
+            <div class="author-name">Author: <a data-file="cake" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cap"></div>
+            <div class="class-name">.fi-lined2-cap</div>
+            <div class="author-name">Author: <a data-file="cap" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-car"></div>
             <div class="class-name">.fi-lined2-car</div>
             <div class="author-name">Author: <a data-file="car" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-car-battery"></div>
-            <div class="class-name">.fi-lined2-car-battery</div>
-            <div class="author-name">Author: <a data-file="car-battery" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-car-1"></div>
+            <div class="class-name">.fi-lined2-car-1</div>
+            <div class="author-name">Author: <a data-file="car-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-car-steering-wheel"></div>
-            <div class="class-name">.fi-lined2-car-steering-wheel</div>
-            <div class="author-name">Author: <a data-file="car-steering-wheel" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-car-2"></div>
+            <div class="class-name">.fi-lined2-car-2</div>
+            <div class="author-name">Author: <a data-file="car-2" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-car-wit-chassis"></div>
-            <div class="class-name">.fi-lined2-car-wit-chassis</div>
-            <div class="author-name">Author: <a data-file="car-wit-chassis" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-carrot"></div>
+            <div class="class-name">.fi-lined2-carrot</div>
+            <div class="author-name">Author: <a data-file="carrot" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cd-record"></div>
-            <div class="class-name">.fi-lined2-cd-record</div>
-            <div class="author-name">Author: <a data-file="cd-record" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-casserole"></div>
+            <div class="class-name">.fi-lined2-casserole</div>
+            <div class="author-name">Author: <a data-file="casserole" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-chain-tag"></div>
-            <div class="class-name">.fi-lined2-chain-tag</div>
-            <div class="author-name">Author: <a data-file="chain-tag" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cd"></div>
+            <div class="class-name">.fi-lined2-cd</div>
+            <div class="author-name">Author: <a data-file="cd" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-chest"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cheese"></div>
+            <div class="class-name">.fi-lined2-cheese</div>
+            <div class="author-name">Author: <a data-file="cheese" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-chest"></div>
             <div class="class-name">.fi-lined2-chest</div>
             <div class="author-name">Author: <a data-file="chest" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-chicken"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-chichen-itza"></div>
+            <div class="class-name">.fi-lined2-chichen-itza</div>
+            <div class="author-name">Author: <a data-file="chichen-itza" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-chicken"></div>
             <div class="class-name">.fi-lined2-chicken</div>
             <div class="author-name">Author: <a data-file="chicken" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-chinese-lantern"></div>
-            <div class="class-name">.fi-lined2-chinese-lantern</div>
-            <div class="author-name">Author: <a data-file="chinese-lantern" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-chip"></div>
+            <div class="class-name">.fi-lined2-chip</div>
+            <div class="author-name">Author: <a data-file="chip" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-christian-cross"></div>
-            <div class="class-name">.fi-lined2-christian-cross</div>
-            <div class="author-name">Author: <a data-file="christian-cross" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-circles-inside-a-square"></div>
-            <div class="class-name">.fi-lined2-circles-inside-a-square</div>
-            <div class="author-name">Author: <a data-file="circles-inside-a-square" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-circuit-board"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-circuit-board"></div>
             <div class="class-name">.fi-lined2-circuit-board</div>
             <div class="author-name">Author: <a data-file="circuit-board" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-clear-night"></div>
-            <div class="class-name">.fi-lined2-clear-night</div>
-            <div class="author-name">Author: <a data-file="clear-night" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cloud"></div>
+            <div class="class-name">.fi-lined2-cloud</div>
+            <div class="author-name">Author: <a data-file="cloud" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cloud-expansion"></div>
-            <div class="class-name">.fi-lined2-cloud-expansion</div>
-            <div class="author-name">Author: <a data-file="cloud-expansion" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cloud-1"></div>
+            <div class="class-name">.fi-lined2-cloud-1</div>
+            <div class="author-name">Author: <a data-file="cloud-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cloud-night"></div>
-            <div class="class-name">.fi-lined2-cloud-night</div>
-            <div class="author-name">Author: <a data-file="cloud-night" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cloud-2"></div>
+            <div class="class-name">.fi-lined2-cloud-2</div>
+            <div class="author-name">Author: <a data-file="cloud-2" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cloud-storage-drive"></div>
-            <div class="class-name">.fi-lined2-cloud-storage-drive</div>
-            <div class="author-name">Author: <a data-file="cloud-storage-drive" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cloud-expand"></div>
+            <div class="class-name">.fi-lined2-cloud-expand</div>
+            <div class="author-name">Author: <a data-file="cloud-expand" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-clouded-pronostic"></div>
-            <div class="class-name">.fi-lined2-clouded-pronostic</div>
-            <div class="author-name">Author: <a data-file="clouded-pronostic" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cloud-storage"></div>
+            <div class="class-name">.fi-lined2-cloud-storage</div>
+            <div class="author-name">Author: <a data-file="cloud-storage" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cloudy-day"></div>
-            <div class="class-name">.fi-lined2-cloudy-day</div>
-            <div class="author-name">Author: <a data-file="cloudy-day" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-clouds"></div>
+            <div class="class-name">.fi-lined2-clouds</div>
+            <div class="author-name">Author: <a data-file="clouds" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cloudy-night"></div>
-            <div class="class-name">.fi-lined2-cloudy-night</div>
-            <div class="author-name">Author: <a data-file="cloudy-night" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cloudy"></div>
+            <div class="class-name">.fi-lined2-cloudy</div>
+            <div class="author-name">Author: <a data-file="cloudy" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-clover-ace"></div>
-            <div class="class-name">.fi-lined2-clover-ace</div>
-            <div class="author-name">Author: <a data-file="clover-ace" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cloudy-1"></div>
+            <div class="class-name">.fi-lined2-cloudy-1</div>
+            <div class="author-name">Author: <a data-file="cloudy-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cogwheel-options"></div>
-            <div class="class-name">.fi-lined2-cogwheel-options</div>
-            <div class="author-name">Author: <a data-file="cogwheel-options" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-clown"></div>
+            <div class="class-name">.fi-lined2-clown</div>
+            <div class="author-name">Author: <a data-file="clown" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cold-temperature"></div>
-            <div class="class-name">.fi-lined2-cold-temperature</div>
-            <div class="author-name">Author: <a data-file="cold-temperature" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-clubs"></div>
+            <div class="class-name">.fi-lined2-clubs</div>
+            <div class="author-name">Author: <a data-file="clubs" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-comedy-mask"></div>
-            <div class="class-name">.fi-lined2-comedy-mask</div>
-            <div class="author-name">Author: <a data-file="comedy-mask" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cocktail"></div>
+            <div class="class-name">.fi-lined2-cocktail</div>
+            <div class="author-name">Author: <a data-file="cocktail" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-compass-pointing-east"></div>
-            <div class="class-name">.fi-lined2-compass-pointing-east</div>
-            <div class="author-name">Author: <a data-file="compass-pointing-east" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-coffee"></div>
+            <div class="class-name">.fi-lined2-coffee</div>
+            <div class="author-name">Author: <a data-file="coffee" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-compass-pointing-north"></div>
-            <div class="class-name">.fi-lined2-compass-pointing-north</div>
-            <div class="author-name">Author: <a data-file="compass-pointing-north" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cogwheel"></div>
+            <div class="class-name">.fi-lined2-cogwheel</div>
+            <div class="author-name">Author: <a data-file="cogwheel" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-compass-pointing-south"></div>
-            <div class="class-name">.fi-lined2-compass-pointing-south</div>
-            <div class="author-name">Author: <a data-file="compass-pointing-south" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-compass"></div>
+            <div class="class-name">.fi-lined2-compass</div>
+            <div class="author-name">Author: <a data-file="compass" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-compass-pointing-south-east"></div>
-            <div class="class-name">.fi-lined2-compass-pointing-south-east</div>
-            <div class="author-name">Author: <a data-file="compass-pointing-south-east" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-compass-1"></div>
+            <div class="class-name">.fi-lined2-compass-1</div>
+            <div class="author-name">Author: <a data-file="compass-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-compass-pointing-west"></div>
-            <div class="class-name">.fi-lined2-compass-pointing-west</div>
-            <div class="author-name">Author: <a data-file="compass-pointing-west" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-compass-2"></div>
+            <div class="class-name">.fi-lined2-compass-2</div>
+            <div class="author-name">Author: <a data-file="compass-2" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-computer-chip"></div>
-            <div class="class-name">.fi-lined2-computer-chip</div>
-            <div class="author-name">Author: <a data-file="computer-chip" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-computer"></div>
+            <div class="class-name">.fi-lined2-computer</div>
+            <div class="author-name">Author: <a data-file="computer" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-computer-micro-chip"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-computer-micro-chip"></div>
             <div class="class-name">.fi-lined2-computer-micro-chip</div>
             <div class="author-name">Author: <a data-file="computer-micro-chip" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-computer-microprocessor"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-computer-microprocessor"></div>
             <div class="class-name">.fi-lined2-computer-microprocessor</div>
             <div class="author-name">Author: <a data-file="computer-microprocessor" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-computer-screen-linux"></div>
-            <div class="class-name">.fi-lined2-computer-screen-linux</div>
-            <div class="author-name">Author: <a data-file="computer-screen-linux" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-computer-monitor"></div>
+            <div class="class-name">.fi-lined2-computer-monitor</div>
+            <div class="author-name">Author: <a data-file="computer-monitor" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-computer-tower"></div>
-            <div class="class-name">.fi-lined2-computer-tower</div>
-            <div class="author-name">Author: <a data-file="computer-tower" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-crab"></div>
+            <div class="class-name">.fi-lined2-crab</div>
+            <div class="author-name">Author: <a data-file="crab" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-connections"></div>
-            <div class="class-name">.fi-lined2-connections</div>
-            <div class="author-name">Author: <a data-file="connections" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-crescent-moon-behind-a-cloud"></div>
+            <div class="class-name">.fi-lined2-crescent-moon-behind-a-cloud</div>
+            <div class="author-name">Author: <a data-file="crescent-moon-behind-a-cloud" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cord-lace"></div>
-            <div class="class-name">.fi-lined2-cord-lace</div>
-            <div class="author-name">Author: <a data-file="cord-lace" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cross"></div>
+            <div class="class-name">.fi-lined2-cross</div>
+            <div class="author-name">Author: <a data-file="cross" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-covered-dust-bin"></div>
-            <div class="class-name">.fi-lined2-covered-dust-bin</div>
-            <div class="author-name">Author: <a data-file="covered-dust-bin" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-crown"></div>
+            <div class="class-name">.fi-lined2-crown</div>
+            <div class="author-name">Author: <a data-file="crown" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-crab-top-view"></div>
-            <div class="class-name">.fi-lined2-crab-top-view</div>
-            <div class="author-name">Author: <a data-file="crab-top-view" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cruise-ship"></div>
+            <div class="class-name">.fi-lined2-cruise-ship</div>
+            <div class="author-name">Author: <a data-file="cruise-ship" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cruise-ship-navigating"></div>
-            <div class="class-name">.fi-lined2-cruise-ship-navigating</div>
-            <div class="author-name">Author: <a data-file="cruise-ship-navigating" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-crying-baby"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-crying-baby"></div>
             <div class="class-name">.fi-lined2-crying-baby</div>
             <div class="author-name">Author: <a data-file="crying-baby" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cup-of-wine"></div>
-            <div class="class-name">.fi-lined2-cup-of-wine</div>
-            <div class="author-name">Author: <a data-file="cup-of-wine" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cycle"></div>
+            <div class="class-name">.fi-lined2-cycle</div>
+            <div class="author-name">Author: <a data-file="cycle" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cutlery-utensils"></div>
-            <div class="class-name">.fi-lined2-cutlery-utensils</div>
-            <div class="author-name">Author: <a data-file="cutlery-utensils" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cycling"></div>
+            <div class="class-name">.fi-lined2-cycling</div>
+            <div class="author-name">Author: <a data-file="cycling" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cyclist"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-cyclist"></div>
             <div class="class-name">.fi-lined2-cyclist</div>
             <div class="author-name">Author: <a data-file="cyclist" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-cyclist-runner"></div>
-            <div class="class-name">.fi-lined2-cyclist-runner</div>
-            <div class="author-name">Author: <a data-file="cyclist-runner" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-dart-board"></div>
+            <div class="class-name">.fi-lined2-dart-board</div>
+            <div class="author-name">Author: <a data-file="dart-board" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-dark-cup"></div>
-            <div class="class-name">.fi-lined2-dark-cup</div>
-            <div class="author-name">Author: <a data-file="dark-cup" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-dentist-tool"></div>
+            <div class="class-name">.fi-lined2-dentist-tool</div>
+            <div class="author-name">Author: <a data-file="dentist-tool" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-dentist-pincers"></div>
-            <div class="class-name">.fi-lined2-dentist-pincers</div>
-            <div class="author-name">Author: <a data-file="dentist-pincers" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-detective-search"></div>
-            <div class="class-name">.fi-lined2-detective-search</div>
-            <div class="author-name">Author: <a data-file="detective-search" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-dharma-chakra"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-dharma-chakra"></div>
             <div class="class-name">.fi-lined2-dharma-chakra</div>
             <div class="author-name">Author: <a data-file="dharma-chakra" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-direct-wifi-logo"></div>
-            <div class="class-name">.fi-lined2-direct-wifi-logo</div>
-            <div class="author-name">Author: <a data-file="direct-wifi-logo" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-diamond"></div>
+            <div class="class-name">.fi-lined2-diamond</div>
+            <div class="author-name">Author: <a data-file="diamond" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-disconnected-chains"></div>
-            <div class="class-name">.fi-lined2-disconnected-chains</div>
-            <div class="author-name">Author: <a data-file="disconnected-chains" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-diapers"></div>
+            <div class="class-name">.fi-lined2-diapers</div>
+            <div class="author-name">Author: <a data-file="diapers" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-dish-signal"></div>
-            <div class="class-name">.fi-lined2-dish-signal</div>
-            <div class="author-name">Author: <a data-file="dish-signal" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-dish"></div>
+            <div class="class-name">.fi-lined2-dish</div>
+            <div class="author-name">Author: <a data-file="dish" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-dish-signal-transmission"></div>
-            <div class="class-name">.fi-lined2-dish-signal-transmission</div>
-            <div class="author-name">Author: <a data-file="dish-signal-transmission" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-disk-storage"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-disk-storage"></div>
             <div class="class-name">.fi-lined2-disk-storage</div>
             <div class="author-name">Author: <a data-file="disk-storage" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-dna-chromosome"></div>
-            <div class="class-name">.fi-lined2-dna-chromosome</div>
-            <div class="author-name">Author: <a data-file="dna-chromosome" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-dna"></div>
+            <div class="class-name">.fi-lined2-dna</div>
+            <div class="author-name">Author: <a data-file="dna" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-double-burger"></div>
-            <div class="class-name">.fi-lined2-double-burger</div>
-            <div class="author-name">Author: <a data-file="double-burger" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-documentary"></div>
+            <div class="class-name">.fi-lined2-documentary</div>
+            <div class="author-name">Author: <a data-file="documentary" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-double-gym-dumbbell"></div>
-            <div class="class-name">.fi-lined2-double-gym-dumbbell</div>
-            <div class="author-name">Author: <a data-file="double-gym-dumbbell" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-drive-disk"></div>
+            <div class="class-name">.fi-lined2-drive-disk</div>
+            <div class="author-name">Author: <a data-file="drive-disk" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-drive-link"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-drive-link"></div>
             <div class="class-name">.fi-lined2-drive-link</div>
             <div class="author-name">Author: <a data-file="drive-link" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-drive-with-a-crown"></div>
-            <div class="class-name">.fi-lined2-drive-with-a-crown</div>
-            <div class="author-name">Author: <a data-file="drive-with-a-crown" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-drive-sata"></div>
+            <div class="class-name">.fi-lined2-drive-sata</div>
+            <div class="author-name">Author: <a data-file="drive-sata" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-dvd-drive"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-drop"></div>
+            <div class="class-name">.fi-lined2-drop</div>
+            <div class="author-name">Author: <a data-file="drop" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-dumbbell"></div>
+            <div class="class-name">.fi-lined2-dumbbell</div>
+            <div class="author-name">Author: <a data-file="dumbbell" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-dvd-drive"></div>
             <div class="class-name">.fi-lined2-dvd-drive</div>
             <div class="author-name">Author: <a data-file="dvd-drive" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-eco-light-bulb"></div>
-            <div class="class-name">.fi-lined2-eco-light-bulb</div>
-            <div class="author-name">Author: <a data-file="eco-light-bulb" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-east"></div>
+            <div class="class-name">.fi-lined2-east</div>
+            <div class="author-name">Author: <a data-file="east" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-eco-windmill"></div>
-            <div class="class-name">.fi-lined2-eco-windmill</div>
-            <div class="author-name">Author: <a data-file="eco-windmill" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-ecg"></div>
+            <div class="class-name">.fi-lined2-ecg</div>
+            <div class="author-name">Author: <a data-file="ecg" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-egyptian-ankh"></div>
-            <div class="class-name">.fi-lined2-egyptian-ankh</div>
-            <div class="author-name">Author: <a data-file="egyptian-ankh" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-eco-energy"></div>
+            <div class="class-name">.fi-lined2-eco-energy</div>
+            <div class="author-name">Author: <a data-file="eco-energy" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-electric-plug"></div>
-            <div class="class-name">.fi-lined2-electric-plug</div>
-            <div class="author-name">Author: <a data-file="electric-plug" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-eggs"></div>
+            <div class="class-name">.fi-lined2-eggs</div>
+            <div class="author-name">Author: <a data-file="eggs" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-electrocardiogram-line"></div>
-            <div class="class-name">.fi-lined2-electrocardiogram-line</div>
-            <div class="author-name">Author: <a data-file="electrocardiogram-line" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-engine"></div>
+            <div class="class-name">.fi-lined2-engine</div>
+            <div class="author-name">Author: <a data-file="engine" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-emmental-cheese"></div>
-            <div class="class-name">.fi-lined2-emmental-cheese</div>
-            <div class="author-name">Author: <a data-file="emmental-cheese" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-expand"></div>
+            <div class="class-name">.fi-lined2-expand</div>
+            <div class="author-name">Author: <a data-file="expand" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-engine-with-lighting-bolt"></div>
-            <div class="class-name">.fi-lined2-engine-with-lighting-bolt</div>
-            <div class="author-name">Author: <a data-file="engine-with-lighting-bolt" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-extinguisher"></div>
+            <div class="class-name">.fi-lined2-extinguisher</div>
+            <div class="author-name">Author: <a data-file="extinguisher" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-expand-square"></div>
-            <div class="class-name">.fi-lined2-expand-square</div>
-            <div class="author-name">Author: <a data-file="expand-square" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-experiment-flask-with-leaves-symbol"></div>
-            <div class="class-name">.fi-lined2-experiment-flask-with-leaves-symbol</div>
-            <div class="author-name">Author: <a data-file="experiment-flask-with-leaves-symbol" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-factory-building"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-factory-building"></div>
             <div class="class-name">.fi-lined2-factory-building</div>
             <div class="author-name">Author: <a data-file="factory-building" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-favorite-wireles-conecction"></div>
-            <div class="class-name">.fi-lined2-favorite-wireles-conecction</div>
-            <div class="author-name">Author: <a data-file="favorite-wireles-conecction" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-fan"></div>
+            <div class="class-name">.fi-lined2-fan</div>
+            <div class="author-name">Author: <a data-file="fan" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-female-user-with-short-hair-avatar"></div>
-            <div class="class-name">.fi-lined2-female-user-with-short-hair-avatar</div>
-            <div class="author-name">Author: <a data-file="female-user-with-short-hair-avatar" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-feeding-bottle"></div>
+            <div class="class-name">.fi-lined2-feeding-bottle</div>
+            <div class="author-name">Author: <a data-file="feeding-bottle" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-fencing-attack"></div>
-            <div class="class-name">.fi-lined2-fencing-attack</div>
-            <div class="author-name">Author: <a data-file="fencing-attack" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-female-user"></div>
+            <div class="class-name">.fi-lined2-female-user</div>
+            <div class="author-name">Author: <a data-file="female-user" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-ferry-with-car"></div>
-            <div class="class-name">.fi-lined2-ferry-with-car</div>
-            <div class="author-name">Author: <a data-file="ferry-with-car" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-fencing"></div>
+            <div class="class-name">.fi-lined2-fencing</div>
+            <div class="author-name">Author: <a data-file="fencing" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-finger-gun"></div>
-            <div class="class-name">.fi-lined2-finger-gun</div>
-            <div class="author-name">Author: <a data-file="finger-gun" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-ferry"></div>
+            <div class="class-name">.fi-lined2-ferry</div>
+            <div class="author-name">Author: <a data-file="ferry" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-finger-up"></div>
-            <div class="class-name">.fi-lined2-finger-up</div>
-            <div class="author-name">Author: <a data-file="finger-up" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-fire-flame"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-fire-flame"></div>
             <div class="class-name">.fi-lined2-fire-flame</div>
             <div class="author-name">Author: <a data-file="fire-flame" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-firewall-flame"></div>
-            <div class="class-name">.fi-lined2-firewall-flame</div>
-            <div class="author-name">Author: <a data-file="firewall-flame" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-firewall"></div>
+            <div class="class-name">.fi-lined2-firewall</div>
+            <div class="author-name">Author: <a data-file="firewall" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-fish-bones"></div>
-            <div class="class-name">.fi-lined2-fish-bones</div>
-            <div class="author-name">Author: <a data-file="fish-bones" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-first-aid-kit"></div>
+            <div class="class-name">.fi-lined2-first-aid-kit</div>
+            <div class="author-name">Author: <a data-file="first-aid-kit" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-fishing-boat"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-fishing-boat"></div>
             <div class="class-name">.fi-lined2-fishing-boat</div>
             <div class="author-name">Author: <a data-file="fishing-boat" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-five-fingers"></div>
-            <div class="class-name">.fi-lined2-five-fingers</div>
-            <div class="author-name">Author: <a data-file="five-fingers" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-flame-extinguisher"></div>
-            <div class="class-name">.fi-lined2-flame-extinguisher</div>
-            <div class="author-name">Author: <a data-file="flame-extinguisher" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-flamingo"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-flamingo"></div>
             <div class="class-name">.fi-lined2-flamingo</div>
             <div class="author-name">Author: <a data-file="flamingo" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-flying-aeroplane-top-view"></div>
-            <div class="class-name">.fi-lined2-flying-aeroplane-top-view</div>
-            <div class="author-name">Author: <a data-file="flying-aeroplane-top-view" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-flask"></div>
+            <div class="class-name">.fi-lined2-flask</div>
+            <div class="author-name">Author: <a data-file="flask" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-football-ball-circular"></div>
-            <div class="class-name">.fi-lined2-football-ball-circular</div>
-            <div class="author-name">Author: <a data-file="football-ball-circular" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-flask-1"></div>
+            <div class="class-name">.fi-lined2-flask-1</div>
+            <div class="author-name">Author: <a data-file="flask-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-football-player-with-ball"></div>
-            <div class="class-name">.fi-lined2-football-player-with-ball</div>
-            <div class="author-name">Author: <a data-file="football-player-with-ball" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-foot-print"></div>
+            <div class="class-name">.fi-lined2-foot-print</div>
+            <div class="author-name">Author: <a data-file="foot-print" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-four-finger-in-hand"></div>
-            <div class="class-name">.fi-lined2-four-finger-in-hand</div>
-            <div class="author-name">Author: <a data-file="four-finger-in-hand" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-football"></div>
+            <div class="class-name">.fi-lined2-football</div>
+            <div class="author-name">Author: <a data-file="football" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-french-fries-box"></div>
-            <div class="class-name">.fi-lined2-french-fries-box</div>
-            <div class="author-name">Author: <a data-file="french-fries-box" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-football-player"></div>
+            <div class="class-name">.fi-lined2-football-player</div>
+            <div class="author-name">Author: <a data-file="football-player" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-frequency-antenna"></div>
-            <div class="class-name">.fi-lined2-frequency-antenna</div>
-            <div class="author-name">Author: <a data-file="frequency-antenna" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-fork"></div>
+            <div class="class-name">.fi-lined2-fork</div>
+            <div class="author-name">Author: <a data-file="fork" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-frontal-cab"></div>
-            <div class="class-name">.fi-lined2-frontal-cab</div>
-            <div class="author-name">Author: <a data-file="frontal-cab" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-french-fries"></div>
+            <div class="class-name">.fi-lined2-french-fries</div>
+            <div class="author-name">Author: <a data-file="french-fries" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-frontal-large-bus"></div>
-            <div class="class-name">.fi-lined2-frontal-large-bus</div>
-            <div class="author-name">Author: <a data-file="frontal-large-bus" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-garbage"></div>
+            <div class="class-name">.fi-lined2-garbage</div>
+            <div class="author-name">Author: <a data-file="garbage" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-frontal-solar-panel"></div>
-            <div class="class-name">.fi-lined2-frontal-solar-panel</div>
-            <div class="author-name">Author: <a data-file="frontal-solar-panel" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-german-hat"></div>
+            <div class="class-name">.fi-lined2-german-hat</div>
+            <div class="author-name">Author: <a data-file="german-hat" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-full-computer"></div>
-            <div class="class-name">.fi-lined2-full-computer</div>
-            <div class="author-name">Author: <a data-file="full-computer" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-great-wall-of-china"></div>
+            <div class="class-name">.fi-lined2-great-wall-of-china</div>
+            <div class="author-name">Author: <a data-file="great-wall-of-china" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-gas-mask"></div>
-            <div class="class-name">.fi-lined2-gas-mask</div>
-            <div class="author-name">Author: <a data-file="gas-mask" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-gun"></div>
+            <div class="class-name">.fi-lined2-gun</div>
+            <div class="author-name">Author: <a data-file="gun" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-gear-option"></div>
-            <div class="class-name">.fi-lined2-gear-option</div>
-            <div class="author-name">Author: <a data-file="gear-option" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-hamburguer"></div>
+            <div class="class-name">.fi-lined2-hamburguer</div>
+            <div class="author-name">Author: <a data-file="hamburguer" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-german-hat-with-small-feather"></div>
-            <div class="class-name">.fi-lined2-german-hat-with-small-feather</div>
-            <div class="author-name">Author: <a data-file="german-hat-with-small-feather" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-hand"></div>
+            <div class="class-name">.fi-lined2-hand</div>
+            <div class="author-name">Author: <a data-file="hand" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-great-wall-of-china-doodle"></div>
-            <div class="class-name">.fi-lined2-great-wall-of-china-doodle</div>
-            <div class="author-name">Author: <a data-file="great-wall-of-china-doodle" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-hand-1"></div>
+            <div class="class-name">.fi-lined2-hand-1</div>
+            <div class="author-name">Author: <a data-file="hand-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-hand-gun"></div>
-            <div class="class-name">.fi-lined2-hand-gun</div>
-            <div class="author-name">Author: <a data-file="hand-gun" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-hand-2"></div>
+            <div class="class-name">.fi-lined2-hand-2</div>
+            <div class="author-name">Author: <a data-file="hand-2" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-hang-hook"></div>
-            <div class="class-name">.fi-lined2-hang-hook</div>
-            <div class="author-name">Author: <a data-file="hang-hook" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-heart"></div>
+            <div class="class-name">.fi-lined2-heart</div>
+            <div class="author-name">Author: <a data-file="heart" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-hanging-ladder"></div>
-            <div class="class-name">.fi-lined2-hanging-ladder</div>
-            <div class="author-name">Author: <a data-file="hanging-ladder" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-hearts"></div>
+            <div class="class-name">.fi-lined2-hearts</div>
+            <div class="author-name">Author: <a data-file="hearts" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-hard-drive-device"></div>
-            <div class="class-name">.fi-lined2-hard-drive-device</div>
-            <div class="author-name">Author: <a data-file="hard-drive-device" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-helicopter"></div>
+            <div class="class-name">.fi-lined2-helicopter</div>
+            <div class="author-name">Author: <a data-file="helicopter" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-hat"></div>
-            <div class="class-name">.fi-lined2-hat</div>
-            <div class="author-name">Author: <a data-file="hat" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-helmet"></div>
+            <div class="class-name">.fi-lined2-helmet</div>
+            <div class="author-name">Author: <a data-file="helmet" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-hierarchical-order"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-hierarchical-order"></div>
             <div class="class-name">.fi-lined2-hierarchical-order</div>
             <div class="author-name">Author: <a data-file="hierarchical-order" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-hierarchical-structure"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-hierarchical-structure"></div>
             <div class="class-name">.fi-lined2-hierarchical-structure</div>
             <div class="author-name">Author: <a data-file="hierarchical-structure" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-hierarchy-levels"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-hierarchy"></div>
+            <div class="class-name">.fi-lined2-hierarchy</div>
+            <div class="author-name">Author: <a data-file="hierarchy" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-hierarchy-levels"></div>
             <div class="class-name">.fi-lined2-hierarchy-levels</div>
             <div class="author-name">Author: <a data-file="hierarchy-levels" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-high-temperature"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-high-temperature"></div>
             <div class="class-name">.fi-lined2-high-temperature</div>
             <div class="author-name">Author: <a data-file="high-temperature" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-holy-book"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-holy-book"></div>
             <div class="class-name">.fi-lined2-holy-book</div>
             <div class="author-name">Author: <a data-file="holy-book" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-honey-jar"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-home"></div>
+            <div class="class-name">.fi-lined2-home</div>
+            <div class="author-name">Author: <a data-file="home" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-honey-jar"></div>
             <div class="class-name">.fi-lined2-honey-jar</div>
             <div class="author-name">Author: <a data-file="honey-jar" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-hot-chilli-pepper"></div>
-            <div class="class-name">.fi-lined2-hot-chilli-pepper</div>
-            <div class="author-name">Author: <a data-file="hot-chilli-pepper" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-hot-dog"></div>
+            <div class="class-name">.fi-lined2-hot-dog</div>
+            <div class="author-name">Author: <a data-file="hot-dog" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-hotdog-and-bread"></div>
-            <div class="class-name">.fi-lined2-hotdog-and-bread</div>
-            <div class="author-name">Author: <a data-file="hotdog-and-bread" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-hot-dog-1"></div>
+            <div class="class-name">.fi-lined2-hot-dog-1</div>
+            <div class="author-name">Author: <a data-file="hot-dog-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-human-foot-prints"></div>
-            <div class="class-name">.fi-lined2-human-foot-prints</div>
-            <div class="author-name">Author: <a data-file="human-foot-prints" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-hydro-power-generation"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-hydro-power-generation"></div>
             <div class="class-name">.fi-lined2-hydro-power-generation</div>
             <div class="author-name">Author: <a data-file="hydro-power-generation" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-increasing-temperature"></div>
-            <div class="class-name">.fi-lined2-increasing-temperature</div>
-            <div class="author-name">Author: <a data-file="increasing-temperature" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-integrated-chip"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-integrated-chip"></div>
             <div class="class-name">.fi-lined2-integrated-chip</div>
             <div class="author-name">Author: <a data-file="integrated-chip" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-integrated-circuit"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-integrated-circuit"></div>
             <div class="class-name">.fi-lined2-integrated-circuit</div>
             <div class="author-name">Author: <a data-file="integrated-circuit" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-ip-address-point-locator"></div>
-            <div class="class-name">.fi-lined2-ip-address-point-locator</div>
-            <div class="author-name">Author: <a data-file="ip-address-point-locator" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-ip-locator"></div>
+            <div class="class-name">.fi-lined2-ip-locator</div>
+            <div class="author-name">Author: <a data-file="ip-locator" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-iron-soldering"></div>
-            <div class="class-name">.fi-lined2-iron-soldering</div>
-            <div class="author-name">Author: <a data-file="iron-soldering" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-islam"></div>
+            <div class="class-name">.fi-lined2-islam</div>
+            <div class="author-name">Author: <a data-file="islam" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-islamic-crescent-with-small-star"></div>
-            <div class="class-name">.fi-lined2-islamic-crescent-with-small-star</div>
-            <div class="author-name">Author: <a data-file="islamic-crescent-with-small-star" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-islamic-mosque"></div>
-            <div class="class-name">.fi-lined2-islamic-mosque</div>
-            <div class="author-name">Author: <a data-file="islamic-mosque" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-jet-ski"></div>
-            <div class="class-name">.fi-lined2-jet-ski</div>
-            <div class="author-name">Author: <a data-file="jet-ski" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-joker-face"></div>
-            <div class="class-name">.fi-lined2-joker-face</div>
-            <div class="author-name">Author: <a data-file="joker-face" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-jump-rope"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-jump-rope"></div>
             <div class="class-name">.fi-lined2-jump-rope</div>
             <div class="author-name">Author: <a data-file="jump-rope" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-king-crown"></div>
-            <div class="class-name">.fi-lined2-king-crown</div>
-            <div class="author-name">Author: <a data-file="king-crown" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-knife"></div>
+            <div class="class-name">.fi-lined2-knife</div>
+            <div class="author-name">Author: <a data-file="knife" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-kitchen-pot"></div>
-            <div class="class-name">.fi-lined2-kitchen-pot</div>
-            <div class="author-name">Author: <a data-file="kitchen-pot" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-knife-1"></div>
+            <div class="class-name">.fi-lined2-knife-1</div>
+            <div class="author-name">Author: <a data-file="knife-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-knife-shape"></div>
-            <div class="class-name">.fi-lined2-knife-shape</div>
-            <div class="author-name">Author: <a data-file="knife-shape" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-ladder"></div>
+            <div class="class-name">.fi-lined2-ladder</div>
+            <div class="author-name">Author: <a data-file="ladder" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-knife-with-blood"></div>
-            <div class="class-name">.fi-lined2-knife-with-blood</div>
-            <div class="author-name">Author: <a data-file="knife-with-blood" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-ladder-1"></div>
+            <div class="class-name">.fi-lined2-ladder-1</div>
+            <div class="author-name">Author: <a data-file="ladder-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-ladder-with-four-steps"></div>
-            <div class="class-name">.fi-lined2-ladder-with-four-steps</div>
-            <div class="author-name">Author: <a data-file="ladder-with-four-steps" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-lantern"></div>
+            <div class="class-name">.fi-lined2-lantern</div>
+            <div class="author-name">Author: <a data-file="lantern" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-large-spoon"></div>
-            <div class="class-name">.fi-lined2-large-spoon</div>
-            <div class="author-name">Author: <a data-file="large-spoon" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-led"></div>
+            <div class="class-name">.fi-lined2-led</div>
+            <div class="author-name">Author: <a data-file="led" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-led-bulb"></div>
-            <div class="class-name">.fi-lined2-led-bulb</div>
-            <div class="author-name">Author: <a data-file="led-bulb" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-leg"></div>
+            <div class="class-name">.fi-lined2-leg</div>
+            <div class="author-name">Author: <a data-file="leg" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-lifter-machine"></div>
-            <div class="class-name">.fi-lined2-lifter-machine</div>
-            <div class="author-name">Author: <a data-file="lifter-machine" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-lifter"></div>
+            <div class="class-name">.fi-lined2-lifter</div>
+            <div class="author-name">Author: <a data-file="lifter" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-lighting-flare"></div>
-            <div class="class-name">.fi-lined2-lighting-flare</div>
-            <div class="author-name">Author: <a data-file="lighting-flare" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-lifting-tool"></div>
+            <div class="class-name">.fi-lined2-lifting-tool</div>
+            <div class="author-name">Author: <a data-file="lifting-tool" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-lightning-arrow"></div>
-            <div class="class-name">.fi-lined2-lightning-arrow</div>
-            <div class="author-name">Author: <a data-file="lightning-arrow" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-light-microchip"></div>
+            <div class="class-name">.fi-lined2-light-microchip</div>
+            <div class="author-name">Author: <a data-file="light-microchip" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-lightning-bolt-button"></div>
-            <div class="class-name">.fi-lined2-lightning-bolt-button</div>
-            <div class="author-name">Author: <a data-file="lightning-bolt-button" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-lightning"></div>
+            <div class="class-name">.fi-lined2-lightning</div>
+            <div class="author-name">Author: <a data-file="lightning" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-link-chain"></div>
-            <div class="class-name">.fi-lined2-link-chain</div>
-            <div class="author-name">Author: <a data-file="link-chain" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-lightning-bolt"></div>
+            <div class="class-name">.fi-lined2-lightning-bolt</div>
+            <div class="author-name">Author: <a data-file="lightning-bolt" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-loaf-of-bread"></div>
-            <div class="class-name">.fi-lined2-loaf-of-bread</div>
-            <div class="author-name">Author: <a data-file="loaf-of-bread" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-link"></div>
+            <div class="class-name">.fi-lined2-link</div>
+            <div class="author-name">Author: <a data-file="link" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-locato"></div>
-            <div class="class-name">.fi-lined2-locato</div>
-            <div class="author-name">Author: <a data-file="locato" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-locator"></div>
+            <div class="class-name">.fi-lined2-locator</div>
+            <div class="author-name">Author: <a data-file="locator" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-long-car"></div>
-            <div class="class-name">.fi-lined2-long-car</div>
-            <div class="author-name">Author: <a data-file="long-car" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-low-temperature"></div>
+            <div class="class-name">.fi-lined2-low-temperature</div>
+            <div class="author-name">Author: <a data-file="low-temperature" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-long-leg"></div>
-            <div class="class-name">.fi-lined2-long-leg</div>
-            <div class="author-name">Author: <a data-file="long-leg" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-low-temperature-1"></div>
+            <div class="class-name">.fi-lined2-low-temperature-1</div>
+            <div class="author-name">Author: <a data-file="low-temperature-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-low-temperature-reading"></div>
-            <div class="class-name">.fi-lined2-low-temperature-reading</div>
-            <div class="author-name">Author: <a data-file="low-temperature-reading" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-mac"></div>
+            <div class="class-name">.fi-lined2-mac</div>
+            <div class="author-name">Author: <a data-file="mac" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-luxury-yacht"></div>
-            <div class="class-name">.fi-lined2-luxury-yacht</div>
-            <div class="author-name">Author: <a data-file="luxury-yacht" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-magic-wand"></div>
+            <div class="class-name">.fi-lined2-magic-wand</div>
+            <div class="author-name">Author: <a data-file="magic-wand" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-mac-screen"></div>
-            <div class="class-name">.fi-lined2-mac-screen</div>
-            <div class="author-name">Author: <a data-file="mac-screen" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-magnifying-glass"></div>
+            <div class="class-name">.fi-lined2-magnifying-glass</div>
+            <div class="author-name">Author: <a data-file="magnifying-glass" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-magic-wand-with-sparkles"></div>
-            <div class="class-name">.fi-lined2-magic-wand-with-sparkles</div>
-            <div class="author-name">Author: <a data-file="magic-wand-with-sparkles" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-male-user"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-male-user"></div>
             <div class="class-name">.fi-lined2-male-user</div>
             <div class="author-name">Author: <a data-file="male-user" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-male-user-1"></div>
-            <div class="class-name">.fi-lined2-male-user-1</div>
-            <div class="author-name">Author: <a data-file="male-user-1" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-man"></div>
+            <div class="class-name">.fi-lined2-man</div>
+            <div class="author-name">Author: <a data-file="man" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-male-users"></div>
-            <div class="class-name">.fi-lined2-male-users</div>
-            <div class="author-name">Author: <a data-file="male-users" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-map"></div>
+            <div class="class-name">.fi-lined2-map</div>
+            <div class="author-name">Author: <a data-file="map" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-man-running"></div>
-            <div class="class-name">.fi-lined2-man-running</div>
-            <div class="author-name">Author: <a data-file="man-running" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-mask"></div>
+            <div class="class-name">.fi-lined2-mask</div>
+            <div class="author-name">Author: <a data-file="mask" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-man-with-arm-injury"></div>
-            <div class="class-name">.fi-lined2-man-with-arm-injury</div>
-            <div class="author-name">Author: <a data-file="man-with-arm-injury" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-mask-1"></div>
+            <div class="class-name">.fi-lined2-mask-1</div>
+            <div class="author-name">Author: <a data-file="mask-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-maya-pyramid"></div>
-            <div class="class-name">.fi-lined2-maya-pyramid</div>
-            <div class="author-name">Author: <a data-file="maya-pyramid" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-medal"></div>
+            <div class="class-name">.fi-lined2-medal</div>
+            <div class="author-name">Author: <a data-file="medal" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-medical-first-aid-kit"></div>
-            <div class="class-name">.fi-lined2-medical-first-aid-kit</div>
-            <div class="author-name">Author: <a data-file="medical-first-aid-kit" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-medical-house"></div>
-            <div class="class-name">.fi-lined2-medical-house</div>
-            <div class="author-name">Author: <a data-file="medical-house" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-medical-stethoscope"></div>
-            <div class="class-name">.fi-lined2-medical-stethoscope</div>
-            <div class="author-name">Author: <a data-file="medical-stethoscope" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-medication-capsule"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-medication-capsule"></div>
             <div class="class-name">.fi-lined2-medication-capsule</div>
             <div class="author-name">Author: <a data-file="medication-capsule" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-menorah"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-memory-chip"></div>
+            <div class="class-name">.fi-lined2-memory-chip</div>
+            <div class="author-name">Author: <a data-file="memory-chip" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-menorah"></div>
             <div class="class-name">.fi-lined2-menorah</div>
             <div class="author-name">Author: <a data-file="menorah" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-mexican-hat-and-mustache"></div>
-            <div class="class-name">.fi-lined2-mexican-hat-and-mustache</div>
-            <div class="author-name">Author: <a data-file="mexican-hat-and-mustache" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-mexican-hat"></div>
+            <div class="class-name">.fi-lined2-mexican-hat</div>
+            <div class="author-name">Author: <a data-file="mexican-hat" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-microscope"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-microscope"></div>
             <div class="class-name">.fi-lined2-microscope</div>
             <div class="author-name">Author: <a data-file="microscope" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-milk-bottle"></div>
-            <div class="class-name">.fi-lined2-milk-bottle</div>
-            <div class="author-name">Author: <a data-file="milk-bottle" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-mobile-tower"></div>
+            <div class="class-name">.fi-lined2-mobile-tower</div>
+            <div class="author-name">Author: <a data-file="mobile-tower" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-movie-camera"></div>
-            <div class="class-name">.fi-lined2-movie-camera</div>
-            <div class="author-name">Author: <a data-file="movie-camera" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-moon-and-stars"></div>
+            <div class="class-name">.fi-lined2-moon-and-stars</div>
+            <div class="author-name">Author: <a data-file="moon-and-stars" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-musical-note-symbol"></div>
-            <div class="class-name">.fi-lined2-musical-note-symbol</div>
-            <div class="author-name">Author: <a data-file="musical-note-symbol" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-mosque"></div>
+            <div class="class-name">.fi-lined2-mosque</div>
+            <div class="author-name">Author: <a data-file="mosque" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-navigation-compass"></div>
-            <div class="class-name">.fi-lined2-navigation-compass</div>
-            <div class="author-name">Author: <a data-file="navigation-compass" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-motorcycle"></div>
+            <div class="class-name">.fi-lined2-motorcycle</div>
+            <div class="author-name">Author: <a data-file="motorcycle" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-neck-part"></div>
-            <div class="class-name">.fi-lined2-neck-part</div>
-            <div class="author-name">Author: <a data-file="neck-part" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-mountain-biking"></div>
+            <div class="class-name">.fi-lined2-mountain-biking</div>
+            <div class="author-name">Author: <a data-file="mountain-biking" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-nice-temperature"></div>
-            <div class="class-name">.fi-lined2-nice-temperature</div>
-            <div class="author-name">Author: <a data-file="nice-temperature" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-musical-note"></div>
+            <div class="class-name">.fi-lined2-musical-note</div>
+            <div class="author-name">Author: <a data-file="musical-note" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-nuclear-cells"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-musical-note-1"></div>
+            <div class="class-name">.fi-lined2-musical-note-1</div>
+            <div class="author-name">Author: <a data-file="musical-note-1" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-navigation-button"></div>
+            <div class="class-name">.fi-lined2-navigation-button</div>
+            <div class="author-name">Author: <a data-file="navigation-button" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-neck"></div>
+            <div class="class-name">.fi-lined2-neck</div>
+            <div class="author-name">Author: <a data-file="neck" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-nuclear-cells"></div>
             <div class="class-name">.fi-lined2-nuclear-cells</div>
             <div class="author-name">Author: <a data-file="nuclear-cells" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-number-one-medal"></div>
-            <div class="class-name">.fi-lined2-number-one-medal</div>
-            <div class="author-name">Author: <a data-file="number-one-medal" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-painting"></div>
+            <div class="class-name">.fi-lined2-painting</div>
+            <div class="author-name">Author: <a data-file="painting" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-old-bicycle"></div>
-            <div class="class-name">.fi-lined2-old-bicycle</div>
-            <div class="author-name">Author: <a data-file="old-bicycle" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-open-fan"></div>
-            <div class="class-name">.fi-lined2-open-fan</div>
-            <div class="author-name">Author: <a data-file="open-fan" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-open-scissors"></div>
-            <div class="class-name">.fi-lined2-open-scissors</div>
-            <div class="author-name">Author: <a data-file="open-scissors" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-opened-pin"></div>
-            <div class="class-name">.fi-lined2-opened-pin</div>
-            <div class="author-name">Author: <a data-file="opened-pin" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-paper-bird"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-paper-bird"></div>
             <div class="class-name">.fi-lined2-paper-bird</div>
             <div class="author-name">Author: <a data-file="paper-bird" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-paper-roll"></div>
-            <div class="class-name">.fi-lined2-paper-roll</div>
-            <div class="author-name">Author: <a data-file="paper-roll" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-pc"></div>
+            <div class="class-name">.fi-lined2-pc</div>
+            <div class="author-name">Author: <a data-file="pc" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-pc-storage"></div>
-            <div class="class-name">.fi-lined2-pc-storage</div>
-            <div class="author-name">Author: <a data-file="pc-storage" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-pepper"></div>
+            <div class="class-name">.fi-lined2-pepper</div>
+            <div class="author-name">Author: <a data-file="pepper" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-pepper-container"></div>
-            <div class="class-name">.fi-lined2-pepper-container</div>
-            <div class="author-name">Author: <a data-file="pepper-container" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-pin"></div>
+            <div class="class-name">.fi-lined2-pin</div>
+            <div class="author-name">Author: <a data-file="pin" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-piston-on"></div>
-            <div class="class-name">.fi-lined2-piston-on</div>
-            <div class="author-name">Author: <a data-file="piston-on" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-ping-pong"></div>
+            <div class="class-name">.fi-lined2-ping-pong</div>
+            <div class="author-name">Author: <a data-file="ping-pong" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-plane-taking-off"></div>
-            <div class="class-name">.fi-lined2-plane-taking-off</div>
-            <div class="author-name">Author: <a data-file="plane-taking-off" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-piston"></div>
+            <div class="class-name">.fi-lined2-piston</div>
+            <div class="author-name">Author: <a data-file="piston" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-plant-leaves"></div>
-            <div class="class-name">.fi-lined2-plant-leaves</div>
-            <div class="author-name">Author: <a data-file="plant-leaves" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-pizza"></div>
+            <div class="class-name">.fi-lined2-pizza</div>
+            <div class="author-name">Author: <a data-file="pizza" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-power-plant"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-plant-leaf"></div>
+            <div class="class-name">.fi-lined2-plant-leaf</div>
+            <div class="author-name">Author: <a data-file="plant-leaf" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-plug"></div>
+            <div class="class-name">.fi-lined2-plug</div>
+            <div class="author-name">Author: <a data-file="plug" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-pointing"></div>
+            <div class="class-name">.fi-lined2-pointing</div>
+            <div class="author-name">Author: <a data-file="pointing" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-power-plant"></div>
             <div class="class-name">.fi-lined2-power-plant</div>
             <div class="author-name">Author: <a data-file="power-plant" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-pranava-om"></div>
-            <div class="class-name">.fi-lined2-pranava-om</div>
-            <div class="author-name">Author: <a data-file="pranava-om" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-pranava"></div>
+            <div class="class-name">.fi-lined2-pranava</div>
+            <div class="author-name">Author: <a data-file="pranava" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-quartz"></div>
-            <div class="class-name">.fi-lined2-quartz</div>
-            <div class="author-name">Author: <a data-file="quartz" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-prelum"></div>
+            <div class="class-name">.fi-lined2-prelum</div>
+            <div class="author-name">Author: <a data-file="prelum" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-question-mark-in-a-shield"></div>
-            <div class="class-name">.fi-lined2-question-mark-in-a-shield</div>
-            <div class="author-name">Author: <a data-file="question-mark-in-a-shield" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-pretzel"></div>
+            <div class="class-name">.fi-lined2-pretzel</div>
+            <div class="author-name">Author: <a data-file="pretzel" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-racing-bike"></div>
-            <div class="class-name">.fi-lined2-racing-bike</div>
-            <div class="author-name">Author: <a data-file="racing-bike" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-pyramids"></div>
+            <div class="class-name">.fi-lined2-pyramids</div>
+            <div class="author-name">Author: <a data-file="pyramids" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-racket-and-ball"></div>
-            <div class="class-name">.fi-lined2-racket-and-ball</div>
-            <div class="author-name">Author: <a data-file="racket-and-ball" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-rabbit"></div>
+            <div class="class-name">.fi-lined2-rabbit</div>
+            <div class="author-name">Author: <a data-file="rabbit" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-radioactive-elements"></div>
-            <div class="class-name">.fi-lined2-radioactive-elements</div>
-            <div class="author-name">Author: <a data-file="radioactive-elements" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-radioactive"></div>
+            <div class="class-name">.fi-lined2-radioactive</div>
+            <div class="author-name">Author: <a data-file="radioactive" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-radioactive-symbol"></div>
-            <div class="class-name">.fi-lined2-radioactive-symbol</div>
-            <div class="author-name">Author: <a data-file="radioactive-symbol" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-rainbow"></div>
+            <div class="class-name">.fi-lined2-rainbow</div>
+            <div class="author-name">Author: <a data-file="rainbow" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-rainbow-behind-a-cloud"></div>
-            <div class="class-name">.fi-lined2-rainbow-behind-a-cloud</div>
-            <div class="author-name">Author: <a data-file="rainbow-behind-a-cloud" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-rainbow-and-cloud"></div>
+            <div class="class-name">.fi-lined2-rainbow-and-cloud</div>
+            <div class="author-name">Author: <a data-file="rainbow-and-cloud" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-random-access-memory-chip"></div>
-            <div class="class-name">.fi-lined2-random-access-memory-chip</div>
-            <div class="author-name">Author: <a data-file="random-access-memory-chip" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-raindrops"></div>
+            <div class="class-name">.fi-lined2-raindrops</div>
+            <div class="author-name">Author: <a data-file="raindrops" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-rectangular-musical-note"></div>
-            <div class="class-name">.fi-lined2-rectangular-musical-note</div>
-            <div class="author-name">Author: <a data-file="rectangular-musical-note" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-recycle"></div>
+            <div class="class-name">.fi-lined2-recycle</div>
+            <div class="author-name">Author: <a data-file="recycle" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-recycle-triangle"></div>
-            <div class="class-name">.fi-lined2-recycle-triangle</div>
-            <div class="author-name">Author: <a data-file="recycle-triangle" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-red-hot-chili-pepper"></div>
+            <div class="class-name">.fi-lined2-red-hot-chili-pepper</div>
+            <div class="author-name">Author: <a data-file="red-hot-chili-pepper" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-remote-control-signal"></div>
-            <div class="class-name">.fi-lined2-remote-control-signal</div>
-            <div class="author-name">Author: <a data-file="remote-control-signal" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-remote-control"></div>
+            <div class="class-name">.fi-lined2-remote-control</div>
+            <div class="author-name">Author: <a data-file="remote-control" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-resistor"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-resistor"></div>
             <div class="class-name">.fi-lined2-resistor</div>
             <div class="author-name">Author: <a data-file="resistor" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-restaurant-fork"></div>
-            <div class="class-name">.fi-lined2-restaurant-fork</div>
-            <div class="author-name">Author: <a data-file="restaurant-fork" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-rhombus"></div>
-            <div class="class-name">.fi-lined2-rhombus</div>
-            <div class="author-name">Author: <a data-file="rhombus" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-robotic-arm"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-robotic-arm"></div>
             <div class="class-name">.fi-lined2-robotic-arm</div>
             <div class="author-name">Author: <a data-file="robotic-arm" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-rocket-launched"></div>
-            <div class="class-name">.fi-lined2-rocket-launched</div>
-            <div class="author-name">Author: <a data-file="rocket-launched" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-rocket"></div>
+            <div class="class-name">.fi-lined2-rocket</div>
+            <div class="author-name">Author: <a data-file="rocket" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-round-cloud"></div>
-            <div class="class-name">.fi-lined2-round-cloud</div>
-            <div class="author-name">Author: <a data-file="round-cloud" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-router"></div>
+            <div class="class-name">.fi-lined2-router</div>
+            <div class="author-name">Author: <a data-file="router" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-round-teapot"></div>
-            <div class="class-name">.fi-lined2-round-teapot</div>
-            <div class="author-name">Author: <a data-file="round-teapot" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-router-1"></div>
+            <div class="class-name">.fi-lined2-router-1</div>
+            <div class="author-name">Author: <a data-file="router-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-router-with-screen"></div>
-            <div class="class-name">.fi-lined2-router-with-screen</div>
-            <div class="author-name">Author: <a data-file="router-with-screen" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-royal-crown"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-royal-crown"></div>
             <div class="class-name">.fi-lined2-royal-crown</div>
             <div class="author-name">Author: <a data-file="royal-crown" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-rugby-ball"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-rugby-ball"></div>
             <div class="class-name">.fi-lined2-rugby-ball</div>
             <div class="author-name">Author: <a data-file="rugby-ball" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-rugby-helmet"></div>
-            <div class="class-name">.fi-lined2-rugby-helmet</div>
-            <div class="author-name">Author: <a data-file="rugby-helmet" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-runner"></div>
+            <div class="class-name">.fi-lined2-runner</div>
+            <div class="author-name">Author: <a data-file="runner" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-running-at-finish-line"></div>
-            <div class="class-name">.fi-lined2-running-at-finish-line</div>
-            <div class="author-name">Author: <a data-file="running-at-finish-line" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-running-man"></div>
+            <div class="class-name">.fi-lined2-running-man</div>
+            <div class="author-name">Author: <a data-file="running-man" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-sagrada-familia-building"></div>
-            <div class="class-name">.fi-lined2-sagrada-familia-building</div>
-            <div class="author-name">Author: <a data-file="sagrada-familia-building" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-sagrada-familia"></div>
+            <div class="class-name">.fi-lined2-sagrada-familia</div>
+            <div class="author-name">Author: <a data-file="sagrada-familia" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-sail-boat-sailing"></div>
-            <div class="class-name">.fi-lined2-sail-boat-sailing</div>
-            <div class="author-name">Author: <a data-file="sail-boat-sailing" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-sail-boat"></div>
+            <div class="class-name">.fi-lined2-sail-boat</div>
+            <div class="author-name">Author: <a data-file="sail-boat" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-satellite-transmission"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-satellite"></div>
+            <div class="class-name">.fi-lined2-satellite</div>
+            <div class="author-name">Author: <a data-file="satellite" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-satellite-transmission"></div>
             <div class="class-name">.fi-lined2-satellite-transmission</div>
             <div class="author-name">Author: <a data-file="satellite-transmission" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-school-van"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-school-van"></div>
             <div class="class-name">.fi-lined2-school-van</div>
             <div class="author-name">Author: <a data-file="school-van" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-scooter-bike"></div>
-            <div class="class-name">.fi-lined2-scooter-bike</div>
-            <div class="author-name">Author: <a data-file="scooter-bike" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-scissor"></div>
+            <div class="class-name">.fi-lined2-scissor</div>
+            <div class="author-name">Author: <a data-file="scissor" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-scroll-with-message-inside"></div>
-            <div class="class-name">.fi-lined2-scroll-with-message-inside</div>
-            <div class="author-name">Author: <a data-file="scroll-with-message-inside" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-scooter"></div>
+            <div class="class-name">.fi-lined2-scooter</div>
+            <div class="author-name">Author: <a data-file="scooter" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-security-warning"></div>
-            <div class="class-name">.fi-lined2-security-warning</div>
-            <div class="author-name">Author: <a data-file="security-warning" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-screen"></div>
+            <div class="class-name">.fi-lined2-screen</div>
+            <div class="author-name">Author: <a data-file="screen" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-segment-displa"></div>
-            <div class="class-name">.fi-lined2-segment-displa</div>
-            <div class="author-name">Author: <a data-file="segment-displa" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-segment-display"></div>
+            <div class="class-name">.fi-lined2-segment-display</div>
+            <div class="author-name">Author: <a data-file="segment-display" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-sharp-carrot"></div>
-            <div class="class-name">.fi-lined2-sharp-carrot</div>
-            <div class="author-name">Author: <a data-file="sharp-carrot" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-server"></div>
+            <div class="class-name">.fi-lined2-server</div>
+            <div class="author-name">Author: <a data-file="server" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-shield-refresh"></div>
-            <div class="class-name">.fi-lined2-shield-refresh</div>
-            <div class="author-name">Author: <a data-file="shield-refresh" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-settings"></div>
+            <div class="class-name">.fi-lined2-settings</div>
+            <div class="author-name">Author: <a data-file="settings" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-shield-restriction"></div>
-            <div class="class-name">.fi-lined2-shield-restriction</div>
-            <div class="author-name">Author: <a data-file="shield-restriction" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-shield"></div>
+            <div class="class-name">.fi-lined2-shield</div>
+            <div class="author-name">Author: <a data-file="shield" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-shield-shape"></div>
-            <div class="class-name">.fi-lined2-shield-shape</div>
-            <div class="author-name">Author: <a data-file="shield-shape" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-shield-1"></div>
+            <div class="class-name">.fi-lined2-shield-1</div>
+            <div class="author-name">Author: <a data-file="shield-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-shield-with-cross-mark"></div>
-            <div class="class-name">.fi-lined2-shield-with-cross-mark</div>
-            <div class="author-name">Author: <a data-file="shield-with-cross-mark" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-shield-2"></div>
+            <div class="class-name">.fi-lined2-shield-2</div>
+            <div class="author-name">Author: <a data-file="shield-2" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-shining-sun-with-rays"></div>
-            <div class="class-name">.fi-lined2-shining-sun-with-rays</div>
-            <div class="author-name">Author: <a data-file="shining-sun-with-rays" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-shield-3"></div>
+            <div class="class-name">.fi-lined2-shield-3</div>
+            <div class="author-name">Author: <a data-file="shield-3" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-shoulders"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-shield-4"></div>
+            <div class="class-name">.fi-lined2-shield-4</div>
+            <div class="author-name">Author: <a data-file="shield-4" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-shield-5"></div>
+            <div class="class-name">.fi-lined2-shield-5</div>
+            <div class="author-name">Author: <a data-file="shield-5" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-shield-application"></div>
+            <div class="class-name">.fi-lined2-shield-application</div>
+            <div class="author-name">Author: <a data-file="shield-application" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-shield-user"></div>
+            <div class="class-name">.fi-lined2-shield-user</div>
+            <div class="author-name">Author: <a data-file="shield-user" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-shopping-basket"></div>
+            <div class="class-name">.fi-lined2-shopping-basket</div>
+            <div class="author-name">Author: <a data-file="shopping-basket" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-shoulders"></div>
             <div class="class-name">.fi-lined2-shoulders</div>
             <div class="author-name">Author: <a data-file="shoulders" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-signal-dish-satellite"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-signal-dish-satellite"></div>
             <div class="class-name">.fi-lined2-signal-dish-satellite</div>
             <div class="author-name">Author: <a data-file="signal-dish-satellite" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-sitting-rabbit"></div>
-            <div class="class-name">.fi-lined2-sitting-rabbit</div>
-            <div class="author-name">Author: <a data-file="sitting-rabbit" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-ski"></div>
+            <div class="class-name">.fi-lined2-ski</div>
+            <div class="author-name">Author: <a data-file="ski" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-skiing-down-hill"></div>
-            <div class="class-name">.fi-lined2-skiing-down-hill</div>
-            <div class="author-name">Author: <a data-file="skiing-down-hill" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-smoke-mask"></div>
+            <div class="class-name">.fi-lined2-smoke-mask</div>
+            <div class="author-name">Author: <a data-file="smoke-mask" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-small-helicopter"></div>
-            <div class="class-name">.fi-lined2-small-helicopter</div>
-            <div class="author-name">Author: <a data-file="small-helicopter" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-snow-flakes"></div>
+            <div class="class-name">.fi-lined2-snow-flakes</div>
+            <div class="author-name">Author: <a data-file="snow-flakes" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-snowing-cloud"></div>
-            <div class="class-name">.fi-lined2-snowing-cloud</div>
-            <div class="author-name">Author: <a data-file="snowing-cloud" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-snowflake"></div>
+            <div class="class-name">.fi-lined2-snowflake</div>
+            <div class="author-name">Author: <a data-file="snowflake" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-space-satellite"></div>
-            <div class="class-name">.fi-lined2-space-satellite</div>
-            <div class="author-name">Author: <a data-file="space-satellite" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-solar-panel"></div>
+            <div class="class-name">.fi-lined2-solar-panel</div>
+            <div class="author-name">Author: <a data-file="solar-panel" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-spindle"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-south-in-compass"></div>
+            <div class="class-name">.fi-lined2-south-in-compass</div>
+            <div class="author-name">Author: <a data-file="south-in-compass" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-spades"></div>
+            <div class="class-name">.fi-lined2-spades</div>
+            <div class="author-name">Author: <a data-file="spades" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-spark"></div>
+            <div class="class-name">.fi-lined2-spark</div>
+            <div class="author-name">Author: <a data-file="spark" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-spark-plug"></div>
+            <div class="class-name">.fi-lined2-spark-plug</div>
+            <div class="author-name">Author: <a data-file="spark-plug" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-speedometer"></div>
+            <div class="class-name">.fi-lined2-speedometer</div>
+            <div class="author-name">Author: <a data-file="speedometer" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-spindle"></div>
             <div class="class-name">.fi-lined2-spindle</div>
             <div class="author-name">Author: <a data-file="spindle" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-star-of-david"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-spoon"></div>
+            <div class="class-name">.fi-lined2-spoon</div>
+            <div class="author-name">Author: <a data-file="spoon" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-spoon-1"></div>
+            <div class="class-name">.fi-lined2-spoon-1</div>
+            <div class="author-name">Author: <a data-file="spoon-1" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-squares"></div>
+            <div class="class-name">.fi-lined2-squares</div>
+            <div class="author-name">Author: <a data-file="squares" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-star-of-david"></div>
             <div class="class-name">.fi-lined2-star-of-david</div>
             <div class="author-name">Author: <a data-file="star-of-david" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-storage-device"></div>
-            <div class="class-name">.fi-lined2-storage-device</div>
-            <div class="author-name">Author: <a data-file="storage-device" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-steering-wheel"></div>
+            <div class="class-name">.fi-lined2-steering-wheel</div>
+            <div class="author-name">Author: <a data-file="steering-wheel" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-street-signals"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-steering-wheel-1"></div>
+            <div class="class-name">.fi-lined2-steering-wheel-1</div>
+            <div class="author-name">Author: <a data-file="steering-wheel-1" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-stethoscope"></div>
+            <div class="class-name">.fi-lined2-stethoscope</div>
+            <div class="author-name">Author: <a data-file="stethoscope" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-storage"></div>
+            <div class="class-name">.fi-lined2-storage</div>
+            <div class="author-name">Author: <a data-file="storage" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-storm"></div>
+            <div class="class-name">.fi-lined2-storm</div>
+            <div class="author-name">Author: <a data-file="storm" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-street-signals"></div>
             <div class="class-name">.fi-lined2-street-signals</div>
             <div class="author-name">Author: <a data-file="street-signals" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-streetcar-front"></div>
-            <div class="class-name">.fi-lined2-streetcar-front</div>
-            <div class="author-name">Author: <a data-file="streetcar-front" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-streetcar"></div>
+            <div class="class-name">.fi-lined2-streetcar</div>
+            <div class="author-name">Author: <a data-file="streetcar" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-sugar-container"></div>
-            <div class="class-name">.fi-lined2-sugar-container</div>
-            <div class="author-name">Author: <a data-file="sugar-container" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-sugar"></div>
+            <div class="class-name">.fi-lined2-sugar</div>
+            <div class="author-name">Author: <a data-file="sugar" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-sun-cloud-and-rain"></div>
-            <div class="class-name">.fi-lined2-sun-cloud-and-rain</div>
-            <div class="author-name">Author: <a data-file="sun-cloud-and-rain" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-sun"></div>
+            <div class="class-name">.fi-lined2-sun</div>
+            <div class="author-name">Author: <a data-file="sun" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-sunny-pronostic"></div>
-            <div class="class-name">.fi-lined2-sunny-pronostic</div>
-            <div class="author-name">Author: <a data-file="sunny-pronostic" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-sun-1"></div>
+            <div class="class-name">.fi-lined2-sun-1</div>
+            <div class="author-name">Author: <a data-file="sun-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-sushi-and-chopsticks"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-sushi-and-chopsticks"></div>
             <div class="class-name">.fi-lined2-sushi-and-chopsticks</div>
             <div class="author-name">Author: <a data-file="sushi-and-chopsticks" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-swimmer-swimming"></div>
-            <div class="class-name">.fi-lined2-swimmer-swimming</div>
-            <div class="author-name">Author: <a data-file="swimmer-swimming" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-swimmer"></div>
+            <div class="class-name">.fi-lined2-swimmer</div>
+            <div class="author-name">Author: <a data-file="swimmer" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-syringe-with-measure-marks"></div>
-            <div class="class-name">.fi-lined2-syringe-with-measure-marks</div>
-            <div class="author-name">Author: <a data-file="syringe-with-measure-marks" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-syringe"></div>
+            <div class="class-name">.fi-lined2-syringe</div>
+            <div class="author-name">Author: <a data-file="syringe" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-t-shirt-with-flowers"></div>
-            <div class="class-name">.fi-lined2-t-shirt-with-flowers</div>
-            <div class="author-name">Author: <a data-file="t-shirt-with-flowers" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-t-shirt"></div>
+            <div class="class-name">.fi-lined2-t-shirt</div>
+            <div class="author-name">Author: <a data-file="t-shirt" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-taco"></div>
-            <div class="class-name">.fi-lined2-taco</div>
-            <div class="author-name">Author: <a data-file="taco" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-tag"></div>
+            <div class="class-name">.fi-lined2-tag</div>
+            <div class="author-name">Author: <a data-file="tag" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-television-remote-control"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-tanakh"></div>
+            <div class="class-name">.fi-lined2-tanakh</div>
+            <div class="author-name">Author: <a data-file="tanakh" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-taxi"></div>
+            <div class="class-name">.fi-lined2-taxi</div>
+            <div class="author-name">Author: <a data-file="taxi" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-teapot"></div>
+            <div class="class-name">.fi-lined2-teapot</div>
+            <div class="author-name">Author: <a data-file="teapot" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-teapot-1"></div>
+            <div class="class-name">.fi-lined2-teapot-1</div>
+            <div class="author-name">Author: <a data-file="teapot-1" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-television-remote-control"></div>
             <div class="class-name">.fi-lined2-television-remote-control</div>
             <div class="author-name">Author: <a data-file="television-remote-control" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-tennis-sport-ball"></div>
-            <div class="class-name">.fi-lined2-tennis-sport-ball</div>
-            <div class="author-name">Author: <a data-file="tennis-sport-ball" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-temperature"></div>
+            <div class="class-name">.fi-lined2-temperature</div>
+            <div class="author-name">Author: <a data-file="temperature" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-thermometer-and-sun"></div>
-            <div class="class-name">.fi-lined2-thermometer-and-sun</div>
-            <div class="author-name">Author: <a data-file="thermometer-and-sun" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-tennis"></div>
+            <div class="class-name">.fi-lined2-tennis</div>
+            <div class="author-name">Author: <a data-file="tennis" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-thor-hammer"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-thermometer"></div>
+            <div class="class-name">.fi-lined2-thermometer</div>
+            <div class="author-name">Author: <a data-file="thermometer" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-thermometer-1"></div>
+            <div class="class-name">.fi-lined2-thermometer-1</div>
+            <div class="author-name">Author: <a data-file="thermometer-1" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-thermometer-2"></div>
+            <div class="class-name">.fi-lined2-thermometer-2</div>
+            <div class="author-name">Author: <a data-file="thermometer-2" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-thermometer-3"></div>
+            <div class="class-name">.fi-lined2-thermometer-3</div>
+            <div class="author-name">Author: <a data-file="thermometer-3" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-thermometer-4"></div>
+            <div class="class-name">.fi-lined2-thermometer-4</div>
+            <div class="author-name">Author: <a data-file="thermometer-4" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-thor-hammer"></div>
             <div class="class-name">.fi-lined2-thor-hammer</div>
             <div class="author-name">Author: <a data-file="thor-hammer" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-three-fingers"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-three-fingers"></div>
             <div class="class-name">.fi-lined2-three-fingers</div>
             <div class="author-name">Author: <a data-file="three-fingers" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-thumb-finger-up"></div>
-            <div class="class-name">.fi-lined2-thumb-finger-up</div>
-            <div class="author-name">Author: <a data-file="thumb-finger-up" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-thumb-down"></div>
+            <div class="class-name">.fi-lined2-thumb-down</div>
+            <div class="author-name">Author: <a data-file="thumb-down" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-thumbs-down-hand"></div>
-            <div class="class-name">.fi-lined2-thumbs-down-hand</div>
-            <div class="author-name">Author: <a data-file="thumbs-down-hand" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-thumbs-up"></div>
+            <div class="class-name">.fi-lined2-thumbs-up</div>
+            <div class="author-name">Author: <a data-file="thumbs-up" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-thunderstorm-clouds"></div>
-            <div class="class-name">.fi-lined2-thunderstorm-clouds</div>
-            <div class="author-name">Author: <a data-file="thunderstorm-clouds" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-toilet-paper"></div>
+            <div class="class-name">.fi-lined2-toilet-paper</div>
+            <div class="author-name">Author: <a data-file="toilet-paper" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-torii"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-torii"></div>
             <div class="class-name">.fi-lined2-torii</div>
             <div class="author-name">Author: <a data-file="torii" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-tradegy-mask"></div>
-            <div class="class-name">.fi-lined2-tradegy-mask</div>
-            <div class="author-name">Author: <a data-file="tradegy-mask" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-torso"></div>
+            <div class="class-name">.fi-lined2-torso</div>
+            <div class="author-name">Author: <a data-file="torso" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-trailer-for-car"></div>
-            <div class="class-name">.fi-lined2-trailer-for-car</div>
-            <div class="author-name">Author: <a data-file="trailer-for-car" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-trailer"></div>
+            <div class="class-name">.fi-lined2-trailer</div>
+            <div class="author-name">Author: <a data-file="trailer" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-train-front"></div>
-            <div class="class-name">.fi-lined2-train-front</div>
-            <div class="author-name">Author: <a data-file="train-front" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-train"></div>
+            <div class="class-name">.fi-lined2-train</div>
+            <div class="author-name">Author: <a data-file="train" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-treasure-map-with-x"></div>
-            <div class="class-name">.fi-lined2-treasure-map-with-x</div>
-            <div class="author-name">Author: <a data-file="treasure-map-with-x" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-two-fingers"></div>
+            <div class="class-name">.fi-lined2-two-fingers</div>
+            <div class="author-name">Author: <a data-file="two-fingers" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-triangular-pizza-slice"></div>
-            <div class="class-name">.fi-lined2-triangular-pizza-slice</div>
-            <div class="author-name">Author: <a data-file="triangular-pizza-slice" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-ufo"></div>
+            <div class="class-name">.fi-lined2-ufo</div>
+            <div class="author-name">Author: <a data-file="ufo" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-trunk"></div>
-            <div class="class-name">.fi-lined2-trunk</div>
-            <div class="author-name">Author: <a data-file="trunk" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-umbrella"></div>
+            <div class="class-name">.fi-lined2-umbrella</div>
+            <div class="author-name">Author: <a data-file="umbrella" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-two-boxing-gloves"></div>
-            <div class="class-name">.fi-lined2-two-boxing-gloves</div>
-            <div class="author-name">Author: <a data-file="two-boxing-gloves" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-user"></div>
+            <div class="class-name">.fi-lined2-user</div>
+            <div class="author-name">Author: <a data-file="user" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-two-eggs"></div>
-            <div class="class-name">.fi-lined2-two-eggs</div>
-            <div class="author-name">Author: <a data-file="two-eggs" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-users"></div>
+            <div class="class-name">.fi-lined2-users</div>
+            <div class="author-name">Author: <a data-file="users" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-two-fingers-up"></div>
-            <div class="class-name">.fi-lined2-two-fingers-up</div>
-            <div class="author-name">Author: <a data-file="two-fingers-up" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-users-1"></div>
+            <div class="class-name">.fi-lined2-users-1</div>
+            <div class="author-name">Author: <a data-file="users-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-two-overlapping-square"></div>
-            <div class="class-name">.fi-lined2-two-overlapping-square</div>
-            <div class="author-name">Author: <a data-file="two-overlapping-square" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-van"></div>
+            <div class="class-name">.fi-lined2-van</div>
+            <div class="author-name">Author: <a data-file="van" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-two-pyramids"></div>
-            <div class="class-name">.fi-lined2-two-pyramids</div>
-            <div class="author-name">Author: <a data-file="two-pyramids" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-two-snow-flakes"></div>
-            <div class="class-name">.fi-lined2-two-snow-flakes</div>
-            <div class="author-name">Author: <a data-file="two-snow-flakes" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-two-women-on-line"></div>
-            <div class="class-name">.fi-lined2-two-women-on-line</div>
-            <div class="author-name">Author: <a data-file="two-women-on-line" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-user-protection"></div>
-            <div class="class-name">.fi-lined2-user-protection</div>
-            <div class="author-name">Author: <a data-file="user-protection" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-van-profile"></div>
-            <div class="class-name">.fi-lined2-van-profile</div>
-            <div class="author-name">Author: <a data-file="van-profile" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-vehicle-speedometer"></div>
-            <div class="class-name">.fi-lined2-vehicle-speedometer</div>
-            <div class="author-name">Author: <a data-file="vehicle-speedometer" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-vehicle-steering-wheel"></div>
-            <div class="class-name">.fi-lined2-vehicle-steering-wheel</div>
-            <div class="author-name">Author: <a data-file="vehicle-steering-wheel" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-very-cold-temperature"></div>
-            <div class="class-name">.fi-lined2-very-cold-temperature</div>
-            <div class="author-name">Author: <a data-file="very-cold-temperature" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-viking-helmet"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-viking-helmet"></div>
             <div class="class-name">.fi-lined2-viking-helmet</div>
             <div class="author-name">Author: <a data-file="viking-helmet" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-viking-ship"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-viking-ship"></div>
             <div class="class-name">.fi-lined2-viking-ship</div>
             <div class="author-name">Author: <a data-file="viking-ship" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-vintage-personal-computer"></div>
-            <div class="class-name">.fi-lined2-vintage-personal-computer</div>
-            <div class="author-name">Author: <a data-file="vintage-personal-computer" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-volleyball"></div>
+            <div class="class-name">.fi-lined2-volleyball</div>
+            <div class="author-name">Author: <a data-file="volleyball" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-vintage-teapot"></div>
-            <div class="class-name">.fi-lined2-vintage-teapot</div>
-            <div class="author-name">Author: <a data-file="vintage-teapot" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-warning"></div>
+            <div class="class-name">.fi-lined2-warning</div>
+            <div class="author-name">Author: <a data-file="warning" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-voip-router"></div>
-            <div class="class-name">.fi-lined2-voip-router</div>
-            <div class="author-name">Author: <a data-file="voip-router" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-water-jet-ski"></div>
+            <div class="class-name">.fi-lined2-water-jet-ski</div>
+            <div class="author-name">Author: <a data-file="water-jet-ski" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-volley-ball"></div>
-            <div class="class-name">.fi-lined2-volley-ball</div>
-            <div class="author-name">Author: <a data-file="volley-ball" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-warm-black-mug"></div>
-            <div class="class-name">.fi-lined2-warm-black-mug</div>
-            <div class="author-name">Author: <a data-file="warm-black-mug" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-web-shield"></div>
-            <div class="class-name">.fi-lined2-web-shield</div>
-            <div class="author-name">Author: <a data-file="web-shield" href="http://www.freepik.com">Freepik</a> </div>
-        </div>
-
-        <div class="glyph"><div class="glyph-icon fi-lined2-weight-lifter"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-weight-lifter"></div>
             <div class="class-name">.fi-lined2-weight-lifter</div>
             <div class="author-name">Author: <a data-file="weight-lifter" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-wifi-chip"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-west"></div>
+            <div class="class-name">.fi-lined2-west</div>
+            <div class="author-name">Author: <a data-file="west" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-wifi"></div>
+            <div class="class-name">.fi-lined2-wifi</div>
+            <div class="author-name">Author: <a data-file="wifi" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-wifi-1"></div>
+            <div class="class-name">.fi-lined2-wifi-1</div>
+            <div class="author-name">Author: <a data-file="wifi-1" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-wifi-chip"></div>
             <div class="class-name">.fi-lined2-wifi-chip</div>
             <div class="author-name">Author: <a data-file="wifi-chip" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-wifi-logo"></div>
-            <div class="class-name">.fi-lined2-wifi-logo</div>
-            <div class="author-name">Author: <a data-file="wifi-logo" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-windmill"></div>
+            <div class="class-name">.fi-lined2-windmill</div>
+            <div class="author-name">Author: <a data-file="windmill" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-wind-and-rain"></div>
-            <div class="class-name">.fi-lined2-wind-and-rain</div>
-            <div class="author-name">Author: <a data-file="wind-and-rain" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-window-in-a-pc-monitor-screen"></div>
+            <div class="class-name">.fi-lined2-window-in-a-pc-monitor-screen</div>
+            <div class="author-name">Author: <a data-file="window-in-a-pc-monitor-screen" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-wind-swirls"></div>
-            <div class="class-name">.fi-lined2-wind-swirls</div>
-            <div class="author-name">Author: <a data-file="wind-swirls" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-windy"></div>
+            <div class="class-name">.fi-lined2-windy</div>
+            <div class="author-name">Author: <a data-file="windy" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-windows-screen"></div>
-            <div class="class-name">.fi-lined2-windows-screen</div>
-            <div class="author-name">Author: <a data-file="windows-screen" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-windy-1"></div>
+            <div class="class-name">.fi-lined2-windy-1</div>
+            <div class="author-name">Author: <a data-file="windy-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-wine-glass"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-wine-glass"></div>
             <div class="class-name">.fi-lined2-wine-glass</div>
             <div class="author-name">Author: <a data-file="wine-glass" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-wireless-receptor"></div>
-            <div class="class-name">.fi-lined2-wireless-receptor</div>
-            <div class="author-name">Author: <a data-file="wireless-receptor" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-wine-glass-1"></div>
+            <div class="class-name">.fi-lined2-wine-glass-1</div>
+            <div class="author-name">Author: <a data-file="wine-glass-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-wireless-signal"></div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-wireless-connection"></div>
+            <div class="class-name">.fi-lined2-wireless-connection</div>
+            <div class="author-name">Author: <a data-file="wireless-connection" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-wireless-signal"></div>
             <div class="class-name">.fi-lined2-wireless-signal</div>
             <div class="author-name">Author: <a data-file="wireless-signal" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-wireless-transmitter"></div>
-            <div class="class-name">.fi-lined2-wireless-transmitter</div>
-            <div class="author-name">Author: <a data-file="wireless-transmitter" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-wireless-signal-1"></div>
+            <div class="class-name">.fi-lined2-wireless-signal-1</div>
+            <div class="author-name">Author: <a data-file="wireless-signal-1" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-wolf-howling"></div>
-            <div class="class-name">.fi-lined2-wolf-howling</div>
-            <div class="author-name">Author: <a data-file="wolf-howling" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-wolf"></div>
+            <div class="class-name">.fi-lined2-wolf</div>
+            <div class="author-name">Author: <a data-file="wolf" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-woman-profile"></div>
-            <div class="class-name">.fi-lined2-woman-profile</div>
-            <div class="author-name">Author: <a data-file="woman-profile" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-woman"></div>
+            <div class="class-name">.fi-lined2-woman</div>
+            <div class="author-name">Author: <a data-file="woman" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-woman-uterus"></div>
-            <div class="class-name">.fi-lined2-woman-uterus</div>
-            <div class="author-name">Author: <a data-file="woman-uterus" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-world-wide-web"></div>
+            <div class="class-name">.fi-lined2-world-wide-web</div>
+            <div class="author-name">Author: <a data-file="world-wide-web" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-world-wide-web-on-grid"></div>
-            <div class="class-name">.fi-lined2-world-wide-web-on-grid</div>
-            <div class="author-name">Author: <a data-file="world-wide-web-on-grid" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-x-ray"></div>
+            <div class="class-name">.fi-lined2-x-ray</div>
+            <div class="author-name">Author: <a data-file="x-ray" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-yacht-navigate"></div>
-            <div class="class-name">.fi-lined2-yacht-navigate</div>
-            <div class="author-name">Author: <a data-file="yacht-navigate" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-yacht"></div>
+            <div class="class-name">.fi-lined2-yacht</div>
+            <div class="author-name">Author: <a data-file="yacht" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
-        <div class="glyph"><div class="glyph-icon fi-lined2-yin-yang-symbol"></div>
-            <div class="class-name">.fi-lined2-yin-yang-symbol</div>
-            <div class="author-name">Author: <a data-file="yin-yang-symbol" href="http://www.freepik.com">Freepik</a> </div>
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-yacht-1"></div>
+            <div class="class-name">.fi-lined2-yacht-1</div>
+            <div class="author-name">Author: <a data-file="yacht-1" href="http://www.freepik.com">Freepik</a> </div>
+        </div>
+
+        <div class="glyph">
+            <div class="glyph-icon fi-lined2-yin-yang"></div>
+            <div class="class-name">.fi-lined2-yin-yang</div>
+            <div class="author-name">Author: <a data-file="yin-yang" href="http://www.freepik.com">Freepik</a> </div>
         </div>
 
 
@@ -2021,59 +2478,65 @@
 
 
 
-    <section class="attribution wrapper"   style="text-align:center;">
+    <section class="attribution wrapper" style="text-align:center;">
 
-      <div class="title">License and attribution:</div><div class="attrDiv">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>. <div><p>Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="car" href="http://www.freepik.com">Freepik</a></p>  </div>
-      </div>
-      <div class="title">Copy the Attribution License:</div>
+        <div class="title">License and attribution:</div>
+        <div class="attrDiv">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>.
+            <div>
+                <p>Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="mask-1" href="http://www.freepik.com">Freepik</a></p>
+            </div>
+        </div>
+        <div class="title">Copy the Attribution License:</div>
 
-    <textarea onclick="this.focus();this.select();">Font generated by &lt;a href=&quot;http://www.flaticon.com&quot;&gt;flaticon.com&lt;/a&gt;. <p>Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="car" href="http://www.freepik.com">Freepik</a></p>
-     </textarea>
+        <textarea onclick="this.focus();this.select();">Font generated by &lt;a href=&quot;http://www.flaticon.com&quot;&gt;flaticon.com&lt;/a&gt;.
+            <p>Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="mask-1" href="http://www.freepik.com">Freepik</a></p>
+        </textarea>
 
     </section>
 
     <section class="iconsuse">
 
-          <div class="title">Examples:</div>
+        <div class="title">Examples:</div>
 
-            <div class="image">
-                <p>
-                    <i class="glyph-icon fi-lined2-ace-of-spades"></i>
-                    <span>&lt;i class=&quot;fi-lined2-ace-of-spades&quot;&gt;&lt;/i&gt;</span>
-                </p>
-            </div>
+        <div class="image">
+            <p>
+                <i class="glyph-icon fi-lined2-aeroplane"></i>
+                <span>&lt;i class=&quot;fi-lined2-aeroplane&quot;&gt;&lt;/i&gt;</span>
+            </p>
+        </div>
 
-            <div class="image">
-                <p>
-                    <i class="glyph-icon fi-lined2-alcohol-bottle"></i>
-                    <span>&lt;i class=&quot;fi-lined2-alcohol-bottle&quot;&gt;&lt;/i&gt;</span>
-                </p>
-            </div>
+        <div class="image">
+            <p>
+                <i class="glyph-icon fi-lined2-airplane"></i>
+                <span>&lt;i class=&quot;fi-lined2-airplane&quot;&gt;&lt;/i&gt;</span>
+            </p>
+        </div>
 
-            <div class="image">
-                <p>
-                    <i class="glyph-icon fi-lined2-alien-spaceship"></i>
-                    <span>&lt;i class=&quot;fi-lined2-alien-spaceship&quot;&gt;&lt;/i&gt;</span>
-                </p>
-            </div>
+        <div class="image">
+            <p>
+                <i class="glyph-icon fi-lined2-airplane-1"></i>
+                <span>&lt;i class=&quot;fi-lined2-airplane-1&quot;&gt;&lt;/i&gt;</span>
+            </p>
+        </div>
 
-            <div class="image">
-                <p>
-                    <i class="glyph-icon fi-lined2-ambulance-alert"></i>
-                    <span>&lt;i class=&quot;fi-lined2-ambulance-alert&quot;&gt;&lt;/i&gt;</span>
-                </p>
-            </div>
+        <div class="image">
+            <p>
+                <i class="glyph-icon fi-lined2-ambulance"></i>
+                <span>&lt;i class=&quot;fi-lined2-ambulance&quot;&gt;&lt;/i&gt;</span>
+            </p>
+        </div>
 
         </div>
 
     </section>
 
-<div id="footer">
-    <div>Generated by <a href="http://www.flaticon.com">flaticon.com</a>
+    <div id="footer">
+        <div>Generated by <a href="http://www.flaticon.com">flaticon.com</a>
+        </div>
     </div>
-</div>
 
 
 
 </body>
+
 </html>

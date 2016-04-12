@@ -1,18 +1,12 @@
 System.config({
   baseURL: ".",
   defaultJSExtensions: true,
-  transpiler: "babel",
-  babelOptions: {
-    "optional": [
-      "runtime",
-      "optimisation.modules.system"
-    ]
-  },
+  transpiler: "typescript",
   paths: {
-    //"*": "dist/*",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
+
   map: {
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.2.0",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.0",
@@ -22,14 +16,19 @@ System.config({
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "bootstrap": "github:twbs/bootstrap@4.0.0-alpha.2",
+    "bootstrap-notify": "npm:bootstrap-notify@3.1.3",
     "clean-css": "npm:clean-css@3.4.12",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
     "jquery": "npm:jquery@2.2.3",
+    "ladda": "npm:ladda@1.0.0",
     "lodash": "npm:lodash@4.8.2",
+    "marked": "npm:marked@0.3.5",
     "moment": "npm:moment@2.12.0",
     "numeral": "npm:numeral@1.5.3",
+    "sweetalert": "npm:sweetalert@1.1.3",
     "text": "github:systemjs/plugin-text@0.0.7",
+    "typescript": "npm:typescript@1.8.9",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -253,6 +252,9 @@ System.config({
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
+    "npm:ladda@1.0.0": {
+      "spin.js": "npm:spin.js@2.3.2"
+    },
     "npm:lodash@4.8.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -293,6 +295,12 @@ System.config({
     },
     "npm:string_decoder@0.10.31": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
+    },
+    "npm:sweetalert@1.1.3": {
+      "path": "github:jspm/nodelibs-path@0.1.0"
+    },
+    "npm:typescript@1.8.9": {
+      "os": "github:jspm/nodelibs-os@0.1.0"
     },
     "npm:url@0.10.3": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",

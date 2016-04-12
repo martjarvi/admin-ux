@@ -2,5 +2,13 @@
  * Admin UX - Typography
  * @author: Adarsh Pastakia
  */
+@include text-emphasis-variant( '.text-secondary', $ux-secondary);
 
-@include text-emphasis-variant('.text-secondary', $ux-secondary);
+code,
+mark,
+pre,
+small,
+span {
+    font-weight: inherit;
+    font-style : inherit;
+}
