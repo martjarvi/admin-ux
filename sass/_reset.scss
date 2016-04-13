@@ -12,8 +12,7 @@ html {
     @include user-select(none);
 }
 
-.ux-selectable,
-p {
+.ux-selectable {
     cursor: text;
     @include user-select(text);
 }

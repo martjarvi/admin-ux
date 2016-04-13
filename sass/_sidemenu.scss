@@ -29,9 +29,12 @@
         &.active:hover {
             cursor      : pointer;
             background  : transparent;
-            font-weight : 600;
             border-color: $ux-primary;
             color       : $ux-primary;
+
+            &:not(.child) {
+                font-weight: 600;
+            }
         }
 
         &[data-toggle="collapse"] {

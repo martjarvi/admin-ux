@@ -2,6 +2,7 @@
     font-size  : .9em;
     font-weight: 400;
     padding    : .3em .6em .35em;
+    margin     : .1em .2em;
 }
 
 .label-sm {
@@ -12,4 +13,99 @@
 .label-lg {
     font-size  : 1.4em;
     font-weight: 400;
+}
+
+.col-stretch {
+    @include flex-column(stretch, flex-start);
+
+    > div {
+        @include flex(1 1 0);
+    }
+}
+
+.card-secondary {
+    color: $white;
+    @include card-variant($ux-secondary, $ux-secondary);
+}
+
+.card-primary-light {
+    @include card-variant($ux-primary-light, $ux-primary-light);
+}
+
+.card-secondary-light {
+    @include card-variant($ux-secondary-light, $ux-secondary-light);
+}
+
+.card-info-light {
+    @include card-variant($ux-info-light, $ux-info-light);
+}
+
+.card-danger-light {
+    @include card-variant($ux-danger-light, $ux-danger-light);
+}
+
+.card-success-light {
+    @include card-variant($ux-success-light, $ux-success-light);
+}
+
+.card-warning-light {
+    @include card-variant($ux-warning-light, $ux-warning-light);
+}
+
+.card-primary-medium {
+    @include card-variant($ux-primary-medium, $ux-primary-medium);
+}
+
+.card-secondary-medium {
+    @include card-variant($ux-secondary-medium, $ux-secondary-medium);
+}
+
+.card-info-medium {
+    @include card-variant($ux-info-medium, $ux-info-medium);
+}
+
+.card-danger-medium {
+    @include card-variant($ux-danger-medium, $ux-danger-medium);
+}
+
+.card-success-medium {
+    @include card-variant($ux-success-medium, $ux-success-medium);
+}
+
+.card-warning-medium {
+    @include card-variant($ux-warning-medium, $ux-warning-medium);
+}
+@media (max-width: 30em) {
+    .display-1 {
+        font-size: 5.5rem;
+    }
+
+    .display-2 {
+        font-size: 5rem;
+    }
+
+    .display-3 {
+        font-size: 4rem;
+    }
+
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 20em) {
+    .display-1 {
+        font-size: 5rem;
+    }
+
+    .display-2 {
+        font-size: 4rem;
+    }
+
+    .display-3 {
+        font-size: 3rem;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
 }

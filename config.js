@@ -6,10 +6,9 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-
   map: {
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.2.0",
-    "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.0",
+    "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.1",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.1",
     "aurelia-router": "npm:aurelia-router@1.0.0-beta.1.2.0",
     "aurelia-validation": "npm:aurelia-validation@0.6.6",
@@ -22,7 +21,7 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.20",
     "jquery": "npm:jquery@2.2.3",
     "ladda": "npm:ladda@1.0.0",
-    "lodash": "npm:lodash@4.8.2",
+    "lodash": "npm:lodash@4.10.0",
     "marked": "npm:marked@0.3.5",
     "moment": "npm:moment@2.12.0",
     "numeral": "npm:numeral@1.5.3",
@@ -255,7 +254,7 @@ System.config({
     "npm:ladda@1.0.0": {
       "spin.js": "npm:spin.js@2.3.2"
     },
-    "npm:lodash@4.8.2": {
+    "npm:lodash@4.10.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },

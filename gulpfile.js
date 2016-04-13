@@ -3,13 +3,13 @@ var gulp = require('gulp'),
 	to5 = require('gulp-babel'),
 	sass = require('gulp-sass'),
 	bundler = require('aurelia-bundler');
-gulp.task('sass:compile', function(done) {
+gulp.task('sass', function(done) {
 	return gulp.src('./sass/**/*.scss')
 		.pipe(sass()
 			.on('error', sass.logError))
 		.pipe(gulp.dest('./styles'));
 });
-gulp.task('default', ['sass:compile'], function() {});
+gulp.task('default', ['sass'], function() {});
 var config = {
 	force: true,
 	baseURL: '.',
@@ -30,15 +30,18 @@ var config = {
 		}
 	}
 };
-gulp.task('bundle', ['sass:compile', 'build'], function() {
+gulp.task('bundle', ['sass'], function() {
 	return bundler.bundle(config);
 });
 gulp.task('unbundle', function() {
 	return bundler.unbundle(config);
 });
 gulp.task('release', ['bundle'], function() {
-	gulp.src(['./index.html', './config.js', './dist/app.js', './dist/aurelia.js', './images/**/*', './styles/*.css', './font/**/*', './jspm_packages/system*'], {
+	return gulp.src(['./index.html', './config.js', './dist/app.js', './dist/aurelia.js', './images/**/*', './styles/*.css', './font/**/*', './jspm_packages/system*'], {
 			base: './'
 		})
-		.pipe(gulp.dest('./build'));
-})
+		.pipe(gulp.dest('../aux-pages'));
+});
+gulp.task('production', ['release'], function() {
+	return bundler.unbundle(config);
+});

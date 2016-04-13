@@ -17,6 +17,10 @@
         .ux-filler {
             display: none;
         }
+        @media (max-width: 20em) {
+            font-size: .9em;
+            height   : $ux-header-height - 1rem;
+        }
     }
 
     .ux-footer {
@@ -63,34 +67,49 @@
 
         .ux-body {
             @include flex(1 1 0);
-            position: relative;
-            overflow: auto;
+            position                  : relative;
+            overflow                  : auto;
+            -webkit-overflow-scrolling: touch;
 
             .ux-page {
                 padding: 1em .5em;
 
                 > h1 {
-                    color : $ux-primary-light;
-                    margin: .5rem 1rem;
-                    @extend .display-4;
+                    color      : $ux-primary-light;
+                    margin     : .5rem 1rem;
+                    font-weight: 300;
+                    font-size  : 4rem;
+                }
+
+                > h2 {
+                    color      : $ux-primary-light;
+                    margin     : .5rem 1rem;
+                    font-weight: 300;
+                    font-size  : 3rem;
+                }
+
+                > h3 {
+                    color      : $ux-primary-light;
+                    margin     : .5rem 1rem;
+                    font-weight: 300;
+                    font-size  : 2rem;
                 }
             }
         }
     }
 
     .ux-banner {
-        @include flex(0 0 $ux-sidemenu-width);
         @include align-self(stretch);
+        @include flex(0 0 $ux-sidemenu-width);
         padding       : 0 .5em;
         line-height   : 2.5;
         position      : relative;
         text-transform: uppercase;
-        background    : $ux-sidemenu-bg;
 
         .ux-home-link {
             padding   : 0 .5em;
             margin    : 0 .5em;
-            font-size : 1.5rem;
+            font-size : 1.1em;
             color     : $ux-header-banner-text;
             background: $ux-header-banner-bg;
             @if $enable-rounded {
@@ -109,8 +128,8 @@
         }
 
         .ux-menu {
-            font-size: 1.25rem;
-            display  : none;
+            font-size : 1em;
+            visibility: hidden;
         }
     }
 
@@ -203,13 +222,13 @@
     }
 
     .ux-options {
-        font-size: 1.2rem;
+        font-size: 1em;
         padding  : 0 .5em;
         @include flex(0 0 auto);
         @include flex-row(center, flex-start, false);
 
-         > div > a,
-        > a {
+         > a,
+        > div > a {
             position: relative;
             margin  : 0 .5em;
             cursor  : pointer;
@@ -236,7 +255,7 @@
 
         .ux-profile {
             > .dropdown-toggle {
-                font-size: 2rem;
+                font-size: 1.8em;
 
                 &:after {
                     font-size: .5em;
@@ -271,54 +290,7 @@
             }
 
             .ux-menu {
-                display: inline-block;
-            }
-        }
-
-        .ux-header .ux-filler {
-            display: block;
-            @include flex(1 1 0);
-        }
-
-        .ux-options .ux-general-menu-link {
-            display: block;
-        }
-
-        .ux-general-menu {
-            transition: right .5s;
-            z-index   : 500;
-            overflow  : auto;
-            padding   : 1em 0;
-            width     : $ux-sidemenu-width;
-            color     : $ux-sidemenu-text;
-            background: $ux-sidemenu-bg;
-            @include flex-column(stretch, flex-start);
-            @include border-start(1px solid $ux-sidemenu-border);
-            @include position(absolute, $ux-header-height -1 * $ux-sidemenu-width $ux-footer-height null);
-
-            .ux-col-fill {
-                display: none;
-            }
-        }
-
-        .ux-search-bar {
-            border-color: $ux-header-option-link-text;
-            box-shadow  : 0 1px 2px 0 $ux-gray-lighter inset;
-            @include align-self(center);
-
-            a {
-                color     : $ux-white;
-                background: $ux-header-option-link-text;
-
-                &:focus,
-                &:hover {
-                    color     : $ux-white;
-                    background: $ux-header-option-link-hover;
-                }
-            }
-
-            input {
-                width: $ux-sidemenu-width - 4rem !important;
+                visibility: visible;
             }
         }
 
@@ -354,6 +326,54 @@
                 z-index: 499;
             }
         }
+    }
+    @media (max-width:30em) {
+        .ux-header .ux-filler {
+            display: block;
+            @include flex(1 1 0);
+        }
+
+        .ux-options .ux-general-menu-link {
+            display: block;
+        }
+
+        .ux-general-menu {
+            transition: right .5s;
+            z-index   : 500;
+            overflow  : auto;
+            padding   : 1em 0;
+            width     : $ux-sidemenu-width;
+            color     : $ux-sidemenu-text;
+            background: $ux-sidemenu-bg;
+            @include flex-column(stretch, flex-start);
+            @include border-start(1px solid $ux-sidemenu-border);
+            @include position(absolute, ($ux-header-height) (-1 * $ux-sidemenu-width) $ux-footer-height null);
+
+            .ux-col-fill {
+                display: none;
+            }
+        }
+
+        .ux-search-bar {
+            border-color: $ux-header-option-link-text;
+            box-shadow  : 0 1px 2px 0 $ux-gray-lighter inset;
+            @include align-self(center);
+
+            a {
+                color     : $ux-white;
+                background: $ux-header-option-link-text;
+
+                &:focus,
+                &:hover {
+                    color     : $ux-white;
+                    background: $ux-header-option-link-hover;
+                }
+            }
+
+            input {
+                width: $ux-sidemenu-width - 4rem !important;
+            }
+        }
 
         &.show-general-menu {
             .ux-general-menu {
@@ -364,6 +384,11 @@
                 opacity: 1;
                 z-index: 499;
             }
+        }
+    }
+    @media (max-width : 20em) {
+        .ux-general-menu {
+            @include position(absolute, ($ux-header-height - 1rem) (-1 * $ux-sidemenu-width) $ux-footer-height null);
         }
     }
 }

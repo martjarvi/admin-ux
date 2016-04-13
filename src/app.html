@@ -48,14 +48,14 @@
             <aside class="ux-sidemenu" ref="__sidemenu">
                 <ul class="nav nav-pills nav-stacked" id="sidemenu">
                     <li class="nav-item ${nav.cls}" repeat.for="nav of routes">
-                        <a if.bind="!nav.children" class="nav-link ${router.currentInstruction.fragment===nav.href?'active':''}" href="#${nav.href}">
+                        <a if.bind="!nav.children" mouseup.trigger="closeMenus($event)" class="nav-link ${router.currentInstruction.fragment===nav.href?'active':''}" href="#${nav.href}">
                             <span class="${nav.icon}"></span> ${nav.title}</a>
 
                         <!-- Nav with children -->
                         <a if.bind="nav.children" class="nav-link ${router.currentInstruction.fragment.indexOf(nav.href)==0?'active':'collapsed'}" data-toggle="collapse" data-target="#route_${$index}" aria-expanded="false">
                             <span class="${nav.icon}"></span> ${nav.title}</a>
                         <div if.bind="nav.children" id="route_${$index}" class="collapse ${router.currentInstruction.fragment.indexOf(nav.href)==0?'in':''}">
-                            <a repeat.for="chl of nav.children" class="nav-link ${router.currentInstruction.fragment===nav.href+'.'+chl.href?'active':''}" href="#${nav.href}.${chl.href}"> ${chl.title}</a>
+                            <a repeat.for="chl of nav.children" mouseup.trigger="closeMenus($event)" class="nav-link child ${router.currentInstruction.fragment===nav.href+'.'+chl.href?'active':''}" href="#${nav.href}.${chl.href}"> ${chl.title}</a>
                         </div>
                     </li>
                 </ul>
