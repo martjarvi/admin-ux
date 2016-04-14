@@ -369,6 +369,8 @@ System.config({
       "src/app.html!github:systemjs/plugin-text@0.0.7.js",
       "src/app.js",
       "src/bootstrap/_btnsplit.html!github:systemjs/plugin-text@0.0.7.js",
+      "src/bootstrap/notifications.html!github:systemjs/plugin-text@0.0.7.js",
+      "src/bootstrap/notifications.js",
       "src/bootstrap/view.html!github:systemjs/plugin-text@0.0.7.js",
       "src/bootstrap/view.js",
       "src/dashboard/view.html!github:systemjs/plugin-text@0.0.7.js",
