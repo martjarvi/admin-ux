@@ -39,11 +39,14 @@ define(["require", "exports"], function (require, exports) {
                     href: '/components',
                     cls: 'ux-route-components',
                     children: [{
-                            title: 'Widgets',
-                            href: 'widgets'
-                        }, {
                             title: 'Bootstrap UI',
                             href: 'bootstrap'
+                        }, {
+                            title: 'Alerts & Notifications',
+                            href: 'notifications'
+                        }, {
+                            title: 'Cards',
+                            href: 'cards'
                         }]
                 }, {
                     title: 'Charts',
@@ -138,6 +141,14 @@ define(["require", "exports"], function (require, exports) {
                     route: 'components.bootstrap',
                     moduleId: './bootstrap/view',
                     name: 'components.bootstrap'
+                }, {
+                    route: 'components.notifications',
+                    moduleId: './bootstrap/notifications',
+                    name: 'components.notifications'
+                }, {
+                    route: 'components.cards',
+                    moduleId: './bootstrap/cards',
+                    name: 'components.cards'
                 }, {
                     route: '',
                     redirect: 'home'

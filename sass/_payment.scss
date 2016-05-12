@@ -1,0 +1,317 @@
+@import "bourbon/bourbon";
+
+.ux-pay-card {
+	display      : block;
+	width        : 380px;
+	padding      : 1.25em 1.5em;
+	border-radius: .5em;
+	border       : 1px solid $ux-gray-dark;
+	@include linear-gradient( 'top', $ux-gray-medium, $ux-gray-dark);
+
+	.form-control,
+	label {
+		font-family: 'OCR A Std' !important;
+		@include placeholder {
+			font-family: 'OCR A Std' !important;
+		}
+	}
+
+	select {
+		height: 27px;
+	}
+
+	.exp-input {
+		@include flex-row($wrap:false);
+
+		select {
+			@include flex(1 1 0);
+		}
+	}
+
+	.card-logo {
+		background     : no-repeat center center;
+		@include size(80px);
+		float          : right;
+		margin-right   : 1em;
+		background-size: 80px auto;
+	}
+
+	.ccnum-input {
+		font-size     : 1.4em;
+		font-weight   : 500;
+		letter-spacing: .15em;
+	}
+
+	.ccname-input {
+		text-transform: uppercase;
+	}
+
+	label {
+		color      : $ux-white;
+		text-shadow: 0 1px 1px #000;
+	}
+
+	&.visa {
+		$color      : #1C89F9;
+		border-color: $color;
+		@include linear-gradient( 'top', lighten($color, 20%), $color);
+
+		.card-logo {
+			background-image: url('../images/pay/visa.png');
+			background-size : auto 20px;
+		}
+	}
+
+	&.disc {
+		$color      : #E95F18;
+		border-color: $color;
+		@include linear-gradient( 'top', lighten($color, 20%), $color);
+
+		.card-logo {
+			background-image: url('../images/pay/disc.png');
+			background-size : auto 20px;
+		}
+	}
+
+	&.diners {
+		$color      : #ADABBE;
+		border-color: $color;
+		@include linear-gradient( 'top', lighten($color, 10%), $color);
+
+		.card-logo {
+			background-image: url('../images/pay/diners.png');
+		}
+	}
+
+	&.master {
+		$color      : #E92F2F;
+		border-color: $color;
+		@include linear-gradient( 'top', lighten($color, 20%), $color);
+
+		.card-logo {
+			background-image: url('../images/pay/master.png');
+		}
+	}
+
+	&.amex {
+		$color      : #63C2ED;
+		border-color: $color;
+		@include linear-gradient( 'top', lighten($color, 10%), $color);
+
+		.card-logo {
+			background-image: url('../images/pay/amex.png');
+		}
+	}
+
+	&.union {
+		$color      : #939FA5;
+		border-color: $color;
+		@include linear-gradient( 'top', lighten($color, 20%), $color);
+
+		.card-logo {
+			background-image: url('../images/pay/union.png');
+		}
+	}
+
+	&.jcb {
+		$color      : #4F4C4C;
+		border-color: $color;
+		@include linear-gradient( 'top', lighten($color, 20%), $color);
+
+		.card-logo {
+			background-image: url('../images/pay/jcb.png');
+		}
+	}
+	@media (max-width : 30em) {
+		width: 320px;
+
+		.form-control {
+			font-size: .8em;
+		}
+
+		.ccnum-input {
+			font-size     : 1.3em;
+			letter-spacing: .05em;
+		}
+	}
+}
+
+.ux-cc-input-full {
+	display: inline-block;
+
+	.cc-front {
+		height       : 250px;
+		width        : 400px;
+		float        : left;
+		padding      : 5px 10px;
+		border-radius: 10px;
+		border       : 1px solid #CBC9C9;
+		box-shadow   : 23px 12px 39px 1px rgba(#000, .32);
+		background   : url('../images/cc-front.png') repeat;
+
+		.cc-logos {
+			height    : 36px;
+			position  : relative;
+			margin-top: 10px;
+			background: url('../images/cc-logos.png') no-repeat left center;
+
+			&:after {
+				content   : ' ';
+				position  : absolute;
+				top       : 0;
+				left      : 0;
+				right     : 0;
+				height    : 36px;
+				background: url('../images/cc-logo-hilight.png') no-repeat left center;
+			}
+
+			&.visa {
+				&:after {
+					background-position: -575px;
+				}
+			}
+
+			&.electron {
+				&:after {
+					background-position: -520px;
+				}
+			}
+
+			&.mastercard {
+				&:after {
+					background-position: -465px;
+				}
+			}
+
+			&.maestro {
+				&:after {
+					background-position: -410px;
+				}
+			}
+
+			&.amex {
+				&:after {
+					background-position: -355px;
+				}
+			}
+
+			&.diners {
+				&:after {
+					background-position: -300px;
+				}
+			}
+
+			&.discover {
+				&:after {
+					background-position: -245px;
+				}
+			}
+
+			&.jcb {
+				&:after {
+					background-position: -300px;
+				}
+				background-position: -110px;
+			}
+
+			&.unionpay {
+				&:after {
+					background-position: -300px;
+				}
+				background-position: -165px;
+			}
+
+			&.laser {
+				&:after {
+					background-position: -305px;
+				}
+				background-position: -225px;
+			}
+
+			&.dankort {
+				&:after {
+					background-position: -250px;
+				}
+				background-position: -225px;
+			}
+		}
+	}
+
+	.cc-back {
+		height       : 250px;
+		width        : 565px;
+		padding      : 5px 10px 5px 400px;
+		border-radius: 10px;
+		border       : 1px solid #CBC9C9;
+		background   : url('../images/cc-back.png') repeat;
+	}
+
+	.cc-input-group {
+		margin-top: 15px;
+		text-align: left;
+
+		label {
+			font-variant : small-caps;
+			padding-left : 3px;
+			padding-right: 10px;
+			font-weight  : normal;
+			font-family  : 'OCR A Std', sans-serif;
+		}
+
+		input {
+			padding    : 5px 10px;
+			font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+		}
+
+		.cc-input {
+			width    : 100%;
+			display  : block;
+			font-size: 18pt;
+		}
+
+		&.input-inline {
+			label {
+				width: 110px;
+			}
+
+			input,
+			select {
+				display: inline-block !important;
+			}
+
+			select {
+				width  : 100px !important;
+				height : 24px;
+				padding: 3px 5px;
+			}
+
+			input.cc-holder {
+				text-transform: uppercase;
+				width         : 260px !important;
+			}
+		}
+	}
+
+	.cc-back .cc-input-group {
+		margin-top: 90px;
+		text-align: right;
+
+		label {
+			margin-left: 0;
+			text-align : right !important;
+			width      : 80px !important;
+		}
+
+		input {
+			width     : 70px;
+			float     : right;
+			margin-top: 2px;
+		}
+	}
+
+	.cc-back .cc-sec-info {
+		text-align: right;
+		font-size : 11px;
+		padding   : 3px 0 3px 8px;
+	}
+}

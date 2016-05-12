@@ -12,6 +12,21 @@ $font-family-sans-serif   : 'Open Sans', 'Roboto', 'Helvetica', 'Segoe UI', Aria
 $font-family-serif        : 'Lato', Georgia, "Times New Roman", Times, serif;
 $font-family-monospace    : 'Source Code Pro', Menlo, Monaco, Consolas, "Courier New", monospace;
 
+$font-size-root: 16px;
+
+$grid-breakpoints: (
+	// Extra small screen / phone
+	xs: 0,
+	// Small screen / phone
+	sm: 30 * $font-size-root,
+	// Medium screen / tablet
+	md: 48 * $font-size-root,
+	// Large screen / desktop
+	lg: 64 * $font-size-root,
+	// Extra large screen / wide desktop
+	xl: 96 * $font-size-root
+);
+
 $font-size-base           : .8rem;
 $font-size-lg             : 1.2rem;
 $font-size-sm             : .7rem;
@@ -69,6 +84,7 @@ $state-warning-border     : $ux-warning;
 $input-bg                 : $white;
 $input-label              : $ux-gray-dark;
 
+$alert-padding            : 16px;
 $blockquote-border-color  : $brand-primary;
 
 $dropdown-link-color      : $ux-gray-dark;

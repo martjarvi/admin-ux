@@ -1,0 +1,45 @@
+<template>
+    <form class="ux-pay-card visa" ref="__payCard">
+        <fieldset class="form-group">
+            <label for="uxCardNumber">Card Number</label>
+            <input type="text" class="form-control ccnum-input" maxlength="19" id="uxCardNumber" placeholder="4444 3333 2222 1111" value.bind="ccnum1" keypress.trigger="checkNumber($event)" input.trigger="ccnumChange($event)">
+        </fieldset>
+        <div class="row">
+            <fieldset class="form-group col-xs-6 col-md-8">
+                <label for="exampleSelect1">Expiry Date</label>
+                <div class="exp-input">
+                    <select class="form-control" id="exampleSelect1">
+                        <option value="">--Month--</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    &nbsp;
+                    <select class="form-control" id="exampleSelect2">
+                        <option value="">--Year--</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset class="form-group col-md-4">
+                <label for="ccv">CVV Code</label>
+                <input type="text" class="form-control" maxlength="4" placeholder="123" id="ccv" />
+            </fieldset>
+        </div>
+        <div class="row">
+            <fieldset class="form-group col-md-8">
+                <label for="cname">Name on Card</label>
+                <input type="text" class="form-control ccname-input" id="cname" placeholder="Name on Card" />
+            </fieldset>
+            <div class="col-md-4">
+                <div class="card-logo"></div>
+            </div>
+        </div>
+    </form>
+</template>

@@ -1,0 +1,45 @@
+<template>
+    <div class="ux-cc-input-full">
+        <div class="cc-front">
+            <div class="cc-logos visa" ref="_ccLogos"></div>
+            <div class="cc-input-group has-feedback">
+                <label>CARD NUMBER</label>
+                <input class="cc-input form-control" maxlength="19" required placeholder="4444 3333 2222 1111" value.bind="ccnum1" keypress.trigger="checkNumber($event)" input.trigger="ccnumChange($event)" />
+            </div>
+            <div class="cc-input-group input-inline">
+                <label>Expiration</label>
+                <select class="form-control input-sm" required>
+                    <option value="">--Month--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <span>/</span>
+                <select class="form-control input-sm" required>
+                    <option value="">--Year--</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                </select>
+            </div>
+            <div class="cc-input-group input-inline has-feedback">
+                <label>Card Holder</label>
+                <input class="form-control cc-holder" required/>
+            </div>
+        </div>
+        <div class="cc-back">
+            <div class="cc-input-group input-inline has-feedback">
+                <label>Security Code</label>
+                <input class="form-control" maxlength="4" required/>
+            </div>
+            <div class="cc-sec-info">A 3-digit code located to the right of signature strip on the back of your card.
+                <br/>
+                <br/>A 4-digit code located on the front of your card.
+            </div>
+        </div>
+    </div>
+</template>

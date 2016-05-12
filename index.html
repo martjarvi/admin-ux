@@ -15,8 +15,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-    <link rel="mask-icon" href="images/favicon/pin-icon.svg?v0.4" color="#02A4D3">
     <!-- favorite icons -->
+    <link rel="apple-touch-startup-image" href="images/favicon/startup.png">
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
@@ -42,7 +42,7 @@
 
 </head>
 
-<body dir="ltr">
+<body dir="ltr" class="ux-admin">
 
     <div aurelia-app="main"></div>
 
@@ -51,16 +51,16 @@
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
     <script>
-        // var systemLocate = System.locate;
-        // System.locate = function(load) {
-        //     var System = this;
-        //     return Promise.resolve(systemLocate.call(this, load))
-        //         .then(function(address) {
-        //             if (address.lastIndexOf("html.js") > -1) return address;
-        //             return address + System.cacheBust;
-        //         });
-        // };
-        // System.cacheBust = '?bust=' + Date.now();
+//        var systemLocate = System.locate;
+//        System.locate = function(load) {
+//            var System = this;
+//            return Promise.resolve(systemLocate.call(this, load))
+//                .then(function(address) {
+//                    if (address.lastIndexOf("html.js") > -1) return address;
+//                    return address + System.cacheBust;
+//                });
+//        };
+//        System.cacheBust = '?bust=' + Date.now();
         System.import('aurelia-bootstrapper');
     </script>
 

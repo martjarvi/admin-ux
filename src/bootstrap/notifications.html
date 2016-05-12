@@ -1,0 +1,153 @@
+<template>
+    <div class="ux-page">
+        <h2>Alerts &amp; Notifications</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <h2 class="card-title text-primary">Bootstrap Variations</h2>
+                            <hr/>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="text-muted">alert-{theme}</h6>
+                                        <div class="alert alert-dismissible alert-info">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong>NOTE!</strong> <a href="javascript:;" class="alert-link">Read this</a> important note.
+                                        </div>
+                                        <div class="alert alert-dismissible alert-success">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong>SUCCESS!</strong> <a href="javascript:;" class="alert-link">File</a> uploaded successfully
+                                        </div>
+                                        <div class="alert alert-dismissible alert-warning">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong>WARNING!</strong> This is a warning, please <a href="javascript:;" class="alert-link">read this</a>.
+                                        </div>
+                                        <div class="alert alert-dismissible alert-danger">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong>DANGER!</strong> <a href="javascript:;" class="alert-link">Check connection</a> and try submitting again.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-muted">alert-{theme} dark</h6>
+                                        <div class="alert alert-dismissible alert-info dark">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong>NOTE!</strong> <a href="javascript:;" class="alert-link">Read this</a> important note.
+                                        </div>
+                                        <div class="alert alert-dismissible alert-success dark">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong>SUCCESS!</strong> <a href="javascript:;" class="alert-link">File</a> uploaded successfully
+                                        </div>
+                                        <div class="alert alert-dismissible alert-warning dark">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong>WARNING!</strong> This is a warning, please <a href="javascript:;" class="alert-link">read this</a>.
+                                        </div>
+                                        <div class="alert alert-dismissible alert-danger dark">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong>DANGER!</strong> <a href="javascript:;" class="alert-link">Check connection</a> and try submitting again.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="text-muted">alert-{theme} dash</h6>
+                                        <div class="alert alert-dismissible alert-info dash">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong>NOTE!</strong> <a href="javascript:;" class="alert-link">Read this</a> important note.
+                                        </div>
+                                        <div class="alert alert-dismissible alert-success dash">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong>SUCCESS!</strong> <a href="javascript:;" class="alert-link">File</a> uploaded successfully
+                                        </div>
+                                        <div class="alert alert-dismissible alert-warning dash">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong>WARNING!</strong> This is a warning, please <a href="javascript:;" class="alert-link">read this</a>.
+                                        </div>
+                                        <div class="alert alert-dismissible alert-danger dash">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong>DANGER!</strong> <a href="javascript:;" class="alert-link">Check connection</a> and try submitting again.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-muted">alert-{theme} alt</h6>
+                                        <div class="alert alert-dismissible alert-info alt">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong><span class="fi-vaadin-info-1"></span> NOTE!</strong> <a href="javascript:;" class="alert-link">Read this</a> important note.
+                                        </div>
+                                        <div class="alert alert-dismissible alert-success alt">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong><span class="fi-vaadin-checked-3"></span> SUCCESS!</strong> <a href="javascript:;" class="alert-link">File</a> uploaded successfully
+                                        </div>
+                                        <div class="alert alert-dismissible alert-warning alt">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong><span class="fi-vaadin-exclamation-circle"></span> WARNING!</strong> This is a warning, please <a href="javascript:;" class="alert-link">read this</a>.
+                                        </div>
+                                        <div class="alert alert-dismissible alert-danger alt">
+                                            <button type="button" class="close">&times;</button>
+                                            <strong><span class="fi-vaadin-close-button"></span> DANGER!</strong> <a href="javascript:;" class="alert-link">Check connection</a> and try submitting again.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <h2 class="card-title text-primary">Toast Notifications</h2>
+                            <hr/>
+                            <div class="container-fluid">
+                                <div class="row" click.delegate="showToast($event)">
+                                    <div class="col-md-4">
+                                        <button class="btn btn-info btn-block" data-theme='info' data-icon='fi-vaadin-information'>Show Toast</button>
+                                        <button class="btn btn-success btn-block" data-theme='success' data-icon="fi-vaadin-check-button">Show Toast</button>
+                                        <button class="btn btn-warning btn-block" data-theme='warning' data-icon="fi-vaadin-exclamation-circle-1">Show Toast</button>
+                                        <button class="btn btn-danger btn-block" data-theme='danger' data-icon="fi-vaadin-cancel-button">Show Toast</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-info btn-block" data-theme='info dark' data-icon='fi-vaadin-information'>Show Dark Toast</button>
+                                        <button class="btn btn-success btn-block" data-theme='success dark' data-icon="fi-vaadin-check-button">Show Dark Toast</button>
+                                        <button class="btn btn-warning btn-block" data-theme='warning dark' data-icon="fi-vaadin-exclamation-circle-1">Show Dark Toast</button>
+                                        <button class="btn btn-danger btn-block" data-theme='danger dark' data-icon="fi-vaadin-cancel-button">Show Dark Toast</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-info-outline btn-block" data-theme='info alt' data-icon='fi-vaadin-information'>Show Alt Toast</button>
+                                        <button class="btn btn-success-outline btn-block" data-theme='success alt' data-icon="fi-vaadin-check-button">Show Alt Toast</button>
+                                        <button class="btn btn-warning-outline btn-block" data-theme='warning alt' data-icon="fi-vaadin-exclamation-circle-1">Show Alt Toast</button>
+                                        <button class="btn btn-danger-outline btn-block" data-theme='danger alt' data-icon="fi-vaadin-cancel-button">Show Alt Toast</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <h2 class="card-title text-primary">Sweet Alerts</h2>
+                            <hr/>
+                            <div class="container-fluid">
+                                <div class="row" click.delegate="showAlert($event)">
+                                    <div class="col-md-4">
+                                        <button class="btn btn-info btn-block" data-theme='info' data-icon='fi-vaadin-information'>Show Alert</button>
+                                        <button class="btn btn-success btn-block" data-theme='success' data-icon="fi-vaadin-check-button">Show Alert</button>
+                                        <button class="btn btn-warning btn-block" data-theme='warning' data-icon="fi-vaadin-exclamation-circle-1">Show Alert</button>
+                                        <button class="btn btn-danger btn-block" data-theme='error' data-icon="fi-vaadin-cancel-button">Show Alert</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-info-outline btn-block" data-theme='info' data-type='confirm'>Show Confirmation</button>
+                                        <button class="btn btn-success-outline btn-block" data-theme='success' data-type="prompt">Show Prompt</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

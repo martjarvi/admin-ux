@@ -3,72 +3,73 @@
  * @author: Adarsh Pastakia
  */
 
-$body-bg-image                 : '../images/bg-alum-dark.png';
+$body-bg-image : '../images/bg-alum-dark.png';
+$body-bg-color : #7B7B7B;
 //$sidemenu-bg-image             : '../images/bg-white-wall.png';
 
-$white                         : #FFF;
-$black                         : #000;
+$white : #FFF;
+$black : #000;
 
-$ux-white                      : #FAFAFA;
-$ux-black                      : #2D3E50;
+$ux-white : #FAFAFA;
+$ux-black : #2D3E50;
 
-$ux-gray-darker                : #444444;
-$ux-gray-dark                  : #626F66;
-$ux-gray-medium                : #7E8C8D;
-$ux-gray-light                 : #BEC3C7;
-$ux-gray-lighter               : #ECF0F1;
+$ux-gray-darker : #444444;
+$ux-gray-dark : #626F66;
+$ux-gray-medium : #7E8C8D;
+$ux-gray-light : #BEC3C7;
+$ux-gray-lighter : #ECF0F1;
 
-$ux-primary                    : #27B99A;
-$ux-secondary                  : #34495E;
-$ux-info                       : #49BFEB;
-$ux-danger                     : #F2503B;
-$ux-success                    : #5CB972;
-$ux-warning                    : #FFA44C;
+$ux-primary : #27B99A;
+$ux-secondary : #34495E;
+$ux-info : #49BFEB;
+$ux-danger : #F2503B;
+$ux-success : #5CB972;
+$ux-warning : #FFA44C;
 
-$ux-primary-dark               : #13A085;
-$ux-secondary-dark             : #2D3E50;
-$ux-info-dark                  : #2E97CC;
-$ux-danger-dark                : #C23824;
-$ux-success-dark               : #1FA66E;
-$ux-warning-dark               : #E87E04;
+$ux-primary-dark : #13A085;
+$ux-secondary-dark : #2D3E50;
+$ux-info-dark : #2E97CC;
+$ux-danger-dark : #C23824;
+$ux-success-dark : #1FA66E;
+$ux-warning-dark : #E87E04;
 
-$ux-primary-medium             : #4BC4A9;
-$ux-secondary-medium           : #F6F8FB;
-$ux-info-medium                : #66C9EE;
-$ux-danger-medium              : #F2503B;
-$ux-success-medium             : #75C488;
-$ux-warning-medium             : #FFB268;
+$ux-primary-medium : #4BC4A9;
+$ux-secondary-medium : #F6F8FB;
+$ux-info-medium : #66C9EE;
+$ux-danger-medium : #F2503B;
+$ux-success-medium : #75C488;
+$ux-warning-medium : #FFB268;
 
-$ux-primary-light              : #DFF4F0;
-$ux-secondary-light            : #FDFEFE;
-$ux-info-light                 : #E4F6FC;
-$ux-danger-light               : #FEE5E3;
-$ux-success-light              : #E7F4EA;
-$ux-warning-light              : #FFF1E5;
+$ux-primary-light : #DFF4F0;
+$ux-secondary-light : #FDFEFE;
+$ux-info-light : #E4F6FC;
+$ux-danger-light : #FEE5E3;
+$ux-success-light : #E7F4EA;
+$ux-warning-light : #FFF1E5;
 
-$ux-base-border                : $ux-gray-light;
+$ux-base-border : $ux-gray-light;
 
-$ux-header-bg                  : $ux-white;
-$ux-header-border              : $ux-base-border;
-$ux-header-height              : 3rem;
+$ux-header-bg : $ux-white;
+$ux-header-border : $ux-base-border;
+$ux-header-height : 3rem;
 
-$ux-footer-bg                  : $ux-black;
-$ux-footer-text                : $ux-gray-dark;
-$ux-footer-height              : .8rem;
+$ux-footer-bg : $ux-black;
+$ux-footer-text : $ux-gray-dark;
+$ux-footer-height : .8rem;
 
-$ux-sidemenu-bg                : $white;
-$ux-sidemenu-text              : $ux-gray-medium;
-$ux-sidemenu-border            : $ux-base-border;
-$ux-sidemenu-width             : 12rem;
+$ux-sidemenu-bg : $white;
+$ux-sidemenu-text : $ux-gray-medium;
+$ux-sidemenu-border : $ux-base-border;
+$ux-sidemenu-width : 12rem;
 
-$ux-header-banner-bg           : $ux-primary;
-$ux-header-banner-text         : $ux-white;
+$ux-header-banner-bg : $ux-primary;
+$ux-header-banner-text : $ux-white;
 
-$ux-header-option-link-text    : $ux-gray-medium;
-$ux-header-option-link-disabled: $ux-gray-light;
-$ux-header-option-link-hover   : $ux-primary;
+$ux-header-option-link-text : $ux-gray-medium;
+$ux-header-option-link-disabled : $ux-gray-light;
+$ux-header-option-link-hover : $ux-primary;
 
-$ux-sidemenu-link-text         : $ux-gray-dark;
-$ux-sidemenu-link-hover-bg     : $ux-white;
+$ux-sidemenu-link-text : $ux-gray-dark;
+$ux-sidemenu-link-hover-bg : $ux-white;
 
-$ux-placeholder                : $ux-gray-light;
+$ux-placeholder : $ux-gray-light;

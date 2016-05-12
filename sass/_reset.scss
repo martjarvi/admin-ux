@@ -4,136 +4,144 @@
  */
 body,
 html {
-    cursor    : default;
-    overflow  : hidden;
-    box-sizing: border-box;
-    background: url($body-bg-image);
-    @include size(100%, 100%);
-    @include user-select(none);
-}
-
-.ux-selectable {
-    cursor: text;
-    @include user-select(text);
-}
-
-::-moz-selection,
-::selection {
-    background-color: $ux-primary-medium !important;
-    color           : $ux-white !important;
-}
-
-input,
-textarea {
-    outline    : none !important;
-    padding    : .25em .5em;
-    font-family: 'Lato';
-    font-weight: 300;
-
-    &:-moz-placeholder {
-        font-family: 'Lato';
-        font-weight: 300;
-        color      : $ux-placeholder;
-    }
-
-    &:-ms-input-placeholder {
-        font-family: 'Lato';
-        font-weight: 300;
-        color      : $ux-placeholder;
-    }
-
-    &::-moz-placeholder {
-        font-family: 'Lato';
-        font-weight: 300;
-        color      : $ux-placeholder;
-    }
-
-    &::-webkit-input-placeholder {
-        font-family: 'Lato';
-        font-weight: 300;
-        color      : $ux-placeholder;
-    }
-}
-
-a,
-button {
-    outline   : none !important;
-    cursor    : pointer;
-    transition: all .5s;
-}
-
-p {
-    line-height: 1.5;
-}
-
-[class*=" fi-"]:after,
-[class*=" fi-"]:before,
-[class^="fi-"]:after,
-[class^="fi-"]:before {
-    display                : inline-block;
-    font-style             : normal;
-    font-weight            : inherit;
-    font-variant           : normal;
-    line-height            : 1;
-    text-decoration        : inherit;
-    text-rendering         : optimizeLegibility;
-    text-transform         : none;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing : antialiased;
-    font-smoothing         : antialiased;
+	cursor     : default;
+	overflow   : hidden;
+	box-sizing : border-box;
+	background : url($body-bg-image);
+	@include size(100%, 100%);
+	@include user-select(none);
 }
 
 [class*=" col-"],
 [class^="col-"] {
-    flex-basis: 100%;
+	flex-basis : 100%;
 }
 
-.ux-splash {
-    @include size(100%, 100%);
-    @include position(absolute, 0 0 null);
-    background     : $white url('../images/loader-pipe.gif') no-repeat center center;
-    box-shadow     : 0 0 10px 0 $ux-gray-darker;
-    background-size: 16em 16em;
-    transition     : top 1s;
-    z-index        : 20000;
+.ux-admin {
+	.ux-selectable {
+		cursor : text;
+		@include user-select(text);
+	}
 
-    &.animate {
-        top: -100%;
-    }
-}
+	::-moz-selection,
+	::selection {
+		background-color : $ux-primary-medium !important;
+		color            : $ux-white !important;
+	}
 
-.ux-hide {
-    display: none;
-}
+	.text-strong,
+	strong {
+		font-weight : 600 !important;
+	}
 
-.ux-col-fill {
-    @include flex(1 1 0);
-}
+	.text-bold,
+	b {
+		font-weight : 800 !important;
+	}
 
-.ux-badge {
-    font-size    : .8em;
-    border-radius: 1em;
-    padding      : 0 .5em;
-    color        : $ux-white;
-    background   : $ux-gray-medium;
+	input,
+	textarea {
+		outline     : none !important;
+		padding     : .25em .5em;
+		font-family : 'Lato';
+		font-weight : 300;
 
-    &.primary {
-        background: $ux-primary;
-    }
+		&:-moz-placeholder {
+			font-family : 'Lato';
+			font-weight : 300;
+			color       : $ux-placeholder;
+		}
 
-    &.info {
-        background: $ux-info;
-    }
+		&:-ms-input-placeholder {
+			font-family : 'Lato';
+			font-weight : 300;
+			color       : $ux-placeholder;
+		}
 
-    &.danger {
-        background: $ux-danger;
-    }
+		&::-moz-placeholder {
+			font-family : 'Lato';
+			font-weight : 300;
+			color       : $ux-placeholder;
+		}
 
-    &.success {
-        background: $ux-success;
-    }
+		&::-webkit-input-placeholder {
+			font-family : 'Lato';
+			font-weight : 300;
+			color       : $ux-placeholder;
+		}
+	}
 
-    &.warning {
-        background: $ux-warning;
-    }
+	a,
+	button {
+		outline    : none !important;
+		cursor     : pointer;
+		transition : all .5s;
+	}
+
+	p {
+		line-height : 1.5;
+	}
+
+	[class*=" fi-"]:after,
+	[class*=" fi-"]:before,
+	[class^="fi-"]:after,
+	[class^="fi-"]:before {
+		display                 : inline-block;
+		font-style              : normal;
+		font-weight             : inherit;
+		font-variant            : normal;
+		line-height             : 1;
+		text-decoration         : inherit;
+		text-rendering          : optimizeLegibility;
+		text-transform          : none;
+		-moz-osx-font-smoothing : grayscale;
+		-webkit-font-smoothing  : antialiased;
+		font-smoothing          : antialiased;
+	}
+
+	.ux-splash {
+		@include size(100%, 100%);
+		@include position(absolute, 0 0 null);
+		background      : $white url('../images/loader-pipe.gif') no-repeat center center;
+		box-shadow      : 0 0 10px 0 $ux-gray-darker;
+		background-size : 16em 16em;
+		transition      : top 1s;
+		z-index         : 20000;
+
+		&.animate {
+			top : -100%;
+		}
+	}
+
+	.ux-hide {
+		display : none;
+	}
+
+	.ux-badge {
+		font-size     : .8em;
+		border-radius : 1em;
+		padding       : 0 .5em;
+		color         : $ux-white;
+		background    : $ux-gray-medium;
+
+		&.primary {
+			background : $ux-primary;
+		}
+
+		&.info {
+			background : $ux-info;
+		}
+
+		&.danger {
+			background : $ux-danger;
+		}
+
+		&.success {
+			background : $ux-success;
+		}
+
+		&.warning {
+			background : $ux-warning;
+		}
+	}
 }

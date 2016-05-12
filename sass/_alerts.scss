@@ -1,0 +1,169 @@
+/**
+ * Admin UX - Bootstrap Alert Variations
+ * @author: Adarsh Pastakia
+ */
+.ux-admin {
+    .alert {
+        padding-right: 2em !important;
+
+        .close {
+            opacity: .5;
+
+            &:hover {
+                color: $ux-gray-dark;
+            }
+        }
+
+        &.dash {
+            border-style: dashed;
+        }
+    }
+    @mixin alert-dark($bg, $border) {
+         @include alert-variant($bg, $border, $ux-white);
+
+        .alert-link {
+            color: $white;
+        }
+
+        .close {
+            color      : $ux-gray-dark;
+            text-shadow: 0 1px 1px $ux-danger-light;
+
+            &:hover {
+                color: $ux-gray-darker;
+            }
+        }
+    }
+
+    .alert-success.dark {
+        @include alert-dark($ux-success-medium, $ux-success-dark);
+    }
+
+    .alert-info.dark {
+        @include alert-dark($ux-info-medium, $ux-info-dark);
+    }
+
+    .alert-warning.dark {
+        @include alert-dark($ux-warning-medium, $ux-warning-dark);
+    }
+
+    .alert-danger.dark {
+        @include alert-dark($ux-danger-medium, $ux-danger-dark);
+    }
+
+    .alert-success.alt {
+        @include alert-variant($ux-white, $ux-success, $ux-success-medium);
+    }
+
+    .alert-info.alt {
+        @include alert-variant($ux-white, $ux-info, $ux-info-medium);
+    }
+
+    .alert-warning.alt {
+        @include alert-variant($ux-white, $ux-warning, $ux-warning-medium);
+    }
+
+    .alert-danger.alt {
+        @include alert-variant($ux-white, $ux-danger, $ux-danger-medium);
+    }
+
+    // Toast Notifications
+    .toast {
+        width            : 25%;
+        padding          : .75em 1.25em;
+        border-left-width: .5rem !important;
+        border-left-style: solid !important;
+        box-shadow       : 0 4px 4px 0 $ux-gray-medium;
+        @media (max-width: 30em) {
+            width: 75%;
+        }
+
+        h6 {
+            margin: 0;
+        }
+
+        .toast-row {
+            @include flex-row(center, flex-start, false);
+
+            .col-icon {
+                font-size   : 2em;
+                opacity     : .8;
+                @include flex(0 0 auto);
+                margin-right: .5em;
+            }
+
+            .col-body {
+                @include flex(1 1 0);
+            }
+        }
+
+        div.progress-bar {
+            @include position(absolute, null 0 0 0);
+            height: .25em;
+
+            progress {
+                height: .25em;
+            }
+
+        }
+    }
+
+    // Sweet alert
+    .sweet-overlay {
+        background-color: rgba($ux-gray-medium, .6);
+        @include backdrop-blur(2px);
+    }
+
+    .sweet-alert {
+        box-shadow: 0 0 5px 0 $ux-gray-medium;
+
+        .sa-icon {
+            &.sa-info {
+                border-color: $ux-info-medium;
+
+                &:after,
+                &:before {
+                    background-color: $ux-info-medium;
+                }
+            }
+
+            &.sa-error {
+                border-color: $ux-danger-medium;
+
+                .sa-line {
+                    background-color: $ux-danger-medium;
+                }
+            }
+
+            &.sa-success {
+                border-color: $ux-success-medium;
+
+                .sa-line {
+                    background-color: $ux-success-medium;
+                }
+            }
+
+            &.sa-warning {
+                border-color: $ux-warning-medium !important;
+
+                span {
+                    background-color: $ux-warning-medium !important;
+                }
+            }
+        }
+
+        .sa-button-container {
+            .confirm {
+                background-color: $ux-primary-medium !important;
+
+                &:hover {
+                    background-color: $ux-primary !important;
+                }
+
+                &:active {
+                    background-color: $ux-primary-dark !important;
+                }
+            }
+        }
+    }
+}

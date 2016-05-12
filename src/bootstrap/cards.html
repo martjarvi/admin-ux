@@ -1,0 +1,97 @@
+<template>
+	<div class="ux-page">
+		<h2>Cards</h2>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-4 col-stretch">
+					<div class="card card-curl card-primary">
+						<div class="card-header">Card Title</div>
+						<div class="card-img lg" style="background-image: url('images/feature1.jpg')"></div>
+						<div class="card-block">
+							<p>${lipsum2}</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4 col-stretch">
+					<div class="card card-curl card-secondary">
+						<div class="card-header">Card Title</div>
+						<div class="card-img lg" style="background-image: url('images/feature2.jpg')"></div>
+						<div class="card-block">
+							<p>${lipsum2}</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4 col-stretch">
+					<div class="card card-curl card-danger">
+						<div class="card-header">Card Title</div>
+						<div class="card-img lg" style="background-image: url('images/feature6.jpg')"></div>
+						<div class="card-block">
+							<p>${lipsum2}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-4 col-stretch">
+					<div class="card card-curl card-primary-light">
+						<div class="card-header">Card Title</div>
+						<div class="card-img" style="background-image: url('images/feature1.jpg')"></div>
+						<div class="card-block">
+							<p>${lipsum2}</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4 col-stretch">
+					<div class="card card-curl card-secondary-light">
+						<div class="card-header">Card Title</div>
+						<div class="card-img" style="background-image: url('images/feature2.jpg')"></div>
+						<div class="card-block">
+							<p>${lipsum2}</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4 col-stretch">
+					<div class="card card-curl card-danger-light">
+						<div class="card-header">Card Title</div>
+						<div class="card-img" style="background-image: url('images/feature6.jpg')"></div>
+						<div class="card-block">
+							<p>${lipsum2}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="card">
+						<div class="card-block">
+							<h2 class="card-title text-primary">Credit Card Payment</h2>
+							<hr/>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-2 col-md-offset-2 text-right bg-info">
+										<p>Visa: 4*</p>
+										<p>MasterCard: (51-55)*</p>
+										<p>Amex: 34*</p>
+										<p>Diners: 36*</p>
+										<p>UnionPay: 62*</p>
+										<p>Discover: 65*</p>
+										<p>JCB: 352*</p>
+									</div>
+									<div class="col-md-6">
+										<compose view="./_ccpay.html" containerless></compose>
+									</div>
+								</div>
+								<hr/>
+								<div class="row">
+									<div class="col-md-8 col-md-offset-2">
+										<compose view="./_ccpayfull.html" containerless></compose>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

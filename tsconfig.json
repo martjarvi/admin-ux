@@ -22,6 +22,8 @@
     "main.ts",
     "src/app.d.ts",
     "src/app.ts",
+    "src/bootstrap/cards.ts",
+    "src/bootstrap/notifications.ts",
     "src/bootstrap/view.ts",
     "src/dashboard/view.ts",
     "src/home/view.ts",
