@@ -8947,6 +8947,247 @@ span {
 .font-3 {
   font-size: 3em; }
 
+.ux-pay-card {
+  display: block;
+  width: 380px;
+  padding: 1.25em 1.5em;
+  border-radius: .5em;
+  border: 1px solid #626F66;
+  background-color: #7E8C8D;
+  background-image: -webkit-linear-gradient(top, #7E8C8D, #626F66);
+  background-image: linear-gradient(to bottom,#7E8C8D, #626F66); }
+  .ux-pay-card .form-control,
+  .ux-pay-card label {
+    font-family: 'OCR A Std' !important; }
+    .ux-pay-card .form-control::-webkit-input-placeholder,
+    .ux-pay-card label::-webkit-input-placeholder {
+      font-family: 'OCR A Std' !important; }
+    .ux-pay-card .form-control::-moz-placeholder,
+    .ux-pay-card label::-moz-placeholder {
+      font-family: 'OCR A Std' !important; }
+    .ux-pay-card .form-control:-moz-placeholder,
+    .ux-pay-card label:-moz-placeholder {
+      font-family: 'OCR A Std' !important; }
+    .ux-pay-card .form-control:-ms-input-placeholder,
+    .ux-pay-card label:-ms-input-placeholder {
+      font-family: 'OCR A Std' !important; }
+  .ux-pay-card select {
+    height: 27px; }
+  .ux-pay-card .exp-input {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    -o-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    -o-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+    .ux-pay-card .exp-input select {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      box-flex: 1;
+      -webkit-flex: 1 1 0;
+      -moz-flex: 1 1 0;
+      -ms-flex: 1 1 0;
+      flex: 1 1 0; }
+  .ux-pay-card .card-logo {
+    background: no-repeat center center;
+    height: 80px;
+    width: 80px;
+    float: right;
+    margin-right: 1em;
+    background-size: 80px auto; }
+  .ux-pay-card .ccnum-input {
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: .15em; }
+  .ux-pay-card .ccname-input {
+    text-transform: uppercase; }
+  .ux-pay-card label {
+    color: #FAFAFA;
+    text-shadow: 0 1px 1px #000; }
+  .ux-pay-card.visa {
+    border-color: #1C89F9;
+    background-color: #7fbdfc;
+    background-image: -webkit-linear-gradient(top, #7fbdfc, #1C89F9);
+    background-image: linear-gradient(to bottom,#7fbdfc, #1C89F9); }
+    .ux-pay-card.visa .card-logo {
+      background-image: url("../images/pay/visa.png");
+      background-size: auto 20px; }
+  .ux-pay-card.disc {
+    border-color: #E95F18;
+    background-color: #f2a075;
+    background-image: -webkit-linear-gradient(top, #f2a075, #E95F18);
+    background-image: linear-gradient(to bottom,#f2a075, #E95F18); }
+    .ux-pay-card.disc .card-logo {
+      background-image: url("../images/pay/disc.png");
+      background-size: auto 20px; }
+  .ux-pay-card.diners {
+    border-color: #ADABBE;
+    background-color: #c9c8d4;
+    background-image: -webkit-linear-gradient(top, #c9c8d4, #ADABBE);
+    background-image: linear-gradient(to bottom,#c9c8d4, #ADABBE); }
+    .ux-pay-card.diners .card-logo {
+      background-image: url("../images/pay/diners.png"); }
+  .ux-pay-card.master {
+    border-color: #E92F2F;
+    background-color: #f38b8b;
+    background-image: -webkit-linear-gradient(top, #f38b8b, #E92F2F);
+    background-image: linear-gradient(to bottom,#f38b8b, #E92F2F); }
+    .ux-pay-card.master .card-logo {
+      background-image: url("../images/pay/master.png"); }
+  .ux-pay-card.amex {
+    border-color: #63C2ED;
+    background-color: #91d4f2;
+    background-image: -webkit-linear-gradient(top, #91d4f2, #63C2ED);
+    background-image: linear-gradient(to bottom,#91d4f2, #63C2ED); }
+    .ux-pay-card.amex .card-logo {
+      background-image: url("../images/pay/amex.png"); }
+  .ux-pay-card.union {
+    border-color: #939FA5;
+    background-color: #cbd0d3;
+    background-image: -webkit-linear-gradient(top, #cbd0d3, #939FA5);
+    background-image: linear-gradient(to bottom,#cbd0d3, #939FA5); }
+    .ux-pay-card.union .card-logo {
+      background-image: url("../images/pay/union.png"); }
+  .ux-pay-card.jcb {
+    border-color: #4F4C4C;
+    background-color: #837e7e;
+    background-image: -webkit-linear-gradient(top, #837e7e, #4F4C4C);
+    background-image: linear-gradient(to bottom,#837e7e, #4F4C4C); }
+    .ux-pay-card.jcb .card-logo {
+      background-image: url("../images/pay/jcb.png"); }
+  @media (max-width: 30em) {
+    .ux-pay-card {
+      width: 320px; }
+      .ux-pay-card .form-control {
+        font-size: .8em; }
+      .ux-pay-card .ccnum-input {
+        font-size: 1.3em;
+        letter-spacing: .05em; } }
+
+.ux-cc-input-full {
+  display: inline-block; }
+  .ux-cc-input-full .cc-front {
+    height: 250px;
+    width: 400px;
+    float: left;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #CBC9C9;
+    box-shadow: 23px 12px 39px 1px rgba(0, 0, 0, 0.32);
+    background: url("../images/cc-front.png") repeat; }
+    .ux-cc-input-full .cc-front .cc-logos {
+      height: 36px;
+      position: relative;
+      margin-top: 10px;
+      background: url("../images/cc-logos.png") no-repeat left center; }
+      .ux-cc-input-full .cc-front .cc-logos:after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 36px;
+        background: url("../images/cc-logo-hilight.png") no-repeat left center; }
+      .ux-cc-input-full .cc-front .cc-logos.visa:after {
+        background-position: -575px; }
+      .ux-cc-input-full .cc-front .cc-logos.electron:after {
+        background-position: -520px; }
+      .ux-cc-input-full .cc-front .cc-logos.mastercard:after {
+        background-position: -465px; }
+      .ux-cc-input-full .cc-front .cc-logos.maestro:after {
+        background-position: -410px; }
+      .ux-cc-input-full .cc-front .cc-logos.amex:after {
+        background-position: -355px; }
+      .ux-cc-input-full .cc-front .cc-logos.diners:after {
+        background-position: -300px; }
+      .ux-cc-input-full .cc-front .cc-logos.discover:after {
+        background-position: -245px; }
+      .ux-cc-input-full .cc-front .cc-logos.jcb {
+        background-position: -110px; }
+        .ux-cc-input-full .cc-front .cc-logos.jcb:after {
+          background-position: -300px; }
+      .ux-cc-input-full .cc-front .cc-logos.unionpay {
+        background-position: -165px; }
+        .ux-cc-input-full .cc-front .cc-logos.unionpay:after {
+          background-position: -300px; }
+      .ux-cc-input-full .cc-front .cc-logos.laser {
+        background-position: -225px; }
+        .ux-cc-input-full .cc-front .cc-logos.laser:after {
+          background-position: -305px; }
+      .ux-cc-input-full .cc-front .cc-logos.dankort {
+        background-position: -225px; }
+        .ux-cc-input-full .cc-front .cc-logos.dankort:after {
+          background-position: -250px; }
+  .ux-cc-input-full .cc-back {
+    height: 250px;
+    width: 565px;
+    padding: 5px 10px 5px 400px;
+    border-radius: 10px;
+    border: 1px solid #CBC9C9;
+    background: url("../images/cc-back.png") repeat; }
+  .ux-cc-input-full .cc-input-group {
+    margin-top: 15px;
+    text-align: left; }
+    .ux-cc-input-full .cc-input-group label {
+      font-variant: small-caps;
+      padding-left: 3px;
+      padding-right: 10px;
+      font-weight: normal;
+      font-family: 'OCR A Std', sans-serif; }
+    .ux-cc-input-full .cc-input-group input {
+      padding: 5px 10px;
+      font-family: 'Open Sans', Verdana, Helvetica, sans-serif; }
+    .ux-cc-input-full .cc-input-group .cc-input {
+      width: 100%;
+      display: block;
+      font-size: 18pt; }
+    .ux-cc-input-full .cc-input-group.input-inline label {
+      width: 110px; }
+    .ux-cc-input-full .cc-input-group.input-inline input,
+    .ux-cc-input-full .cc-input-group.input-inline select {
+      display: inline-block !important; }
+    .ux-cc-input-full .cc-input-group.input-inline select {
+      width: 100px !important;
+      height: 24px;
+      padding: 3px 5px; }
+    .ux-cc-input-full .cc-input-group.input-inline input.cc-holder {
+      text-transform: uppercase;
+      width: 260px !important; }
+  .ux-cc-input-full .cc-back .cc-input-group {
+    margin-top: 90px;
+    text-align: right; }
+    .ux-cc-input-full .cc-back .cc-input-group label {
+      margin-left: 0;
+      text-align: right !important;
+      width: 80px !important; }
+    .ux-cc-input-full .cc-back .cc-input-group input {
+      width: 70px;
+      float: right;
+      margin-top: 2px; }
+  .ux-cc-input-full .cc-back .cc-sec-info {
+    text-align: right;
+    font-size: 11px;
+    padding: 3px 0 3px 8px; }
+
 .ux-jumbo-banner {
   overflow: hidden;
   position: relative;
@@ -8979,16 +9220,20 @@ span {
   .ux-jumbo-banner .ux-spacer > div {
     height: .5rem; }
   .ux-jumbo-banner .feature {
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    box-flex: 0;
     -webkit-flex: 0 0 16em;
     -moz-flex: 0 0 16em;
     -ms-flex: 0 0 16em;
-    -o-flex: 0 0 16em;
     flex: 0 0 16em;
     background: url("../images/logo.png?4") no-repeat center center;
     background-size: 12em auto; }
   .ux-jumbo-banner .content {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
     -webkit-flex: 1 1 16em;
     -moz-flex: 1 1 16em;
     -ms-flex: 1 1 16em;
-    -o-flex: 1 1 16em;
     flex: 1 1 16em; }

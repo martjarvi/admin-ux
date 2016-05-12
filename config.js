@@ -369,6 +369,8 @@ System.config({
       "src/app.html!github:systemjs/plugin-text@0.0.7.js",
       "src/app.js",
       "src/bootstrap/_btnsplit.html!github:systemjs/plugin-text@0.0.7.js",
+      "src/bootstrap/_ccpay.html!github:systemjs/plugin-text@0.0.7.js",
+      "src/bootstrap/_ccpayfull.html!github:systemjs/plugin-text@0.0.7.js",
       "src/bootstrap/cards.html!github:systemjs/plugin-text@0.0.7.js",
       "src/bootstrap/cards.js",
       "src/bootstrap/notifications.html!github:systemjs/plugin-text@0.0.7.js",
