@@ -4968,10 +4968,40 @@ a.bg-danger:focus, a.bg-danger:hover {
       -o-flex: 1 1 0;
       flex: 1 1 0;
       position: relative;
-      overflow: auto;
-      -webkit-overflow-scrolling: touch; }
+      -webkit-display: flex;
+      -moz-display: flex;
+      -ms-display: flex;
+      -o-display: flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: stretch;
+      -moz-align-items: stretch;
+      -ms-align-items: stretch;
+      -o-align-items: stretch;
+      align-items: stretch;
+      -webkit-justify-content: flex-start;
+      -moz-justify-content: flex-start;
+      -ms-justify-content: flex-start;
+      -o-justify-content: flex-start;
+      justify-content: flex-start;
+      -webkit-flex-wrap: nowrap;
+      -moz-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      -o-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
       .ux-viewport .ux-viewport-body .ux-body .ux-page {
-        padding: 1em .5em; }
+        -webkit-flex: 1 1 0;
+        -moz-flex: 1 1 0;
+        -ms-flex: 1 1 0;
+        -o-flex: 1 1 0;
+        flex: 1 1 0;
+        padding: 1em .5em;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch; }
         .ux-viewport .ux-viewport-body .ux-body .ux-page > h1 {
           color: #DFF4F0;
           margin: .5rem 1rem;
@@ -5166,14 +5196,14 @@ a.bg-danger:focus, a.bg-danger:hover {
     -ms-flex-wrap: nowrap;
     -o-flex-wrap: nowrap;
     flex-wrap: nowrap; }
-    .ux-viewport .ux-options > div > a,
-    .ux-viewport .ux-options > a {
+    .ux-viewport .ux-options > a,
+    .ux-viewport .ux-options > div > a {
       position: relative;
       margin: 0 .5em;
       cursor: pointer;
       color: #7E8C8D; }
-      .ux-viewport .ux-options > div > a.ux-indicator:after,
-      .ux-viewport .ux-options > a.ux-indicator:after {
+      .ux-viewport .ux-options > a.ux-indicator:after,
+      .ux-viewport .ux-options > div > a.ux-indicator:after {
         content: ' ';
         border-radius: .15em;
         background: #F2503B;
@@ -5182,13 +5212,13 @@ a.bg-danger:focus, a.bg-danger:hover {
         position: absolute;
         top: 0.15em;
         right: -0.15em; }
-      .ux-viewport .ux-options > div > a.ux-disabled,
-      .ux-viewport .ux-options > a.ux-disabled {
+      .ux-viewport .ux-options > a.ux-disabled,
+      .ux-viewport .ux-options > div > a.ux-disabled {
         pointer-events: none;
         color: #BEC3C7; }
-      .ux-viewport .ux-options > div > a:focus, .ux-viewport .ux-options > div > a:hover,
-      .ux-viewport .ux-options > a:focus,
-      .ux-viewport .ux-options > a:hover {
+      .ux-viewport .ux-options > a:focus, .ux-viewport .ux-options > a:hover,
+      .ux-viewport .ux-options > div > a:focus,
+      .ux-viewport .ux-options > div > a:hover {
         color: #27B99A; }
     .ux-viewport .ux-options .ux-profile > .dropdown-toggle {
       font-size: 1.8em; }
@@ -8695,6 +8725,63 @@ a.bg-danger:focus, a.bg-danger:hover {
     color: #2D3E50; }
   .ux-admin .card-warning-light.card-curl:before {
     border-color: #FFA44C #7B7B7B; }
+
+form .form-group .inline-row {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  form .form-group .inline-row label {
+    -webkit-flex: 0 0 120px;
+    -moz-flex: 0 0 120px;
+    -ms-flex: 0 0 120px;
+    -o-flex: 0 0 120px;
+    flex: 0 0 120px;
+    text-align: right;
+    text-align: end;
+    width: 120px;
+    margin: 0;
+    margin-right: 5px;
+    -webkit-margin-end: 5px;
+    -moz-margin-end: 5px;
+    -ms-margin-end: 5px;
+    -o-margin-end: 5px;
+    margin-end: 5px; }
+  form .form-group .inline-row .form-control {
+    -webkit-flex: 1 1 0;
+    -moz-flex: 1 1 0;
+    -ms-flex: 1 1 0;
+    -o-flex: 1 1 0;
+    flex: 1 1 0;
+    width: auto; }
+  form .form-group .inline-row ~ small {
+    margin-left: 125px;
+    -webkit-margin-start: 125px;
+    -moz-margin-start: 125px;
+    -ms-margin-start: 125px;
+    -o-margin-start: 125px;
+    margin-start: 125px; }
 
 .ux-admin .label {
   font-size: .9em;

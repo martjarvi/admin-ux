@@ -26,6 +26,7 @@
     "src/bootstrap/notifications.ts",
     "src/bootstrap/view.ts",
     "src/dashboard/view.ts",
+    "src/forms/basic.ts",
     "src/home/view.ts",
     "src/utils.ts",
     "typings/core-js.d.ts",

@@ -57,12 +57,14 @@
 
         .ux-body {
             @include flex(1 1 0);
-            position                  : relative;
-            overflow                  : auto;
-            -webkit-overflow-scrolling: touch;
+            position: relative;
+            @include flex-row(stretch, flex-start, false);
 
             .ux-page {
-                padding: 1em .5em;
+                @include flex(1 1 0);
+                padding                   : 1em .5em;
+                overflow                  : auto;
+                -webkit-overflow-scrolling: touch;
 
                 > h1 {
                     color      : $ux-primary-light;
@@ -217,8 +219,8 @@
         @include flex(0 0 auto);
         @include flex-row(center, flex-start, false);
 
-         > div > a,
-        > a {
+         > a,
+        > div > a {
             position: relative;
             margin  : 0 .5em;
             cursor  : pointer;

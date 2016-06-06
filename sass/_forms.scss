@@ -1,0 +1,23 @@
+form .form-group {
+    .inline-row {
+        @include flex-row($align: center);
+
+        label {
+            @include flex(0 0 120px);
+            text-align: right;
+            text-align: end;
+            width     : 120px;
+            margin    : 0;
+            @include margin-end(5px);
+        }
+
+        .form-control {
+            @include flex(1 1 0);
+            width: auto;
+        }
+
+        ~ small {
+            @include margin-start(125px);
+        }
+    }
+}

@@ -150,6 +150,10 @@ define(["require", "exports"], function (require, exports) {
                     moduleId: './bootstrap/cards',
                     name: 'components.cards'
                 }, {
+                    route: 'forms.basic',
+                    moduleId: './forms/basic',
+                    name: 'forms.basic'
+                }, {
                     route: '',
                     redirect: 'home'
                 }]);

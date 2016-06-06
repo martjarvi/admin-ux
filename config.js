@@ -6,6 +6,7 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
+
   map: {
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.2.0",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.1",
@@ -25,6 +26,7 @@ System.config({
     "marked": "npm:marked@0.3.5",
     "moment": "npm:moment@2.12.0",
     "numeral": "npm:numeral@1.5.3",
+    "select2": "github:select2/select2@4.0.2",
     "sweetalert": "npm:sweetalert@1.1.3",
     "text": "github:systemjs/plugin-text@0.0.7",
     "typescript": "npm:typescript@1.8.9",
@@ -65,6 +67,9 @@ System.config({
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
+    },
+    "github:select2/select2@4.0.2": {
+      "jquery": "npm:jquery@2.2.3"
     },
     "github:twbs/bootstrap@4.0.0-alpha.2": {
       "jquery": "github:components/jquery@2.2.1",

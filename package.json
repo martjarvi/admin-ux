@@ -46,6 +46,7 @@
       "marked": "npm:marked@^0.3.5",
       "moment": "npm:moment@^2.12.0",
       "numeral": "npm:numeral@^1.5.3",
+      "select2": "github:select2/select2@^4.0.2",
       "sweetalert": "npm:sweetalert@^1.1.3",
       "text": "github:systemjs/plugin-text@^0.0.7"
     },

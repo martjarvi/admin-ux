@@ -22,6 +22,7 @@
 @import "animate";
 @import "buttons";
 @import "cards";
+@import "forms";
 @import "overrides";
 @import "popovers";
 @import "sidemenu";
@@ -29,18 +30,21 @@
 @import "payment";
 
 .ux-jumbo-banner {
-	overflow   : hidden;
-	position   : relative;
-	background : url("../images/bg-white-wall.png");
+	overflow  : hidden;
+	position  : relative;
+	background: url('../images/bg-white-wall.png');
 	@include flex-row(stretch, flex-start, true);
+
 	.ux-spacer > div {
-		height : .5rem;
+		height: .5rem;
 	}
+
 	.feature {
 		@include flex(0 0 16em);
-		background      : url("../images/logo.png?4") no-repeat center center;
-		background-size : 12em auto;
+		background     : url('../images/logo.png?4') no-repeat center center;
+		background-size: 12em auto;
 	}
+
 	.content {
 		@include flex(1 1 16em);
 	}
